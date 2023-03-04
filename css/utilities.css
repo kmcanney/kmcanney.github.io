@@ -51,7 +51,7 @@ a.icon-link:hover {
 @media only screen and (max-width: 800px) {
   .navbar {
     padding: 10px 10px;
-    background-color: transparent
+    background-color: white
   }
 }
 
