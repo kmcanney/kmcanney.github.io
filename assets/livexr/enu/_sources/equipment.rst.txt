@@ -1,0 +1,61 @@
+.. _equipment:
+
+Required hardware
+=================
+
+The following hardware is supplied for the Live XR system. Please confirm all items when loading or unloading the system.
+
+
++------------+------------------------------+---------------------------------+
+|Quantity    |Description                   |Notes                            |
++============+==============================+=================================+
+| 9          |Azure Kinect sensor           |                                 |
++------------+------------------------------+---------------------------------+
+| 9          |Kinect power supply           |                                 |
++------------+------------------------------+---------------------------------+
+| 9          |Jetson Xavier NX computer     |                                 |
++------------+------------------------------+---------------------------------+
+| 9          |Jetson Xavier NX power supply |                                 |
++------------+------------------------------+---------------------------------+
+| 9          |USB cables for Kinect         |                                 |
++------------+------------------------------+---------------------------------+
+| 9          |3.5mm audio cable             |To sync Kinect sensors           |
++------------+------------------------------+---------------------------------+
+| 9          |Headless HDMI adapter         |                                 |
++------------+------------------------------+---------------------------------+
+| 9          |Heavy-duty tripod             |For Kinect sensors               |
++------------+------------------------------+---------------------------------+
+| 9          |Ball head                     |To mount Kinect sensors          |
++------------+------------------------------+---------------------------------+
+| 2          |Tripod clamp and plate        |For high-mounted Kinect sensors  |
++------------+------------------------------+---------------------------------+
+| 3          |Light-duty tripod             |For low-mounted Kinect sensors   |
++------------+------------------------------+---------------------------------+
+| 6          |Flags                         |For ICP alignment                |
++------------+------------------------------+---------------------------------+
+| 1          |Checkerboard calibration chart|                                 |
++------------+------------------------------+---------------------------------+
+| 1          |AR marker                     |To print. See :ref:`calibration`.|
++------------+------------------------------+---------------------------------+
+| 8          |Reality Capture markers       |To print. See :ref:`cameras`.    |
++------------+------------------------------+---------------------------------+
+| 4          |Power strips                  |                                 |
++------------+------------------------------+---------------------------------+
+| 1          |Gigabit PoE switch            |                                 |
++------------+------------------------------+---------------------------------+
+| 1          |ASUS RT-AX82U Router          |For OpenVPN functionality  *     |
++------------+------------------------------+---------------------------------+
+| 5          |50' Ethernet cable            |                                 |
++------------+------------------------------+---------------------------------+
+| 5          |25' Ethernet cable            |                                 |
++------------+------------------------------+---------------------------------+
+| 1          |Sony PCM D100 recorder        |                                 |
++------------+------------------------------+---------------------------------+
+
+Studio lighting to be provided by the site.
+
+Network connection with 100 Mbps upload speed to be provided by the site.
+
+.. warning::
+
+    Please note that OpenVPN is configured on the router to provide access to the Jetson Xavier NX computers through the site's Internet connection. Only the supplied Live XR hardware should be connected to the supplied OpenVPN router and Ethernet switch.  

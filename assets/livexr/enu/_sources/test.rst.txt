@@ -1,0 +1,13 @@
+.. _test:
+
+Testing the installation
+========================
+
+After installing the equipment and calibrating the sensors, use the following procedures to test the installation.
+
+Testing synchronization
+-----------------------
+
+
+
+

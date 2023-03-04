@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Adjusting_and_monitoring_volume.htm'],s:['+','inform','when'],p:[['+',56],['a',12],['at',3],['channel',23],['controls',53],['editing',47],['gamma',53],['it',5],['metadata',47],['order',22],['relay',39],['sony',0],['the',41],['type',31],['x',23]]});

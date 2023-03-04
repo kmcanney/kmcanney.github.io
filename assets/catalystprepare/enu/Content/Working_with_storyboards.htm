@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Media|Working with clips" data-mc-conditions="Default.Prolog" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Working with storyboards</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapGlobal.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapDom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapUtilities.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapXhr.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapTextEffects.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapSlideshow.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapMessageBus.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapDefault.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapMediaQueries.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAccessibility.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapHelpSystem.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAliasFile.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapSkinHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapToc.Breadcrumbs.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapToc.MiniToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapToc.SideMenu.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapIndex.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapGlossary.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapParser.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapSearch.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapNavigateTopics.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapLms.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapELearning.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapTopic.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapMicroContentComponent.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapSearchHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapTopicElements.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapFluid.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+  document.title = "Catalyst Prepare Help - " + document.title;
+/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="Home_Prepare.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search help topics" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="search-container">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search help topics" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="top-bar">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div> </div>
+                                        <div class="topic-layout">
+                                            <div>
+                                                <div class="side-menu">
+                                                    <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Prepare_Responsive.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                                <div class="side-content">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div role="main" id="mc-main-content">
+                                                    <h2><a name="kanchor71"></a>Working with storyboards</h2>
+                                                    <p>You can create and edit storyboards to create a video project that is comprised of multiple, shorter video clips.</p>
+                                                    <p class="note">Storyboards are saved with the current media library.</p>
+                                                    <p class="warn">When no library is opened, storyboard support is not available. For more information, see <a href="Library_create_load.htm" class="period MCXref xref xrefperiod">"<u>Creating or opening a library</u>."</a></p>
+                                                    <p>If you need to create a project that can be written back to a camera or device, you can create a PD-EDL clip list. For more information, see <a href="Working_with_clip_lists.htm" class="period MCXref xref xrefperiod">"<u>Working with clip lists</u>."</a></p>
+                                                    <hr width="100%" size="0" align="center" data-mc-conditions="Default.Online" />
+                                                    <h3><a name="kanchor72"></a>Creating a storyboard</h3>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Click the <span class="uielement"><span class="mc-variable Variables.BrowseButton variable">Organize</span></span> button at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Navigate to the folder that contains the clips you want to use.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Select the files you want to include in your clip list. You can hold Shift or Control (Windows) / ⌘ (macOS) to select multiple files.</p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>Click the <span class="uielement">Storyboard</span> button <img src="Resources/Images/b_storyboard.png" style="height: 21px;width: auto;" /> at the bottom of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window and choose <span class="uielement"><a name="kanchor73"></a>Create from selection</span> from the menu.</p>
+                                                            <p class="warn">The <span class="uielement">Create from selection</span> command is not available when a clip list, spanned clip (<img src="Resources/Images/b_spansame.png" style="height: 21px;width: auto;vertical-align: top;" />), or an FTP-based clip is selected.</p>
+                                                            <p class="tip">If you want create a storyboard list without choosing clips, click the <span class="uielement">Storyboard</span> button at the bottom of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window and choose <span class="uielement"><a name="kanchor74"></a>Create empty</span> from the menu.</p>
+                                                        </li>
+                                                        <li value="5">
+                                                            <p>Type a name for the storyboard and click <span class="uielement">OK</span>.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <h3><a name="kanchor75"></a>Opening a storyboard</h3>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Click the <span class="uielement"><span class="mc-variable Variables.BrowseButton variable">Organize</span></span> button at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Click a storyboard in the Storyboards section of the left pane. The storyboard's clips are displayed in the center pane.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Click the <span class="mc-variable Variables.ViewButton variable">Edit</span> button to load your storyboard in <span class="mc-variable Variables.ViewButton variable">Edit</span> mode.</p>
+                                                            <p class="tip">When viewing a storyboard, <img src="Resources/Images/b_spansame.png" style="height: 24px;width: auto;" /> indicates spanned clips from the same volume, and <img src="Resources/Images/b_spandifferent.png" style="height: 24px;width: auto;" /> indicates spanned clips from different volumes.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <h3><a name="kanchor76"></a>Rearranging clips</h3>
+                                                    <div class="h3">
+                                                        <p>In <span class="mc-variable Variables.ViewButton variable">Edit</span> mode, you can add, remove, and arrange clips. </p>
+                                                        <p>You can drag clips within the storyboard to rearrange them. Drag a clip and drop it to a new position to move it.</p>
+                                                        <p>
+                                                            <img src="Resources/Images/add_clip.png" />
+                                                        </p>
+                                                    </div>
+                                                    <h3><a name="kanchor77"></a>Adding clips</h3>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Click the <span class="uielement"><span class="mc-variable Variables.BrowseButton variable">Organize</span></span> button at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Click a storyboard in the Storyboards section of the left pane. The storyboard's clips are displayed in the center pane.</p>
+                                                            <div class="tip">
+                                                                <p>When the <span class="uielement">Add To</span> button at the bottom of the <span class="mc-variable Variables.ProductNameProlog variable">Catalyst Prepare</span> window is selected, you can quickly add a clip to the selected storyboard by selecting it and clicking the <span class="uielement">Add</span> button (or pressing Enter). Use the <span class="uielement">Add clip to storyboard</span> drop-down list to select a storyboard.</p>
+                                                                <p>When you add a clip, a vertical line is added to the timeline to indicate where each clip begins:</p>
+                                                                <p>
+                                                                    <img src="Resources/Images/timelineclipindicator.png" />
+                                                                </p>
+                                                                <p>You can also drag clips from the Organize pane to a bin or storyboard in the Places pane.</p>
+                                                            </div>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Click the <span class="mc-variable Variables.ViewButton variable">Edit</span> button to load your storyboard in <span class="mc-variable Variables.ViewButton variable">Edit</span> mode.</p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>Click the add button at the end of the clip list or  the <span class="uielement">Add</span> button at the bottom of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window to display a media browser, where you can select additional clips for your storyboard. </p>
+                                                            <p>
+                                                                <img src="Resources/Images/add_clip.png" />
+                                                            </p>
+                                                        </li>
+                                                    </ol>
+                                                    <h3><a name="kanchor78"></a>Removing clips</h3>
+                                                    <div class="h3">
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Click the <span class="uielement"><span class="mc-variable Variables.BrowseButton variable">Organize</span></span> button at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. </p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Click a storyboard in the Storyboards section of the left pane. The storyboard's clips are displayed in the center pane.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Click the <span class="mc-variable Variables.ViewButton variable">Edit</span> button to load your storyboard in <span class="mc-variable Variables.ViewButton variable">Edit</span> mode.</p>
+                                                            </li>
+                                                            <p>Select a clip and click the <span class="uielement">Remove</span> button <img src="Resources/Images/b_delete.png" style="height: 21px;width: auto;" /> at the bottom of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window.</p>
+                                                        </ol>
+                                                    </div>
+                                                    <h3><a name="kanchor79"></a>Editing clips</h3>
+                                                    <div class="h3">
+                                                        <p>In Clip mode, you can log mark in and out points for your clips. </p>
+                                                        <p class="note">You cannot add, delete, or rearrange clips in Clip or Adjust Color mode. Use Storyboard mode for clip list editing.</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Click the <span class="uielement"><span class="mc-variable Variables.BrowseButton variable">Organize</span></span> button at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. </p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Click a storyboard in the Storyboards section of the left pane. The storyboard's clips are displayed in the center pane.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Click the <span class="mc-variable Variables.ViewButton variable">Edit</span> button to load your storyboard in <span class="mc-variable Variables.ViewButton variable">Edit</span> mode.</p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Click the <span class="uielement">Clip</span> button at the bottom of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window to switch to Clip mode.</p>
+                                                                <p class="tip">You can also double-click a clip in Storyboard mode to switch to Clip mode.</p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>Select the clip you want to edit.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>Use the <span class="uielement">Mark In</span> and <span class="uielement">Mark Out</span> buttons to adjust the mark in and out points for the selected clip. </p>
+                                                                <p>For more information, see <a href="Marking_in_and_out_points.htm" class="period MCXref xref xrefperiod">"<u>Marking in and out points for playback</u>."</a></p>
+                                                                <p class="note">Editing a storyboard clip's mark in and out points does not affect other storyboards that use the same clip.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                    <h3><a name="kanchor80"></a>Adjusting color correction for clips</h3>
+                                                    <div class="h3">
+                                                        <p>In Adjust Color mode, you can adjust color correction settings for each clip in a storyboard. </p>
+                                                        <p class="note">You cannot add, delete, or rearrange clips in Clip or Adjust Color mode. Use Storyboard mode for clip list editing.</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Click the <span class="uielement"><span class="mc-variable Variables.BrowseButton variable">Organize</span></span> button at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. </p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Click a storyboard in the Storyboards section of the left pane. The storyboard's clips are displayed in the center pane.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Click the <span class="mc-variable Variables.ViewButton variable">Edit</span> button to load your storyboard in <span class="mc-variable Variables.ViewButton variable">Edit</span> mode.</p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Click the <span class="uielement">Adjust Color</span> button at the bottom of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window to switch to Adjust Color mode. In this mode, <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> displays a waveform/histogram/vectorscope monitor, a video preview, and color controls that you can use to adjust the appearance of your video. </p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>Select the clip you want to edit.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>Click the <span class="uielement">Inspector</span> button <img src="Resources/Images/b_metadata.png" style="width: auto;height: 18px;" /> in the toolbar to display the Inspector pane if it isn't already visible. In the Adjust Color workspace, the Inspector pane provides controls that you will use to adjust color-grading settings.</p>
+                                                                <p>The waveform/histogram/vectorscope monitor and video preview window allow you to monitor your progress as you adjust color values. For more information, see <a href="Color_correction_editing.htm" class="period MCXref xref xrefperiod">"<u>Editing Color Adjustments controls</u>."</a></p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                    <h3 class="pagebreak"><a name="kanchor81"></a>Previewing storyboards</h3>
+                                                    <div class="h3">
+                                                        <p>When you double-click a storyboard in <span class="mc-variable Variables.BrowseButton variable">Organize</span> mode, the storyboard is loaded in <span class="mc-variable Variables.ViewButton variable">Edit</span> mode, where you can preview the file in the same way you preview other clips. For more information, see  <a href="Previewing_a_video.htm" class="period MCXref xref xrefperiod">"<u>Previewing video</u>."</a></p>
+                                                        <p>You can select a clip to set the starting point for playback, and the clip selection will follow the cursor during playback.</p>
+                                                    </div>
+                                                    <h3><a name="kanchor82"></a>Exporting storyboards</h3>
+                                                    <div class="h3">
+                                                        <p>When you select a storyboard in <span class="mc-variable Variables.BrowseButton variable">Organize</span> mode, you can export the storyboard in one of three ways:</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>You can render each of the storyboard's clips to a new format.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>You can render the storyboard as a single media file.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>You can export the storyboard as a project for use in another video editor.</p>
+                                                            </li>
+                                                        </ul>
+                                                        <p>For more information, see  <a href="Library_export.htm#Renderin" class="comma MCXref xref xrefcomma">"<u>Exporting media from a library</u>,"</a> <a href="Library_export.htm#Renderin2" class="comma MCXref xref xrefcomma">"<u>Exporting media from a library</u>,"</a> or <a href="Library_export.htm#Exportin2" class="period MCXref xref xrefperiod">"<u>Exporting media from a library</u>."</a></p>
+                                                        <h3><a name="kanchor83"></a>Using <span class="mc-variable Variables.ProductNameProlog variable">Catalyst Prepare</span> storyboards in <span class="mc-variable Variables.ProductNameMonaco variable">Catalyst Edit</span></h3>
+                                                        <p><span class="mc-variable Variables.ProductNameMonaco variable">Catalyst Edit</span> provides native support for <span class="mc-variable Variables.ProductNameProlog variable">Catalyst Prepare</span> storyboards:</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>In the <span class="mc-variable Variables.ProductNameMonaco variable">Catalyst Edit</span> Media Browser, double-click a .cpreplib  file (<img src="Resources/Images/b_cpreplib.png" style="width: auto;height: 24px;" />). When you open a Catalyst Prepare library, the Media Browser displays all the media contained in that library sorted in bins. </p>
+                                                                <p class="tip">The default location for .cpreplib files is <span class="code">C:\Users\&lt;username&gt;\Videos\</span> on Windows and <span class="code">/Users/&lt;username&gt;/Movies/</span> on macOS.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Drag a storyboard bin to the <span class="mc-variable Variables.ProductNameMonaco variable">Catalyst Edit</span> timeline to add it.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                    <h3>Viewing metadata for storyboards</h3>
+                                                    <div class="h3">
+                                                        <p>Click the <span class="uielement">Inspector</span> button <img src="Resources/Images/b_metadata.png" style="width: auto;height: 18px;" /> in the toolbar to display metadata in the Inspector pane. The Inspector pane displays information about the selected subclip.</p>
+                                                        <p>For more information, see <a href="Viewing_Metadata.htm" class="period MCXref xref xrefperiod">"<u>Viewing and editing metadata</u>."</a></p>
+                                                    </div>
+                                                    <h3>Renaming a storyboard</h3>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Click the <span class="uielement"><span class="mc-variable Variables.BrowseButton variable">Organize</span></span> button at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Click a storyboard in the Storyboards section of the left pane. The storyboard's clips are displayed in the center pane.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Click the <span class="uielement">Storyboard</span> button <img src="Resources/Images/b_storyboard.png" style="height: 21px;width: auto;" /> at the bottom of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window and choose <span class="uielement"><a name="kanchor84"></a>Rename</span> from the menu.</p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>Type a name for the storyboard and click <span class="uielement">OK</span>.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <h3>Deleting a storyboard</h3>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Click the <span class="uielement"><span class="mc-variable Variables.BrowseButton variable">Organize</span></span> button at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Click a storyboard in the Storyboards section of the left pane. The storyboard's clips are displayed in the center pane.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Click the <span class="uielement">Storyboard</span> button <img src="Resources/Images/b_storyboard.png" style="height: 21px;width: auto;" /> at the bottom of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window and choose <span class="uielement"><a name="kanchor85"></a>Delete</span> from the menu.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <p data-mc-conditions="Default.Online">&#160;</p>
+                                                    <p data-mc-conditions="Default.Online">&#160;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

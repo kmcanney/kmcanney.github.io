@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Calibration &mdash; Live XR User Guide 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Network setup" href="networking.html" /> 
+
+ 
+  
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="site-nav-toggle hidden-lg-up"><i class="icon-menu"></i></a>
+            <a class="site-title" href="index.html">
+                Live XR User Guide
+            </a>
+        </div>
+    </header>
+
+
+<div class="breadcrumbs-outer hidden-xs-down">
+    <div class="container">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumbs">
+    
+      <li><a href="index.html">Docs</a></li>
+        
+      <li>Calibration</li>
+    
+    
+      <li class="breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+</div>
+    </div>
+</div>
+    <div class="main-outer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 site-nav">
+                  <!--  
+<div role="search">
+    <form class="search" action="search.html" method="get">
+        <div class="icon-input">
+            <input type="text" name="q" placeholder="Search" />
+            <span class="icon-search"></span>
+        </div>
+        <input type="submit" value="Go" class="d-hidden" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div> -->
+                    <div class="site-nav-tree">
+                        
+                            
+                            
+                                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equipment.html">Required hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the cameras</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#sensor-reality-capture-setup">4-Sensor Reality Capture setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#sensor">9-Sensor Reality Capture setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jetson.html">Jetson Xavier NX setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="networking.html">Network setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Calibration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#arrange-reality-capture-markers">Arrange Reality Capture markers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#capture-the-ar-marker">Capture the AR marker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arrange-flags">Arrange flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#capture-the-flags">Capture the flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#capture-the-calibration-checkerboard">Capture the calibration checkerboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#calibrate-captured-clips">Calibrate captured clips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-the-3d-model-ply">Build the 3D model (ply)</a></li>
+</ul>
+</li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="document">
+                        
+                            
+  <section id="calibration">
+<span id="id1"></span><h1>Calibration</h1>
+<p>Sensors are calibrated using a series of captured images.</p>
+<p>The overall process follows:</p>
+<ol class="arabic simple">
+<li><p>Install the cameras using the 4-Sensor Reality Capture setup or 9-Sensor Reality Capture setup as directed by your Sony technician. For more information, see <a class="reference internal" href="installation.html#cameras"><span class="std std-ref">Installing the cameras</span></a>.</p>
+</li>
+<li><p><a class="reference internal" href="#capturear"><span class="std std-ref">Capture the AR marker</span></a>.</p></li>
+<li><p><a class="reference internal" href="#arrangeflags"><span class="std std-ref">Arrange flags</span></a> in the target area.</p></li>
+<li><p><a class="reference internal" href="#captureflags"><span class="std std-ref">Capture the flags</span></a>.</p></li>
+<li><p><a class="reference internal" href="#capturecheckerboard"><span class="std std-ref">Capture the calibration checkerboard</span></a> as you move it through the target area.</p></li>
+<li><p><a class="reference internal" href="#calibratingclips"><span class="std std-ref">Calibrate captured clips</span></a> (performed by a remote Sony technician).</p></li>
+<li><p><a class="reference internal" href="#buildingply"><span class="std std-ref">Build the 3D model (ply)</span></a> (performed by a remote Sony technician).</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using the 9-sensor Reality Capture workflow, the calibration procedures will be performed twice. For the first calibration, the sensors will be arranged as shown by the yellow dots in the following image. For the second calibration and content capture, the sensors will be shifted 20 degrees (each sensor will be moved clockwise halfway to the next sensor) as shown by the magenta dots.</p>
+<a class="reference internal image-reference" href="_images/9_9Kinect.png"><img alt="_images/9_9Kinect.png" src="_images/9_9Kinect.png" style="width: 600px;" /></a>
+</div>
+<section id="arrange-reality-capture-markers">
+<h2>Arrange Reality Capture markers</h2>
+<p>Arrange the Reality Capture markers on the floor as indicated by the magenta marks in the following image. Each marker should be 1 m (39-3/8 in) from the center of the target area.</p>
+<blockquote>
+<div><blockquote>
+<div><a class="reference internal image-reference" href="_images/9KinectRCMarkers.png"><img alt="_images/9KinectRCMarkers.png" src="_images/9KinectRCMarkers.png" style="width: 450px;" /></a>
+</div></blockquote>
+<p>You can click the following image to save a full-sized PDF for printing on A4 paper.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/RC_Markers.pdf"><img alt="_images/RC_Markers.pdf" src="_images/RC_Markers.pdf" style="width: 250px;" /></a>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="capture-the-ar-marker">
+<span id="capturear"></span><h2>Capture the AR marker</h2>
+<ol class="arabic">
+<li><p>Click the following image to save a full-sized version for printing on A3 paper.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/AR_marker.png"><img alt="_images/AR_marker.png" src="_images/AR_marker.png" style="width: 150px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Place the AR marker in the center of the target area.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/flags1.jpg"><img alt="_images/flags1.jpg" src="_images/flags1.jpg" style="width: 450px;" /></a>
+</div></blockquote>
+</li>
+<li><p>The Sony team will remotely start the process to capture a series of images of the AR marker.</p></li>
+</ol>
+</section>
+<section id="arrange-flags">
+<span id="arrangeflags"></span><h2>Arrange flags</h2>
+<p>Arrange the flags in the target area as shown in the following images</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/flags2.jpg"><img alt="_images/flags2.jpg" src="_images/flags2.jpg" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="_images/flags3.jpg"><img alt="_images/flags3.jpg" src="_images/flags3.jpg" style="width: 450px;" /></a>
+</div></blockquote>
+</section>
+<section id="capture-the-flags">
+<span id="captureflags"></span><h2>Capture the flags</h2>
+<p>The Sony team will remotely start the process to capture a series of images of the flags.</p>
+</section>
+<section id="capture-the-calibration-checkerboard">
+<span id="capturecheckerboard"></span><h2>Capture the calibration checkerboard</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Skip this step unless directed by the Sony team.</p>
+</div>
+<ol class="arabic">
+<li><p>The Sony team will remotely start the process to capture a series of images of the marker board.</p>
+<p>The checkerboard pattern is shown in the following image. The grid is 7x5, and the grid size is 140mm.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/QC16292825023132.pdf"><img alt="_images/QC16292825023132.pdf" src="_images/QC16292825023132.pdf" style="width: 400px;" /></a>
+</div></blockquote>
+<p>The checkerboard should be printed on dibond aluminum plate with dimensions of 760mm × 1080mm x 3mm. A calibration target was shipped to your site. If necessary, you can click the image above to save a full-sized PDF for printing.</p>
+</li>
+<li><p>When prompted, move the checkerboard as shown in the following video:</p>
+<blockquote>
+<div><blockquote>
+<div><video controls src="_static/checker_board_move480.mov"></video></div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The recommended recording time is 310 seconds. Note that in 5 fps mode, the duration is multiplied by 5. Adjust gain as necessary, and exposure should be below -9 to reduce motion blur.</p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="calibrate-captured-clips">
+<span id="calibratingclips"></span><h2>Calibrate captured clips</h2>
+<p>The Sony team will remotely calibrate the captured clips.</p>
+</section>
+<section id="build-the-3d-model-ply">
+<span id="buildingply"></span><h2>Build the 3D model (ply)</h2>
+<p>The Sony team will download the captured content and build the 3D model (ply) locally.</p>
+</section>
+</section>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+    <div class="footer" role="contentinfo">
+        <div class="container">
+            &#169; Copyright 2022, Sony North America Professional Engineering.
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.
+        </div>
+    </div>  
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+Overview
+========
+
+The Live XR system allows you to perform volumetric capture and 3D rendering.
+
+What do you want to learn more about?
+
+- :ref:`equipment`
+
+- :ref:`cameras`
+
+- :ref:`jetson`
+
+- :ref:`networking`
+
+- :ref:`calibration`
+
+
+

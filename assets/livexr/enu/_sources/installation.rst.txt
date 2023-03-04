@@ -1,0 +1,63 @@
+.. _cameras:
+
+Installing the cameras
+======================
+
+Live XR uses Azure Kinect sensors and Jetson Xavier NX computers to perform volumetric capture.
+
+4-Sensor Reality Capture setup
+------------------------------
+
+#. Set up the tripods around the perimeter of the capture volume. Each tripod should be positioned 2.5 meters (98.4 inches) from the center of the volume.
+
+        .. note::
+
+               Use two of the light-duty tripods for the low-mounted (100 cm) sensors at the front of the capture area. These tripods are indicated by the black circles in the following diagram.
+
+        .. image:: images/9Kinect.png
+         :width: 600
+        
+#. Mount one Azure Kinect sensor on each tripod vertically with the RGB camera on top. Each sensor is labeled (NX0 - NX11). Please note the installation location in the preceding image.
+
+   .. image:: images/vert_kinect.jpg
+    :width: 200
+
+#. Adjust the tripods to set the height of the Azure Kinect sensors as shown in the appropriate diagram above.
+
+#. Using a daisy-chain configuraton, connect the **Sync in** and **Sync out** ports on the Azure Kinect sensors with 3.5mm audio cables to ensure synchronization.
+
+     .. image:: images/kinect_sync.png
+      :width: 400
+
+#. Next, you'll need to set up the Jetson Xavier NX devices. For information, please see :ref:`Jetson`.
+
+.. _9sensor:
+
+9-Sensor Reality Capture setup
+------------------------------
+
+#. Set up the tripods around the perimeter of the capture volume as shown by the yellow dots in the following image. The tripods are spaced 40 degrees apart around the capture volume. Each tripod should be positioned 2.5 meters (98.4 inches) from the center of the volume.
+
+        .. image:: images/9_9Kinect.png
+         :width: 600
+
+   .. note::
+ 
+    When using the 9-sensor Reality Capture workflow, the :ref:`calibration` procedures will be performed twice. For the first calibration, the sensors will be arranged as shown by the yellow dots in the preceding image. For the second calibration and content capture, the sensors will be shifted 20 degrees (each sensor will be moved clockwise halfway to the next sensor) as shown by the magenta dots.
+        
+#. Mount one Azure Kinect sensor on each tripod vertically with the RGB camera on top. Each sensor is labeled (NX0 - NX11). Please note the installation location in the preceding image.
+
+   .. image:: images/vert_kinect.jpg
+    :width: 200
+
+#. Adjust the tripods to set the height of the Azure Kinect sensors to 125 cm (49-1/4 in).
+
+#. Using a daisy-chain configuraton, connect the **Sync in** and **Sync out** ports on the Azure Kinect sensors with 3.5mm audio cables to ensure synchronization.
+
+     .. image:: images/kinect_sync.png
+      :width: 400
+
+#. Next, you'll need to set up the Jetson Xavier NX devices. For information, please see :ref:`Jetson`.
+
+
+ 

@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Jetson Xavier NX setup &mdash; Live XR User Guide 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Network setup" href="networking.html" />
+    <link rel="prev" title="Installing the cameras" href="installation.html" /> 
+
+ 
+  
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="site-nav-toggle hidden-lg-up"><i class="icon-menu"></i></a>
+            <a class="site-title" href="index.html">
+                Live XR User Guide
+            </a>
+        </div>
+    </header>
+
+
+<div class="breadcrumbs-outer hidden-xs-down">
+    <div class="container">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumbs">
+    
+      <li><a href="index.html">Docs</a></li>
+        
+      <li>Jetson Xavier NX setup</li>
+    
+    
+      <li class="breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+</div>
+    </div>
+</div>
+    <div class="main-outer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 site-nav">
+                  <!--  
+<div role="search">
+    <form class="search" action="search.html" method="get">
+        <div class="icon-input">
+            <input type="text" name="q" placeholder="Search" />
+            <span class="icon-search"></span>
+        </div>
+        <input type="submit" value="Go" class="d-hidden" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div> -->
+                    <div class="site-nav-tree">
+                        
+                            
+                            
+                                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equipment.html">Required hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the cameras</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#sensor-reality-capture-setup">4-Sensor Reality Capture setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#sensor">9-Sensor Reality Capture setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Jetson Xavier NX setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="networking.html">Network setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calibration.html">Calibration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#arrange-reality-capture-markers">Arrange Reality Capture markers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-ar-marker">Capture the AR marker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#arrange-flags">Arrange flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-flags">Capture the flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-calibration-checkerboard">Capture the calibration checkerboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#calibrate-captured-clips">Calibrate captured clips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#build-the-3d-model-ply">Build the 3D model (ply)</a></li>
+</ul>
+</li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="document">
+                        
+                            
+  <section id="jetson-xavier-nx-setup">
+<span id="jetson"></span><h1>Jetson Xavier NX setup</h1>
+<p>Each of the Azure Kinect sensors is paired with a Jetson Xavier NX computer.</p>
+<p>Each Jetson Xavier NX is preconfigured for the site installation, and no specific configuration is required.</p>
+<ol class="arabic">
+<li><p>Install a tripod clamp and mounting plate approximately 100 cm (39-3/8 in) from the floor on the two high-mounted sensors. These tripods are indicated by the red circles in the following diagram.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/9Kinect.png"><img alt="_images/9Kinect.png" src="_images/9Kinect.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Place one Jetson Xavier NX computer at the base of each tripod. Each Jetson Xavier NX is labeled (NX0 - NX11). Please note the installation location in the preceding image.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Two of the Jetson Xavier NX computers include heavy-duty hook-and-loop fasteners on the bottom of their enclosures. Secure these computers to the mounting plates:</p>
+<a class="reference internal image-reference" href="_images/plate.jpg"><img alt="_images/plate.jpg" src="_images/plate.jpg" style="width: 600px;" /></a>
+</div>
+</li>
+<li><p>Connect a headless adapter to the HDMI port on each Jetson Xavier NX.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/headless_hdmi.jpg"><img alt="_images/headless_hdmi.jpg" src="_images/headless_hdmi.jpg" style="width: 200px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Using a USB-C to USB-A cable, connect each Kinect sensor to a Jetson Xavier NX computer.</p></li>
+<li><p>Using the other cable in the USB cable bundle, connect each Kinect sensor to an AC adapter.</p></li>
+<li><p>Use the provided cable wrap to secure the cables to the tripod to provide strain relief for the USB and power cables.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/cable_strain.jpg"><img alt="_images/cable_strain.jpg" src="_images/cable_strain.jpg" style="width: 200px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Next, you’ll need to set up the networking components. For information, please see <a class="reference internal" href="networking.html#networking"><span class="std std-ref">Network setup</span></a>.</p></li>
+</ol>
+</section>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+    <div class="footer" role="contentinfo">
+        <div class="container">
+            &#169; Copyright 2022, Sony North America Professional Engineering.
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.
+        </div>
+    </div>  
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Network setup &mdash; Live XR User Guide 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Calibration" href="calibration.html" />
+    <link rel="prev" title="Jetson Xavier NX setup" href="jetson.html" /> 
+
+ 
+  
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="site-nav-toggle hidden-lg-up"><i class="icon-menu"></i></a>
+            <a class="site-title" href="index.html">
+                Live XR User Guide
+            </a>
+        </div>
+    </header>
+
+
+<div class="breadcrumbs-outer hidden-xs-down">
+    <div class="container">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumbs">
+    
+      <li><a href="index.html">Docs</a></li>
+        
+      <li>Network setup</li>
+    
+    
+      <li class="breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+</div>
+    </div>
+</div>
+    <div class="main-outer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 site-nav">
+                  <!--  
+<div role="search">
+    <form class="search" action="search.html" method="get">
+        <div class="icon-input">
+            <input type="text" name="q" placeholder="Search" />
+            <span class="icon-search"></span>
+        </div>
+        <input type="submit" value="Go" class="d-hidden" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div> -->
+                    <div class="site-nav-tree">
+                        
+                            
+                            
+                                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equipment.html">Required hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing the cameras</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#sensor-reality-capture-setup">4-Sensor Reality Capture setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#sensor">9-Sensor Reality Capture setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jetson.html">Jetson Xavier NX setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Network setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calibration.html">Calibration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#arrange-reality-capture-markers">Arrange Reality Capture markers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-ar-marker">Capture the AR marker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#arrange-flags">Arrange flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-flags">Capture the flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-calibration-checkerboard">Capture the calibration checkerboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#calibrate-captured-clips">Calibrate captured clips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#build-the-3d-model-ply">Build the 3D model (ply)</a></li>
+</ul>
+</li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="document">
+                        
+                            
+  <section id="network-setup">
+<span id="networking"></span><h1>Network setup</h1>
+<ol class="arabic">
+<li><p>If directed by Sony, connect the supplied router between the site’s network connection and the Ethernet switch. Otherwise, start with Step 2.</p>
+<blockquote>
+<div><ol class="loweralpha">
+<li><p>Connect an Ethernet cable from the site network to the blue input port on the supplied router.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/routerinput.png"><img alt="_images/routerinput.png" src="_images/routerinput.png" style="width: 400px;" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please note that OpenVPN is configured on the router to provide access to the Jetson Xavier NX computers through the site’s Internet connection. Only the supplied Live XR hardware should be connected to the supplied OpenVPN router and Ethernet switch.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If Sony technicians request you to modify any networking settings, router access is available from <a class="reference external" href="http://router.asus.com/Main_Login.asp">http://router.asus.com/Main_Login.asp</a> using the username <code class="docutils literal notranslate"><span class="pre">NAPE_LXR_NET</span></code> and the password <code class="docutils literal notranslate"><span class="pre">M33tT#3J3t$on$</span></code> when prompted.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Connect an Ethernet cable to one of the yellow output ports on the supplied router.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/routeroutput.png"><img alt="_images/routeroutput.png" src="_images/routeroutput.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Connect an Ethernet cable from the site network connection (or from the yellow output port of the supplied router if it is installed) to the LINK/ACT port on the switch:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/switchin.png"><img alt="_images/switchin.png" src="_images/switchin.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Using the supplied Ethernet cables, connect each Jetson Xavier NX to the switch. The provided cable lengths should allow you to route cables around the capture area and avoid tripping hazards.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/switchjetson.png"><img alt="_images/switchjetson.png" src="_images/switchjetson.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Next, you’ll need to calibrate the cameras. For information, please see <a class="reference internal" href="calibration.html#calibration"><span class="std std-ref">Calibration</span></a>.</p></li>
+</ol>
+</section>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+    <div class="footer" role="contentinfo">
+        <div class="container">
+            &#169; Copyright 2022, Sony North America Professional Engineering.
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.
+        </div>
+    </div>  
+
+</body>
+</html>

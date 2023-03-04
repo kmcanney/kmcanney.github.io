@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Working with libraries|Transcoding, copying, and sharing clips" data-mc-conditions="Default.Prolog,Default.Browser" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Transcoding clips</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ffffff);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapGlobal.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapDom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapUtilities.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapXhr.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapTextEffects.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapSlideshow.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapMessageBus.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapDefault.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapMediaQueries.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAccessibility.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapHelpSystem.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAliasFile.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapSkinHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapToc.Breadcrumbs.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapToc.MiniToc.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapToc.SideMenu.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapIndex.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapGlossary.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapParser.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapSearch.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapNavigateTopics.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapLms.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapELearning.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapTopic.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapMicroContentComponent.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapSearchHelper.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapTopicElements.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapFluid.js" type="text/javascript" defer="defer">
+        </script>
+        <script>/* <![CDATA[ */
+  document.title = "Catalyst Prepare Help - " + document.title;
+/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="Home_Prepare.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search help topics" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="search-container">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search help topics" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="top-bar">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div> </div>
+                                        <div class="topic-layout">
+                                            <div>
+                                                <div class="side-menu">
+                                                    <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Prepare_Responsive.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                                <div class="side-content">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div role="main" id="mc-main-content">
+                                                    <h3><a name="Transcod"></a><a name="kanchor30"></a>Transcoding clips</h3>
+                                                    <p>Transcoding clips allows you to convert clips to another format. 
+
+The original clips are not affected (overwritten, deleted, or altered) during the exporting process.</p>
+                                                    <hr width="100%" size="0" align="center" data-mc-conditions="Default.Online">
+                                                    </hr>
+                                                    <div class="h3">
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Select the clips you want to export in <span class="mc-variable Variables.BrowseButton variable">Organize</span> or Edit mode.</p>
+                                                                <p>The left pane allows you to navigate the folders<MadCap:conditionalText data-mc-conditions="Default.Prolog"> in your library</MadCap:conditionalText>, and the middle pane displays the contents of the selected folder</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>Click a file to select it.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Hold Shift and click the first and last file you want to select to select a range of files.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Hold Ctrl (Windows) or ⌘ (macOS) to select multiple files.</p>
+                                                                        <p class="tip">Click the <span class="uielement">Select</span> button <img src="Resources/Images/b_Select2.png" style="width: 22px;height: 22px;" /> to select multiple files without using keyboard modifiers.</p>
+                                                                        <div class="warn">
+                                                                            <p>An <img src="Resources/Images/b_Relay_Badge.png" style="height: 24px;width: auto;" /> on a thumbnail indicates a clip that spans multiple files due to file-size limitations but is displayed in <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> as a single virtual clip. Spanned XDCAM EX clips can be transcoded directly, but AVCHD clips must be copied first.</p>
+                                                                            <p>To transcode spanned AVCHD clips, first copy them to a new folder. After the copy is complete, the <img src="Resources/Images/b_Relay_Badge.png" style="height: 24px;width: auto;" /> indicator is removed, and the clips are combined in a new clip that you can transcode. For more information, see <a href="#Copying" class="period MCXref xref xrefperiod">"<u>Transcoding clips</u>."</a></p>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Click the <span class="uielement">Export</span> button <img src="Resources/Images/b_export.png" style="height: 21px;width: auto;" /> at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window, and use the Export pane to choose a destination and format for your exported files.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>The <span class="uielement">Export clips to</span> box displays the path to the folder where the selected files will be exported. You can type a path in the box or click  the <span class="uielement">Browse</span> button  to choose a folder.</p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>If you want to rename files, select the <a name="kanchor31"></a><span class="uielement">Rename files</span> check box. Renaming ensures that source files will not be overwritten.</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p><a name="kanchor32"></a>Type a string in the <span class="uielement">Prefix</span> box if you want to start all file names with the same text.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><a name="kanchor33"></a>Choose a setting from the <span class="uielement">Numbering</span> drop-down list to indicate whether you want to number clips or use their original file names.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p><a name="kanchor34"></a>Type a string in the <span class="uielement">Suffix</span> box if you want to end all file names with the same text.</p>
+                                                                        <p>For example, if you wanted to name clips using a convention such as <span class="code">Commercial_001_Camera1.mxf</span>, you would type <span class="code">Commercial_</span> in the <span class="uielement">Prefix</span> box, choose <span class="uielement">3 digits</span> from the <span class="uielement">Numbering</span> drop-down list, and type <span class="code">_Camera1</span> in the <span class="uielement">Suffix</span> box.</p>
+                                                                        <p class="tip">If you're exporting a still-image sequence for use in an editor that has specific file-naming requirements, you can use the <span class="uielement">Rename files</span> controls to ensure your exported files are compliant with your editor's requirements.</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>The Source Metadata section shows you the file name, color space format, frame size, and frame rate of the selected clip. </p>
+                                                                <p class="note">Source metadata is not displayed when a <MadCap:conditionalText data-mc-conditions="Default.Prolog">storyboard or </MadCap:conditionalText>clip list is selected.</p>
+                                                                <p class="tip">Click the <span class="uielement">Reset</span> button <img src="Resources/Images/b_reset.png" /> in the Source Metadata heading in the Inspector pane to reset the <span class="uielement">Color Space</span> based on the clip's metadata<MadCap:conditionalText data-mc-conditions="Default.Prolog"> or the selected SR Live metadata source. For more information, see <a href="Editing_application_settings.htm#SRLive_HDR_Settings" class="MCXref xref">"<u>SR Live for HDR settings</u>"</a></MadCap:conditionalText>.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>Use the Transcode Settings section to choose the format for your exported files. If you need to reset the transcode settings to their default values, click the <span class="uielement">Reset</span> button <img src="Resources/Images/b_reset.png" />.</p>
+                                                                <ol>
+                                                                    <li value="1" data-mc-conditions="Default.Prolog">
+                                                                        <p>If you want to use a transcode preset to choose the settings for your exported files, choose a setting from the <span class="uielement"><a name="kanchor35"></a>Transcode preset</span> drop-down list, and then click <span class="uielement">Export</span>.</p>
+                                                                        <p>If you want to choose custom transcoding settings, choose <span class="uielement">Custom</span> from the <span class="uielement">Transcode preset</span> drop-down list and continue to step b.</p>
+                                                                        <p>For more information, see <a href="Transcode_presets.htm" class="period MCXref xref xrefperiod">"<u>Transcoding presets</u>."</a></p>
+                                                                        <p class="tip">When you select a video processing device other than your CPU in the application settings dialog, high-quality <a name="kanchor36"></a>deinterlacing and upscaling are applied to convert SD and HD sources to modern progressive HD and UHD assets. For more information, see <a href="Editing_application_settings.htm#Choosing3" class="period MCXref xref xrefperiod">"<u>Choosing a video processing device</u>."</a></p>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p>High-quality upscaling is applied during transcoding when you choose an HD or UHD render preset.</p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p> Please note that some systems with limited GPU&#160;memory are not supported.</p>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li value="2">
+                                                                        <p>When exporting to a video format, choose a setting from the <span class="uielement">Output color space</span> drop-down list to choose the color space that will be used for rendering the new files.</p>
+                                                                        <p>You can choose <span class="uielement">Same as preview</span> or <span class="uielement">Same as external monitor</span> (if an external monitor is enabled) to match the output color space and color adjustments to your video preview or external monitor setting. For more information, see <a href="Editing_application_settings.htm#Choosing2" class="period MCXref xref xrefperiod">"<u>Editing Catalyst Prepare options</u>."</a></p>
+                                                                        <div class="tip">
+                                                                            <p>If the selected color space includes color adjustments, the color adjustments icon <img src="Resources/Images/b_colorcorrect.png" style="height: 22px;width: auto;" /> is displayed in white and a ToolTip notifies you that color adjustments will be included. If the selected color space does not include color adjustments, the color adjustments icon <img src="Resources/Images/b_colorcorrect.png" style="height: 22px;width: auto;" />is displayed in gray and a ToolTip notifies you that color adjustments will be excluded.</p>
+                                                                            <p>If the selected output color space is not compatible with the source color space, a warning is displayed to notify you that the clip cannot be exported using the current settings.</p>
+                                                                            <p data-mc-conditions="Default.Prolog">SR Live settings are applied only when the <span class="uielement">Output color space</span> drop-down is set to <span class="uielement">Same as preview</span> or <span class="uielement">Same as external monitor</span>. For more information, see <a href="Editing_application_settings.htm#SRLive_HDR_Settings" class="period MCXref xref xrefperiod">"<u>SR Live for HDR settings</u>."</a></p>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li value="3">
+                                                                        <p>Choose a setting from the <span class="uielement">Format</span> drop-down list to indicate the file format you want to use for your exported files.</p>
+                                                                        <p class="note"><span class="uielement">Format</span> settings that are not supported by the selected <span class="uielement">Output color space</span> will not be available.</p>
+                                                                        <div class="note">
+                                                                            <p>When transcoding to DPX format, you can type a value in the <a name="kanchor37"></a><span class="uielement">Starting frame index</span> box to append a numeric index to transcoded file names.</p>
+                                                                            <p><span class="uielement">OpenEXR</span> is available only for S-Gamut, RAW, or X-OCN sources when <span class="uielement">Output color space</span> is set to <span class="uielement">ACES</span>, <span class="uielement">Rec.2020/Linear</span>, <span class="uielement">S-Gamut/Linear</span> or <span class="uielement">S-Gamut3/Linear</span>.</p>
+                                                                            <p><span class="uielement">ProRes</span> is available on macOS only.</p>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li value="4">
+                                                                        <p>Choose a setting from the <span class="uielement">Frame size</span> drop-down list to choose the dimensions of the rendered frame, or choose <span class="uielement">Same as source</span> to match the selected clip.</p>
+                                                                    </li>
+                                                                    <li value="5">
+                                                                        <p>Choose a setting from the <span class="uielement">Frame rate</span> drop-down list to choose the number of frames per second for the rendered clip, or choose <span class="uielement">Same as source</span> to match the selected clip.</p>
+                                                                    </li>
+                                                                    <li value="6">
+                                                                        <p>Choose a setting from the <span class="uielement">Render preset</span> drop-down list to choose the settings that will be used for the exported files.</p>
+                                                                        <p class="tip">Choose the <span class="uielement">Best match</span> preset if you want <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> to choose the most appropriate preset for each selected clip.</p>
+                                                                        <p class="note"><span class="uielement">Render preset</span> settings that are not supported by the selected <span class="uielement">Output color space</span> and <span class="uielement">Format</span> will not be available.</p>
+                                                                        <p class="warn" data-mc-conditions="Default.Prolog">Please note that the <span class="uielement">XAVC Long 422 3840x2160 200 Mbps (Sony)</span> render presets require 16 GB or more RAM. If you're using a dedicated GPU, the presets also require 4 GB or more GPU memory.</p>
+                                                                    </li>
+                                                                    <li value="7">
+                                                                        <p>If you want to create a file with segmented body partitions from a single body partition, select the  <span class="uielement">Create Sony Professional Disc partitions</span> or <span class="uielement">Create segmented body partitions</span> check box. When the check box is cleared, body partitions are not modified.</p>
+                                                                        <p class="note">The <span class="uielement">Create Sony Professional Disc partitions</span> check box is available only when <span class="uielement">XDCAM</span>&#160;is selected in the <span class="uielement">Format</span> drop-down list. <span class="uielement">Create segmented body partitions</span> is available only when <span class="uielement">XAVC Intra</span> or <span class="uielement">XAVC&#160;Long</span> is selected in the <span class="uielement">Format</span> drop-down list.</p>
+                                                                        <p class="warn">Files created with segmented body partitions may not be recognized properly by some Sony camcorders, decks, or servers.</p>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                            <li value="7">
+                                                                <p>Enable the <span class="uielement">Use advanced settings</span> switch if you need to adjust additional transcoding settings.</p>
+                                                                <ol>
+                                                                    <li value="1">
+                                                                        <p>Choose a setting from the <span class="uielement">Crop type</span> drop-down list to choose the aspect ratio for your transcoded file:</p>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p><span class="uielement">None (letterbox/pillarbox)</span>: if the source frame is wider than the destination frame, black bars are displayed at the top and bottom (letterbox). If the source frame is narrower than the destination frame, black bars are displayed on the sides of the frame (pillarbox).</p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="uielement">Center crop (cut edges)</span>: if the source frame does not match the output frame, the frame is centered, and the edges are cropped as needed.</p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="uielement">Use masking ratio</span>: crops the frame to the masking ratio selected in the Clip Settings menu. For more information, see <a href="Editing_settings.htm" class="period MCXref xref xrefperiod">"<u>Editing clip settings</u>."</a></p>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li value="2">
+                                                                        <p>Choose a setting from the <span class="uielement">Encode mode</span> drop-down list to choose whether you want to optimize image quality or transcoding speed.</p>
+                                                                    </li>
+                                                                    <li value="3" data-mc-conditions="Default.Prolog">
+                                                                        <p>Choose a setting from the <span class="uielement"><a name="kanchor38"></a>Audio channels</span> drop-down to choose how audio will be rendered in the output file.</p>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p><span class="uielement">Same as source</span>: the rendered file will contain the same number of audio channels as the source clip.</p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><span class="uielement">Map audio channels</span>: you can choose how audio channels from the source clip will be mapped to audio channels in the rendered file.</p>
+                                                                                <p>Each channel in the rendered file will be displayed with a drop-down list so you can choose which source channel should be rendered to that channel.<br /></p>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li value="4" data-mc-conditions="Default.Prolog">
+                                                                        <p>Select the <a name="kanchor39"></a><span class="uielement">Stitch clips</span> check box if you want to combine the selected clips into a single continuous clip. The order of the clips in the new clip will match the order they are displayed in <span class="mc-variable Variables.BrowseButton variable">Organize</span> or Edit mode.</p>
+                                                                        <p>If you want the new clip to include continuous timecode based on the source clips' timecode, select the <span class="uielement">Use continuous timecode</span> check box. Clip order will be adjusted as needed, and black frames will be added between clips to ensure the timecode in the new clip is not interrupted.  For more information, see <a href="Stitching_clips.htm" class="period MCXref xref xrefperiod">"<u>Stitching clips</u>."</a></p>
+                                                                    </li>
+                                                                    <li value="5" data-mc-conditions="Default.Prolog">
+                                                                        <p>Select the <a name="kanchor40"></a><span class="uielement">Add custom metadata</span> check box if you want to include custom metadata items for the exported files.   For each item that you define, an edit box is displayed to allow you to type the desired value for that metadata item. Custom metadata is saved in a sidecar .json file.</p>
+                                                                        <p class="warn">The <span class="uielement">Add custom metadata</span> check box is only displayed if you have created a customMetadataExport.json file to define the items you want to export. For more information, see <a href="Exporting_custom_metadata.htm" class="period MCXref xref xrefperiod">"<u>Exporting custom metadata</u>."</a></p>
+                                                                    </li>
+                                                                    <li value="6" data-mc-conditions="Default.Prolog">
+                                                                        <p>Select the <a name="kanchor41"></a><span class="uielement">Burn in timecode</span> check box if you want to include timecode in the transcoded video.</p>
+                                                                        <p>Click the position control below the check box to indicate where timecode will be positioned in the frame.</p>
+                                                                        <p>The transcoded file will include the source clip's timecode. If you're transcoding a storyboard, each clip will display its source timecode.</p>
+                                                                    </li>
+                                                                    <li value="7" data-mc-conditions="Default.Prolog">
+                                                                        <p>Select the <a name="kanchor42"></a><span class="uielement">Burn in clip name</span> check box if you want to include the clip name in the transcoded video.</p>
+                                                                        <p>Click the position control below the check box to indicate where the clip name will be positioned in the frame.</p>
+                                                                        <p>If you rename a clip, the custom name will be displayed. For more information, see <a href="Library_organize.htm#Renami" class="period MCXref xref xrefperiod">"<u>Renaming clips</u>."</a></p>
+                                                                        <p> If you're transcoding a storyboard, each clip will display its source clip name.</p>
+                                                                    </li>
+                                                                    <li value="8" data-mc-conditions="Default.Prolog">
+                                                                        <p>If the <span class="uielement">Burn in timecode</span> and/or <span class="uielement">Burn in clip name</span> check boxes are selected, you can select the <span class="uielement">Allow burn in within letterbox/pillarbox area</span> check box if your output format will include letterboxing or pillarboxing and you want to allow the timecode/clip name to be placed in the letterbox/pillarbox area. </p>
+                                                                        <p>When the check box is cleared, the timecode/clip name will be limited to the source frame area.</p>
+                                                                    </li>
+                                                                    <li value="9" data-mc-conditions="Default.Prolog">
+                                                                        <p>Select the <a name="kanchor43"></a><span class="uielement">Add watermark</span> check box if you want to include a watermark image in the transcoded video.</p>
+                                                                        <p>Click <span class="uielement">Browse</span> to choose a JPEG or PNG image file.</p>
+                                                                        <p>Drag the <span class="uielement">Opacity</span> slider to set the transparency/opacity of the watermark image.</p>
+                                                                        <p>Click the position control below the <span class="uielement">Opacity</span> slider to indicate where the watermark image will be positioned in the frame:</p>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p>If you need to render multiple frame sizes, create a full-frame transparent PNG&#160;using the dimensions of your largest target frame size, and the watermark image will be scaled as needed for the smaller frame sizes.</p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p>If your watermark image is smaller than the target frame size, no scaling is applied and the image will be anchored at the selected position control.</p>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li value="10">
+                                                                        <p>Select the <a name="kanchor44"></a><span class="uielement">Use flip, rotate, and desqueeze settings</span> check box if you're working with rotated video or video that was filmed with an anamorphic lens and want to preserve the <span class="uielement">Flip horizontal</span>, <span class="uielement">Flip vertical</span>, rotation, and <span class="uielement">Anamorphic desqueeze</span> settings when transcoding. When the check box is not selected, letterboxing will be applied. </p>
+                                                                        <p>For more information, see <a href="Editing_settings.htm" class="period MCXref xref xrefperiod">"<u>Editing clip settings</u>."</a></p>
+                                                                    </li>
+                                                                    <li value="11">
+                                                                        <p>Select the <a name="kanchor45"></a><span class="uielement">Repair flash bands automatically</span> check box if want to automatically detect and repair flash bands when transcoding.</p>
+                                                                        <p>For more information, see <a href="Repairing_flash_bands.htm" class="period MCXref xref xrefperiod">"<u>Repairing flash bands</u>."</a></p>
+                                                                    </li>
+                                                                    <li value="12">
+                                                                        <p>Select the <a name="kanchor46"></a><span class="uielement">Use mark in/out points</span> check box if you want to transcode only the portion of the video between the mark in and mark out points. For more information, see <a href="Marking_in_and_out_points.htm" class="period MCXref xref xrefperiod">"<u>Marking in and out points for playback</u>."</a></p>
+                                                                    </li>
+                                                                    <li value="13">
+                                                                        <p>Select the <a name="kanchor47"></a><span class="uielement">Add padding to clips</span> check box and type a number in the <span class="uielement">Seconds</span> box if you want to preserve media before the mark in/mark out points.</p>
+                                                                    </li>
+                                                                    <li value="14" data-mc-conditions="Default.Prolog">
+                                                                        <p>Select the <a name="kanchor48"></a><span class="uielement">Transcode using proxy source clip</span> check box if you want to use the proxy as the source clip when transcoding. When you're transcoding a lower-resolution clip, using the proxy as your source media is faster.</p>
+                                                                    </li>
+                                                                    <li value="15" data-mc-conditions="Default.Prolog">
+                                                                        <p>Select the <a name="kanchor49"></a><span class="uielement">Override start timecode</span> check box and type a number in the edit box to specify the starting timecode for your transcoded clip. When the check box is cleared, the clip's timecode is used.</p>
+                                                                        <p class="warn">The <span class="uielement">Override start timecode</span> check box is available when transcoding MXF clips to DNxHD, SStP, XAVC-I, XAVC-L, and XDCAM formats.</p>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                            <div class="tip" data-mc-conditions="Default.Prolog">
+                                                                <p>If you want to save your<a name="kanchor50"></a> transcoding settings, click the <span class="uielement">Transcode Tools</span> button <img src="Resources/Images/b_wrench.png" style="height: 21px;width: auto;" /> in the Transcode Settings heading and choose <span class="uielement">Save transcode preset</span>. </p>
+                                                                <p>For more information, see <a href="Transcode_presets.htm" class="period MCXref xref xrefperiod">"<u>Transcoding presets</u>."</a></p>
+                                                            </div>
+                                                            <li value="8">
+                                                                <p>Click <span class="uielement">Export</span>.</p>
+                                                                <p data-mc-conditions="Default.Prolog">If multiple clips are selected,  the <span class="uielement">Export</span> button at the bottom of the Export pane  is displayed as <a name="kanchor51"></a><span class="uielement">Batch Export</span>. </p>
+                                                                <p>Progress is displayed in the activity pane at the top of the <span class="mc-variable Variables.ProductName variable">Catalyst Prepare</span> window. Each export job can contain multiple files if you have multiple files selected in step 2 above. If you have multiple export jobs queued, a separate progress indicator is displayed for each job.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                    <p data-mc-conditions="Default.Online">&#160;</p>
+                                                    <p data-mc-conditions="Default.Online">&#160;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

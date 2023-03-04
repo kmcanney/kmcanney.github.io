@@ -1,0 +1,18 @@
+.. _using:
+
+Using LiveXR
+============
+
+
+Starting the Live XR interface
+-------------------------------
+
+From the command line, type ``something`` to start a Docker container with the Live XR image in detached mode.
+
+
+Starting a capture session
+--------------------------
+
+#. TBD.
+
+#. More TBD.

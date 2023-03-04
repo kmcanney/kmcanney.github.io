@@ -1,0 +1,52 @@
+.. _aggregation:
+
+Aggregation server setup
+========================
+
+Instructions for setting up the aggregation server are available at https://bitbucket.org/acropolis-athens/live_xr_kinect_capture/src/main/.
+
+#. Use the following command to modify config.ini:
+      
+    ::
+
+     ubuntu@ip-172-31-12-167:~/3d/live_xr_kinect_capture
+     vi aggregation_server/config.ini 
+     . . .
+
+#. Use the following command to create tne .env file and edit the environment variables: 
+
+        ::
+
+           $ cp .env.sample .env
+
+        Variables:
+
+        - FILE_SERVER: Hostname or IP for the file server.
+        
+        - CONTENT_PATH: Storage path for the contents on the file server.  
+
+#. Use the following command to start the server:
+
+    ::
+  
+      python -m aggregation_server.aggregation_server_app
+       
+#. Use the following command to begin capturing:
+
+    ::
+  
+     ubuntu@ip-172-31-12-167:~/3d/live_xr_kinect_capture
+  
+     python -m aggregation_server.aggregation_server_app
+
+     .. image:: images/server1.png
+      :width: 400
+
+#. If necessary, use the following command to manually create the alignment_data folder under live_xr_kinect_capture/camera_alignment:
+
+    ::
+       
+     ubuntu@ip-172-31-12-167:~/3d/live_xr_kinect_capture/camera_alignment/alignment_data$ ls
+     server1_rgb.npy  server2_rgb.npy  server3_rgb.npy  server4_rgb.npy  server5_rgb.npy  server6_rgb.npy
+
+#. Next, you'll need to calibrate the cameras. For information, please see :ref:`calibration`.

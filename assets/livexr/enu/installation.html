@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installing the cameras &mdash; Live XR User Guide 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Jetson Xavier NX setup" href="jetson.html" />
+    <link rel="prev" title="Required hardware" href="equipment.html" /> 
+
+ 
+  
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="site-nav-toggle hidden-lg-up"><i class="icon-menu"></i></a>
+            <a class="site-title" href="index.html">
+                Live XR User Guide
+            </a>
+        </div>
+    </header>
+
+
+<div class="breadcrumbs-outer hidden-xs-down">
+    <div class="container">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumbs">
+    
+      <li><a href="index.html">Docs</a></li>
+        
+      <li>Installing the cameras</li>
+    
+    
+      <li class="breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+</div>
+    </div>
+</div>
+    <div class="main-outer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 site-nav">
+                  <!--  
+<div role="search">
+    <form class="search" action="search.html" method="get">
+        <div class="icon-input">
+            <input type="text" name="q" placeholder="Search" />
+            <span class="icon-search"></span>
+        </div>
+        <input type="submit" value="Go" class="d-hidden" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div> -->
+                    <div class="site-nav-tree">
+                        
+                            
+                            
+                                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equipment.html">Required hardware</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing the cameras</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sensor-reality-capture-setup">4-Sensor Reality Capture setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sensor">9-Sensor Reality Capture setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jetson.html">Jetson Xavier NX setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="networking.html">Network setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calibration.html">Calibration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#arrange-reality-capture-markers">Arrange Reality Capture markers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-ar-marker">Capture the AR marker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#arrange-flags">Arrange flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-flags">Capture the flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#capture-the-calibration-checkerboard">Capture the calibration checkerboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#calibrate-captured-clips">Calibrate captured clips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calibration.html#build-the-3d-model-ply">Build the 3D model (ply)</a></li>
+</ul>
+</li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="document">
+                        
+                            
+  <section id="installing-the-cameras">
+<span id="cameras"></span><h1>Installing the cameras</h1>
+<p>Live XR uses Azure Kinect sensors and Jetson Xavier NX computers to perform volumetric capture.</p>
+<section id="sensor-reality-capture-setup">
+<h2>4-Sensor Reality Capture setup</h2>
+<ol class="arabic">
+<li><p>Set up the tripods around the perimeter of the capture volume. Each tripod should be positioned 2.5 meters (98.4 inches) from the center of the volume.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use two of the light-duty tripods for the low-mounted (100 cm) sensors at the front of the capture area. These tripods are indicated by the black circles in the following diagram.</p>
+</div>
+<a class="reference internal image-reference" href="_images/9Kinect.png"><img alt="_images/9Kinect.png" src="_images/9Kinect.png" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Mount one Azure Kinect sensor on each tripod vertically with the RGB camera on top. Each sensor is labeled (NX0 - NX11). Please note the installation location in the preceding image.</p>
+<a class="reference internal image-reference" href="_images/vert_kinect.jpg"><img alt="_images/vert_kinect.jpg" src="_images/vert_kinect.jpg" style="width: 200px;" /></a>
+</li>
+<li><p>Adjust the tripods to set the height of the Azure Kinect sensors as shown in the appropriate diagram above.</p></li>
+<li><p>Using a daisy-chain configuraton, connect the <strong>Sync in</strong> and <strong>Sync out</strong> ports on the Azure Kinect sensors with 3.5mm audio cables to ensure synchronization.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/kinect_sync.png"><img alt="_images/kinect_sync.png" src="_images/kinect_sync.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Next, you’ll need to set up the Jetson Xavier NX devices. For information, please see <a class="reference internal" href="jetson.html#jetson"><span class="std std-ref">Jetson Xavier NX setup</span></a>.</p></li>
+</ol>
+</section>
+<section id="sensor">
+<span id="id1"></span><h2>9-Sensor Reality Capture setup</h2>
+<ol class="arabic">
+<li><p>Set up the tripods around the perimeter of the capture volume as shown by the yellow dots in the following image. The tripods are spaced 40 degrees apart around the capture volume. Each tripod should be positioned 2.5 meters (98.4 inches) from the center of the volume.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/9_9Kinect.png"><img alt="_images/9_9Kinect.png" src="_images/9_9Kinect.png" style="width: 600px;" /></a>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using the 9-sensor Reality Capture workflow, the <a class="reference internal" href="calibration.html#calibration"><span class="std std-ref">Calibration</span></a> procedures will be performed twice. For the first calibration, the sensors will be arranged as shown by the yellow dots in the preceding image. For the second calibration and content capture, the sensors will be shifted 20 degrees (each sensor will be moved clockwise halfway to the next sensor) as shown by the magenta dots.</p>
+</div>
+</li>
+<li><p>Mount one Azure Kinect sensor on each tripod vertically with the RGB camera on top. Each sensor is labeled (NX0 - NX11). Please note the installation location in the preceding image.</p>
+<a class="reference internal image-reference" href="_images/vert_kinect.jpg"><img alt="_images/vert_kinect.jpg" src="_images/vert_kinect.jpg" style="width: 200px;" /></a>
+</li>
+<li><p>Adjust the tripods to set the height of the Azure Kinect sensors to 125 cm (49-1/4 in).</p></li>
+<li><p>Using a daisy-chain configuraton, connect the <strong>Sync in</strong> and <strong>Sync out</strong> ports on the Azure Kinect sensors with 3.5mm audio cables to ensure synchronization.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/kinect_sync.png"><img alt="_images/kinect_sync.png" src="_images/kinect_sync.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Next, you’ll need to set up the Jetson Xavier NX devices. For information, please see <a class="reference internal" href="jetson.html#jetson"><span class="std std-ref">Jetson Xavier NX setup</span></a>.</p></li>
+</ol>
+</section>
+</section>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+    <div class="footer" role="contentinfo">
+        <div class="container">
+            &#169; Copyright 2022, Sony North America Professional Engineering.
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.
+        </div>
+    </div>  
+
+</body>
+</html>
