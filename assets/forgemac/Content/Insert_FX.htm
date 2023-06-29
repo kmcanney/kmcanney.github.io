@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Applying effects" data-mc-ignored-words="AUDelay;AUDynamicsProcessor;AUPeakLimiter">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Adding effects to a plug-in chain</title>
+        <meta name="description" content="How to use a plug-in chain to process audio." />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2 style="page-break-before: auto;"><a name="kanchor187"></a>Adding effects to a plug-in chain</h2>
+        <p>The Plug-In Chain tool allows you to add multiple plug-ins to process your audio. </p>
+        <p>Insert effects are previewed in real time when you play back a file and are applied when you save the file. </p>
+        <p>If the Plug-In Chain is not visible, you can select the <span class="uielement">Show or hide the right pane</span> button <img src="Resources/Images/Shared/b_showhiderightpane.png" /> or choose <span class="uielement">View</span> &gt; <span class="uielement">Plug-In Chain</span>. For more information, see <a href="Tools.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Arranging editing views</u></span>."</a></p>
+        <div class="warn">
+            <p>If a plug-in does not support the current channel count, it will be bypassed and displayed in red in the Plug-In Chain, and the plug-in UI&#160;will display <a name="kanchor188"></a><span class="uielement">Not Connected</span>:</p>
+            <p>
+                <img src="Resources/Images/Disconnected_plugin.png" />
+            </p>
+        </div>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3>Adding an effect to the plug-in chain</h3>
+        <div class="h3">
+            <p>Perform any of the following steps to add a plug-in to the active editor's chain:</p>
+            <ul>
+                <li value="1">
+                    <p>Click the <span class="uielement">Add Plug-In</span> button at the top of the Plug-In Chain tool to quickly add a plug-in to the bottom of the chain.</p>
+                </li>
+                <li value="2">Drag a preset from the Plug-In Chooser to the Plug-In Chain in the right pane.The plug-in is added to the chain where you drop it.</li>
+                <li value="3">
+                    <p>Control-click a preset in the Plug-In Chooser and choose <span class="uielement">Add to Plug-In Chain</span> from the shortcut menu. </p>
+                </li>
+                <div class="tip">
+                    <p>Choose a setting from the <span class="uielement">Filter</span> drop-down list if you want to filter the list of plug-ins, or choose <span class="uielement">All</span> to display all your plug-ins in the Plug-in Chooser.</p>
+                    <p>If you want to search for a plug-in by keyword, type in the search box at the bottom of the Plug-In Chooser.</p>
+                </div>
+                <li value="4">
+                    <p>Hold Option while choosing an effect from the Effects menu.</p>
+                </li>
+                <li value="5">
+                    <p>Hold Option while double-clicking an effect or preset in the Plug-In Chooser.</p>
+                </li>
+            </ul>
+        </div>
+        <h3 class="pagebreak"><a name="kanchor189"></a>Adjusting an effect's settings</h3>
+        <div class="h3">
+            <p>The Plug-In Chain tool allows you to choose new presets or display a plug-in's controls. </p>
+            <p>
+                <img src="Resources/Images/MasterInsertSettings.png" alt="Master insert effect" />
+            </p>
+            <p>Each plug-in displays a drop-down list that shows the current preset. Click the drop-down to choose a new preset from the list. </p>
+            <p>To adjust a plug-in's controls, click the <span class="uielement">Show Plug-In</span> button. A new window opens where you can adjust the plug-in's controls:</p>
+            <p>
+                <img src="Resources/Images/MasterInsert_ShowPlugIn.png" alt="" />
+            </p>
+        </div>
+        <h3><a name="kanchor190"></a>Saving a single plug-in's settings as a preset</h3>
+        <div class="h3">
+            <p>The controls at the top of the plug-in window allow you to load and save presets.</p>
+            <p>
+                <img src="Resources/Images/ProcessPresets.png" alt="Processing presets" />
+            </p>
+            <p>When you edit a plug-in's settings, an asterisk (*) is appended to the preset name to let you know that the settings have been altered.</p>
+            <p>To save a new preset, click the <span class="uielement">Save As</span> button <img src="Resources/Images/Shared/b_saveas.png" /> and type a name in the <span class="uielement">Preset name</span> box.</p>
+            <p>To replace an existing user preset, click the <span class="uielement">Save</span> button <img src="Resources/Images/Shared/b_save.png" />.</p>
+        </div>
+        <h3><a name="kanchor191"></a>Removing or bypassing plug-ins</h3>
+        <div class="h3">
+            <p>The Plug-In Chain tool displays the active editor's effects chain. </p>
+            <p>If you want to bypass the plug-in chain, click the <span class="uielement">Enable plug-in chain</span> button to turn it off. Click again to re-enable the chain: </p>
+            <p>
+                <img src="Resources/Images/BypassChain.png" alt="" />
+            </p>
+            <p style="page-break-before: inherit;">If you want to bypass a plug-in without removing it from the chain, click the <span class="uielement">Enable plug-in</span> button to turn it off:</p>
+            <p class="note">If a plug-in does not support bypass, the <span class="uielement">Enable plug-in</span> button is not available.</p>
+            <p>
+                <img src="Resources/Images/BypassInsertFX.png" alt="" />
+            </p>
+            <p>If you want to remove a plug-in from the chain, click the <span class="uielement">Remove from chain</span> button: </p>
+            <p>
+                <img src="Resources/Images/RemoveInsertFX.png" alt="" />
+            </p>
+        </div>
+        <h3><a name="kanchor192"></a>Managing plug-in chain presets </h3>
+        <div class="h3">
+            <p>The Plug-In Chain tool allows you to save  effects chains as presets that you can use later. </p>
+            <p>To save a new preset, click the <span class="uielement">Save As</span> button <img src="Resources/Images/Shared/b_saveas.png" /> and type a name in the <span class="uielement">Preset name</span> box.</p>
+            <p>To replace an existing user preset, click the <span class="uielement">Save</span> button <img src="Resources/Images/Shared/b_save.png" />.</p>
+            <p>To load a preset, choose it from the <span class="uielement">Preset</span> drop-down list at the top of the Plug-In Chain tool or choose it from the <span class="uielement">Effects</span> &gt; <span class="uielement">Plug-In Chains</span> submenu.</p>
+        </div>
+        <h3>Changing the order of plug-ins in the Plug-In Chain</h3>
+        <div class="h3">
+            <p>You can drag plug-ins within the Plug-In Chain tool to change the order in which they will be processed.</p>
+            <p>The following image shows the AUDelay plug-in being dragged between the AUDynamicsProcessor and AUPeakLimiter plug-ins:</p>
+            <p>
+                <img src="Resources/Images/DragMasterFX.png" alt="Moving insert effects" />
+            </p>
+        </div>
+    </body>
+</html>

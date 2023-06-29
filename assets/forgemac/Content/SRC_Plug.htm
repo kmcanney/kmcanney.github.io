@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Processing audio" data-mc-conditions="Primary.AppStore Exclude">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>iZotope 64-Bit SRC </title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <meta name="description" content="How to resample audio with the iZotope 64-Bit SRC plug-in." />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2 class="pagebreak"><a name="kanchor170"></a>iZotope 64-Bit SRC </h2>
+        <p>Choose <span class="uielement">Process</span> &gt; <span class="uielement">iZotope 64-Bit SRC</span> to change the sample rate of an existing sound file.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <ol>
+            <li value="1">
+                <p>Choose <span class="uielement">Process</span> &gt; <span class="uielement">iZotope 64-Bit SRC</span>.</p>
+            </li>
+            <li style="page-break-inside: auto;" value="2">
+                <p>Choose a setting from the <span class="uielement">Preset</span> drop-down list, or adjust the controls as needed.</p>
+                <table style="mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col class="Column-Column1" style="width: 1.5in;" />
+                    <col class="Column-Column1" style="width: 4in;" />
+                    <thead>
+                        <tr class="Head-Header1">
+                            <th class="HeadE-Column1-Header1">
+                                <p>Item</p>
+                            </th>
+                            <th class="HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">New sample rate</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Specify the sample rate to which the sound file will be converted.</p>
+                                <p class="note">Increasing a file's sample rate cannot improve the quality of the existing audio, but does allow higher resolution for processing.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Quality</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>When the <span class="uielement">Use simplified quality setting</span> check box is selected, you can drag the <span class="uielement">Quality</span> slider to adjust the plug-in's controls automatically.</p>
+                                <p>
+Dragging the slider sets the balance of audio quality vs. processing speed. A setting of 50% works well for most applications. Increasing the setting improves the quality of the plug-in but requires more processing power.</p>
+                                <p>When the <span class="uielement">Use simplified quality setting</span> check box is cleared, you can adjust the plug-in's controls manually.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Steepness</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>The plug in uses a low-pass filter to discard frequencies that cannot be represented or are undesirable in your audio output.</p>
+                                <p>This setting establishes the steepness of the transition band of the low-pass filter. Higher settings will reject unwanted frequencies, but can cause more ringing in the time domain and a higher CPU load.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Max filter length</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Sets the maximum length of the filters used for resampling.</p>
+                                <p>The default setting will work well for most applications, but you can increase the setting if very high-quality output is desired for uncommon source or destination sampling rates.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Cutoff scaling</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Allows you to scale the cutoff frequency of the plug-in's low-pass filter from the Nyquist frequency.</p>
+                                <p>Typical values are near 1. Higher values will offer a flatter pass-band, and lower values will offer better aliasing suppression.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Alias suppression</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Sets the amount of suppression in the low-pass filter's stop-band. </p>
+                                <p>Frequencies in the stop-band that are not fully attenuated will result in aliasing. Higher settings will result in better quality, and lower settings can minimize CPU load.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1">
+                                <p><span class="uielement">Prering</span>
+                                </p>
+                            </td>
+                            <td class="BodyA-Column1-Body1">
+                                <p>Low-pass filters are characterized by the amount of ringing they introduce into their output. Higher <span class="uielement">Steepness</span> settings produce increased ringing.</p>
+                                <p>A setting of 100% produces a linear phase filter with equal pre and post ringing. A setting of 0% produces a minimum phase filter that offers no preringing but has nonlinear phase distortion. Intermediate settings allow a tradeoff between preringing and  postringing and allows you to linearize phase in the pass-band.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="3">
+                <p>Click the <span class="uielement">Process</span> button.</p>
+            </li>
+        </ol>
+    </body>
+</html>

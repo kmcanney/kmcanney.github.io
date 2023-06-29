@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Selecting sound data">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Selecting data using the mouse</title>
+        <meta name="description" content="How to select sound data using the mouse." />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor80"></a>Selecting data using the mouse</h2>
+        <p>Choose <span class="uielement">Edit</span> &gt; <span class="uielement">Mode</span> &gt; <span class="uielement">Time</span> (or click the <span class="uielement">Time Mode</span> button <img src="Resources/Images/Shared/b_timemode.png" /> in an editor's playbar) to create time selections by clicking and dragging in a waveform.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3> Making a selection</h3>
+        <div class="h3">
+            <p>Perform any of the following actions to select data:</p>
+            <ul style="list-style-type: square;">
+                <li value="1">
+                    <p>Click to position the cursor, hold the mouse button, and drag over an area of the waveform to select data. </p>
+                    <p>If snapping is enabled, the selection edge will snap to marker/region tags and major divisions of the time ruler as you drag past them. </p>
+                    <p>For more information, see <a href="MarkerRegion_Overview.htm" class="MCXref xref">"<span style="color: #009ccc;" class="mcFormatColor"><u>Working with markers and regions</u></span>"</a> and <a href="Enable snapping.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Enable snapping</u></span>."</a></p>
+                </li>
+                <li value="2">
+                    <p>Double-click the waveform to select sound data between boundaries: if the sound file has no markers or regions, double-clicking will select the entire waveform. If markers and regions are present, double-clicking between marker or region tags will select the waveform between the tags.</p>
+                </li>
+                <li value="3">Double-click the loop bar to select the entire waveform.</li>
+                <li value="4">
+                    <p>When markers and regions are present in the sound file, you can triple-click to select all data. Hold Shift while double-clicking to the right or left of a selection to extend the selection to the next region or marker.</p>
+                </li>
+            </ul>
+        </div>
+        <h3><a name="kanchor81"></a>Selecting channels</h3>
+        <div class="h3">
+            <p>When you are working with stereo or multichannel files, you can select data from the individual channels or all channels:</p>
+            <ul>
+                <li value="1">
+                    <p>Drag within a channel to select that channel only.     </p>
+                </li>
+                <li value="2">
+                    <p>Drag across channels to select multiple channels.  </p>
+                </li>
+                <li value="3">
+                    <p>Drag along the divider between channels (or the loop bar above the ruler) to select all channels.  </p>
+                </li>
+                <li value="4">
+                    <p><a name="kanchor82"></a>Hold Command and click a channel to add or remove it from the current selection. </p>
+                </li>
+                <li value="5">
+                    <p>Hold Command and Shift while clicking the first and last channel you want to select to select a range of channels.</p>
+                </li>
+            </ul>
+        </div>
+        <h3><a name="kanchor83"></a>Adjusting the length of a selection</h3>
+        <ol>
+            <li value="1">
+                <p>Move the mouse over the edge of a selection. The resize pointer <img src="Resources/Images/Shared/selectioncursor.png" alt="" width="20" height="19" /> will be displayed.
+</p>
+            </li>
+            <li value="2">
+                <p>Drag to change the length of the selection.<br /><img src="Resources/Images/Shared/adjustselection.png" alt="" /></p> <p>You can also drag the ends of the loop region to adjust the selection length. </p><div class="tip"><p>Hold Shift while clicking the waveform to extend a selection to the point you click.</p><p>Hold Shift while double-clicking to select the entire waveform. If markers or regions exist, Shift+double click extends the selection to the previous and next marker/region.</p></div></li>
+        </ol>
+        <h3><a name="kanchor84"></a>Shifting a selection left or right</h3>
+        <div class="h3">
+            <p>Drag the center of the loop region to move a selection without resizing it:</p>
+            <p>
+                <img src="Resources/Images/Shared/dragselection.png" alt="" width="221" height="44" />
+            </p>
+            <p class="tip">Hold Option while dragging either end of a selection to move it.</p>
+        </div>
+        <h3 class="pagebreak"><a name="kanchor85"></a>Snapping to zero crossings</h3>
+        <div class="h3">
+            <p>Performing edits at zero-crossings reduces the possibility of introducing glitches in your sound file.</p>
+            <p>When snapping is enabled, you can also choose to have elements in the editor snap to zero-crossings. Choose <span class="uielement">Options</span> &gt; <span class="uielement">Snapping</span> &gt; <span class="uielement">Zero Crossings</span> to toggle automatic snapping to zero crossings. For more information, see <a href="Enable snapping.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Enable snapping</u></span>."</a></p>
+            <p>If you want to manually adjust a selection to zero-crossing points, you can use the <span class="uielement">Edit</span> &gt;&#160;<span class="uielement">Selection</span> submenu:</p>
+            <ul>
+                <li value="1">
+                    <p>Choose <span class="uielement">Edit</span> &gt;&#160;<span class="uielement">Selection</span> &gt;&#160;<span class="uielement">Snap to Next Zero</span> to force both edges of a selection to the next zero-crossing of the waveform.</p>
+                </li>
+                <li value="2">
+                    <p>Choose <span class="uielement">Edit</span> &gt;&#160;<span class="uielement">Selection</span> &gt;&#160;<span class="uielement">Snap Edge to Next Zero</span> to force the active edge of a selection to the next zero-crossing of the waveform.</p>
+                    <p>The active edge of a selection is defined by the blinking cursor. Press Home or End to change the active edge.</p>
+                    <p>
+                        <img src="Resources/Images/Shared/nosnapzero.png" style="width: auto;height: 80px;" />
+                    </p>
+                    <p>Before snapping to zero.</p>
+                    <p>
+                        <img src="Resources/Images/Shared/snapzero.png" style="width: auto;height: 80px;" />
+                    </p>
+                    <p>After snapping, the edges of the selection snap to the nearest locations where the waveform crosses the baseline.</p>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
