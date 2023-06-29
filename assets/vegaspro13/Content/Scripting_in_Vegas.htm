@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="" data-mc-conditions="Primary.ProOnly">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Using Scripting</title>
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="kanchor703"></a>Using Scripting</h1>
+        <p>You can use scripting to streamline repetitive tasks, integrate with 
+ external applications, and implement customized features.</p>
+        <p>From the Tools menu, choose <span class="uielement">Scripting</span> 
+ and choose a command from the submenu.</p>
+        <p>You can find the scripting API (application programming interface) and 
+ sample scripts in the Extras folder of the <span class="PrimaryProductName_Legal">Vegas® Pro</span> 
+ application disc or on our Web site: <a href="http://www.sonycreativesoftware.com/download/step1.asp?CatID=15" target="_blank">http://www.sonycreativesoftware.com/download/step1.asp?CatID=15</a>. For more information about scripting, please 
+ check out the <span class="PrimaryProductName">Vegas Pro</span> scripting 
+ forum: <a href="http://www.sonycreativesoftware.com/forums/ShowTopics.asp?ForumID=21" target="_blank">http://www.sonycreativesoftware.com/forums/ShowTopics.asp?ForumID=21</a>.</p>
+        <p class="note">To use scripts that were created for <span class="PrimaryProductName">Vegas Pro</span> 
+ 4.0 software, you'll need to revise the script's namespace from SonicFoundry.Vegas 
+ to Sony.Vegas. For example, the line that includes 
+ <span class="code">"import SonicFoundry.Vegas;"</span> should be changed to <span class="code">"import Sony.Vegas;"</span> before running the script.</p>
+        <p class="warn">Scripts can pose a security risk to your computer. A script has 
+ the power to delete files, read files, write files, execute programs, 
+ access the Internet, access files on your network, and so on. Always examine 
+ the contents of a script before running it. If you don't understand the 
+ script, do not run it unless it comes from a trusted source. In general, 
+ take the same precautions you would take for any program you download 
+ from the Internet or receive in an e-mail attachment.</p>
+        <div class="warn">
+            <p>J# is not supported in .NET 4.0. If you need to use JScript scripts, please install the .NET 2.0/3.5 runtime libraries.</p>
+            <p>To install, choose <span class="uielement">Programs and Features</span>, choose <span class="uielement">Turn Windows features on or off</span>, and then select the <span class="uielement">.NET Framework 3.5 (includes .NET 2.0 and 3.0)</span> check box.</p>
+            <p>After installing .NET, please restart <span class="PrimaryProductName">Vegas Pro</span>.</p>
+        </div>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t7"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Running a script</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t7">
+            <ol>
+                <li value="1">
+                    <p>From the Tools menu, choose <span class="uielement">Scripting.</span></p>
+                </li>
+                <li value="2">
+                    <p>Choose a script from 
+ the submenu or choose <span class="uielement">Run 
+ Script</span> from the submenu to browse to the script file (.vb or .js) 
+ you want to run.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t6"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Adding scripts to the Scripting menu</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t6">
+            <p>When you start the program, <span class="PrimaryProductName">Vegas Pro</span> 
+ looks at the Script Menu folder in the <span class="PrimaryProductName">Vegas Pro</span> 
+ program folder to determine which scripts appear in the Scripting submenu. 
+ This folder is <span class="emphasis">C:\Program 
+ Files\Sony\<span style="mc-tag-and-class: span;" class="PrimaryProductName">Vegas Pro</span>\<span style="mc-tag-and-class: span;" class="PrimaryVersionNumber">13.0</span>\Script 
+ Menu</span> by default.</p>
+            <ol>
+                <li value="1">
+                    <p>Add or delete scripts in the 
+ Script Menu folder to change the contents of the submenu.</p>
+                    <p class="tip">To prevent duplication of script files, you 
+					can use shortcuts in the Script Menu folder.</p>
+                </li>
+                <li value="2">
+                    <p>From the Tools menu, choose 
+ Scripting, and then choose <span class="uielement">Rescan 
+ Script Menu Folder</span> to update the menu.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t5"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Using <span class="PrimaryProductName">Vegas Pro</span> extensions</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t5">
+            <p><span class="PrimaryProductName">Vegas Pro</span> extensions are compiled scripts 
+ that are available under the Extensions submenu in the View, Edit, or 
+ Tools menus. These extensions are loaded when <span class="PrimaryProductName">Vegas Pro</span> 
+ starts and remain loaded as long as the program is running. Extensions 
+ can respond to changes in project data, control playback, and display 
+ a nonmodal interface.</p>
+            <p>You can use the Customize 
+ Toolbar dialog to add <span class="PrimaryProductName">Vegas Pro</span> 
+ extensions to the toolbar, or use the Customize 
+ Keyboard dialog to assign keyboard shortcuts to <span class="PrimaryProductName">Vegas Pro</span> 
+ extensions. For more information, see <a href="CustomizeToolbar.htm" title="" alt="" class="MCXref xref" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Customizing the toolbar</u></span>"</a> and <a href="Customizing_Keyboard_Shortcuts.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Customizing keyboard shortcuts</u></span>."</a></p>
+            <p><span class="PrimaryProductName">Vegas Pro</span> 
+ extensions are saved in <span class="uielement">C:\Users\<span class="emphasis">user name</span>\AppData\Local\Sony\ Application Extensions</span>.</p>
+            <p>For more information about creating 
+ <span class="PrimaryProductName">Vegas Pro</span> extensions, please refer 
+ to the scripting API (application programming interface) in the Extras 
+ folder of the application disc or on our Web site: <a href="http://www.sonycreativesoftware.com/download/step1.asp?CatID=15" target="_blank">http://www.sonycreativesoftware.com/download/step1.asp?CatID=15</a>.</p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t4"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a script</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t4">
+            <p><span class="PrimaryProductName">Vegas Pro</span><a name="kanchor704"></a><a name="kanchor705"></a> scripting 
+ uses the Microsoft .NET framework for scripting. You can write scripts 
+ in C#, 
+ <a name="kanchor706"></a>JScript or Visual Basic .NET.</p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t3"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Editing an existing script</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t3">
+            <p>All you need to edit a script is a simple text editor (and 
+ a working knowledge of JScript or Visual Basic .NET scripting). The scripts that are included 
+ with <span class="PrimaryProductName">Vegas Pro</span> are fully commented 
+ to help you find and edit the parameters you need.</p>
+            <ol>
+                <li value="1">
+                    <p>Create a copy of the script 
+ (.vb or .js) file you want to edit, assigning a descriptive name to the 
+ copy.</p>
+                </li>
+                <li value="2">
+                    <p>Open the new copy of the 
+ script in your text editor.</p>
+                    <p>Edit the script as needed. The comments 
+ in the script will help you find the parameters you need to edit.</p>
+                    <p>Comments are indicated with double forward 
+ slashes: //.</p>
+                    <p>For example, the AddEffectToAllMedia.js 
+ script includes the following lines:</p>
+                    <p>// This is the full name of the effect plug-in you want to add.</p>
+                    <p>var plugInName = "Sony Timecode";</p>
+                    <p>// This is the name of the preset you want. Set this to null if you</p>
+                    <p>// want the default preset.</p>
+                    <p>var presetName = "SMPTE Drop (29.97 fps)";</p>
+                    <p>The default script applies the 
+ Sony Timecode plug-in to all video media in your project using the SMPTE Drop (29.97 fps)preset. If you 
+ wanted to apply the Broadcast Colors plug-in's Extremely Conservative - 7.5 
+ Setup preset to all audio media, you could edit the script as follows 
+ (changes appear in <span style="color: #FF0000;">red</span>):</p>
+                    <p>// This is the full 
+ name of the effect plug-in you want to add.</p>
+                    <p>var plugInName = <span style="color: #FF0000;">"Sony 
+ Broadcast Colors";</span></p>
+                    <p>// This is the name 
+ of the preset you want. Set this to null if you// want the default preset.<br />var presetName = "<span style="color: #FF0000;">Extremely 
+ Conservative - 7.5 Setup</span></p>
+                    <p>The plugInName variable should 
+ use the plug-in name that is displayed in the Plug-In Chooser. The presetName 
+ variable should use the preset name that is displayed in the <span class="uielement">Preset</span> 
+ box in the FX window.</p>
+                </li>
+                <li value="3">
+                    <p>Save the script.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t2"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating custom button images for scripts
+            </a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t2">
+            <p><a name="kanchor707"></a>If you want to display custom icons for scripts in the Scripting 
+ menu and toolbars, you can add .png files to your Script Menu folder.</p>
+            <ol>
+                <li value="1">
+                    <p>Create a 32-bit PNG file with 
+ the icon you want to use. Icons must be 16x16 pixels, and transparency 
+ is supported.</p>
+                </li>
+                <li value="2">
+                    <p>Save the PNG file in your 
+ Script Menu folder (typically <em>C:\Program 
+ Files\Sony\<span class="PrimaryProductName">Vegas Pro</span>\Script 
+ Menu</em>) using the same name as the script the icon should represent.</p>
+                    <p>For example, to assign a custom icon to the HelloWorld.js 
+ script, the icon should be saved as HelloWorld.js.png.</p>
+                </li>
+                <li value="3">
+                    <p>Customize the toolbar as needed, 
+ and the custom icons will be displayed in the Scripting menu (and in any 
+ toolbars that include the script) toolbar the next time you start the 
+ application.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t1" name="kanchor708"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Using <span class="PrimaryProductName">Vegas Pro</span> command-line options
+            </a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t1">
+            <p>You can use the following commands to start <span class="PrimaryProductName">Vegas Pro</span> 
+ from the command line, open projects, start scripts, pass arguments to 
+ scripts, or start <span class="PrimaryProductName">Vegas Pro</span> extensions.</p>
+            <h3 class="glossary">NOLOGO</h3>
+            <p>Starts <span class="PrimaryProductName">Vegas Pro</span> without 
+ displaying the application splash screen.</p>
+            <p><span class="uielement">Example:</span> Vegas120.exe 
+ /NOLOGO</p>
+            <h3 class="glossary">OPEN</h3>
+            <p>Starts <span class="PrimaryProductName">Vegas Pro</span> and 
+ opens the specified media file or project.</p>
+            <p>Examples:</p>
+            <p>Vegas120.exe /OPEN "E:\Video\Wildflowers 
+ 001.avi"&#160;</p>
+            <p>—or—</p>
+            <p>Vegas120.exe /OPEN "E:\Vegas_Projects\24p widescreen.veg"</p>
+            <h3 class="glossary">RUNSCRIPT</h3>
+            <p>Starts <span class="PrimaryProductName">Vegas Pro</span> and 
+ runs the specified script.</p>
+            <p>Examples:</p>
+            <p>Vegas120.exe /RUNSCRIPT "C:\CustomScripts\ScriptName.cs"&#160;</p>
+            <p>—or—</p>
+            <p>Vegas120.exe /SCRIPT "C:\CustomScripts\ScriptName.cs"</p>
+            <h3 class="glossary">SCRIPTARGS</h3>
+            <p>Starts <span class="PrimaryProductName">Vegas Pro</span> and 
+ passes the specified arguments to a script.</p>
+            <p><span class="uielement">Example:</span> Vegas120.exe 
+ /SCRIPTARGS "<span style="font-style: italic;">&lt;argument&gt;</span>" 
+ /SCRIPT "&lt;script path&gt;"</p>
+            <p class="note">For more information about script arguments, please see the <span class="PrimaryProductName">Vegas Pro</span> 
+ Scripting API.</p>
+            <h3 class="glossary">CMDMODULE</h3>
+            <p>Starts <span class="PrimaryProductName">Vegas Pro</span> and 
+ loads the specified extension.</p>
+            <p>You can use this method to add <span class="PrimaryProductName">Vegas Pro</span> 
+ extensions that are not saved in the extensions search path.</p>
+            <p><span class="uielement">Example:</span> Vegas120.exe 
+ /CMDMODULE "E:\Extensions\MyExtension.dll"</p>
+            <h3 class="glossary">OPENPRJ</h3>
+            <p>Starts <span class="PrimaryProductName">Vegas Pro</span> and 
+ opens the project file referenced in the specified media file.</p>
+            <p><span class="uielement">Example:</span> Vegas120.exe 
+ /OPEN "E:\Video\Wildflowers 001.avi"</p>
+            <p class="note">This command will have no effect if the specified media file 
+ was not rendered with an embedded project path reference.</p>
+            <h3 class="glossary">COLORS
+            </h3>
+            <p>Starts <span class="PrimaryProductName">Vegas Pro</span> using 
+ the <span class="PrimaryProductName">Vegas Pro</span> color scheme or the 
+ Windows color scheme. When you use the command-line option, the <span class="uielement">Use <span class="PrimaryProductName">Vegas Pro</span> 
+ color scheme</span> setting on the Display 
+ tab of the Preferences dialog is ignored.</p>
+            <p>To run using the <span class="PrimaryProductName">Vegas Pro</span> 
+ color scheme, use Vegas120.exe /COLORS 1.</p>
+            <p>To run using the Windows color scheme, use Vegas120.exe /COLORS 
+ 0.</p>
+            <p class="note">If you're using high-contrast color scheme in Windows, the <span class="uielement">Use <span class="PrimaryProductName">Vegas Pro</span> 
+ color scheme</span> preference and command-line argument are ignored.</p>
+        </div>
+    </body>
+</html>

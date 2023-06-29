@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using hardware controllers|Using a control surface" data-mc-conditions="Primary.ProOnly">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Using a Generic Control Surface</title>
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor690"></a>Using a Generic Control Surface</h2>
+        <p><a name="kanchor691"></a><a name="kanchor692"></a>You can configure up to five generic MIDI control surfaces to work with the <span class="PrimaryProductName">Vegas Pro</span> interface.</p>
+        <p>For information about your specific device, please refer to the manufacturer's documentation.</p>
+        <p>For more information about setting up a control surface, see <a href="Using_Control_Surfaces.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Using a control surface</u></span>."</a></p>
+        <p class="note">Notes:</p>
+        <ul>
+            <li value="1">
+                <p><a name="kanchor693"></a>If you have 
+ a MIDI controller that includes buttons and knobs or faders, you can use 
+ the device as an external control device. For an example of how you can 
+ set up a generic control surface to control tracks in your project, see <a href="Configuring_a_Generic_Control_Surface.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Configuring a Generic Control Surface</u></span>."</a></p>
+            </li>
+            <li value="2">
+                <p>Effects parameters cannot be adjusted with a generic controller.</p>
+            </li>
+        </ul>
+        <p class="warn">A generic control surface can control either trim or automation 
+ settings. In order to control automation settings, you must assign a button 
+ to place the control surface in automation mode, and the <span class="uielement">Automation 
+ Settings</span> button <img src="Resources/Images/b_automationtouch.gif" /> on the track or bus you want to edit must be set to 
+ <span class="uielement">Automation Write (Touch)</span> 
+ or <span class="uielement">Automation Write (Latch)</span>.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t2"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Customizing your control mappings</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t2">
+            <p>Use the External Control &amp; Automation tab in the Preferences dialog to select the control surfaces you want to use and adjust their configuration.</p>
+            <ol>
+                <li value="1">
+                    <p>From the Options menu, choose <span class="uielement">Preferences</span> to display the Preferences dialog.</p>
+                </li>
+                <li value="2">
+                    <p>Select the External Control &amp; Automation tab.</p>
+                </li>
+                <li value="3">
+                    <p>Double-click the Generic Control entry in the <span class="uielement">Active control devices</span> list to display the Configure Generic Control dialog.</p>
+                </li>
+                <li value="4">
+                    <p>To add or change a function do the following:</p>
+                </li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li value="1">
+                        <p>Choose a setting from the <span class="uielement">View function group</span> drop-down list.</p>
+                    </li>
+                    <li value="2">
+                        <p>Select the <span class="uielement">Learn</span> check box.</p>
+                    </li>
+                    <li value="3">
+                        <p>Select an command in the <span class="uielement">Host Command</span> list and activate the control on your control surface.</p>
+                    </li>
+                    <li value="4">
+                        <p>You can click the <span class="uielement">Edit</span> button to fine-tune the MIDI message settings.</p>
+                    </li>
+                </ol>
+                <li value="5">
+                    <p>Repeat step 4 for each command you want to make available on your control surface.</p>
+                    <div class="tip">
+                        <p>If you want to control audio and video tracks with your MIDI&#160;controller, you'll need to assign buttons to place the controller in Audio and Video mode. </p>
+                        <p>From the <span class="uielement">View function group</span> drop-down list, choose <span class="uielement">Assign</span> and then assign a MIDI&#160;message for the <span class="uielement">Set Audio Mode</span> and <span class="uielement">Set Video Mode</span> commands.</p>
+                        <p>You can then choose <span class="uielement">Audio Channels</span> from the <span class="uielement">View function group</span> drop-down list to configure controls for audio tracks, and choose  <span class="uielement">Video Channels</span> from the <span class="uielement">View function group</span> drop-down list to configure controls for video tracks.</p>
+                    </div>
+                </li>
+                <li value="6">
+                    <p>To remove a function, select an item in the <span class="uielement">Host Command</span> list and click the <span class="uielement">Reset</span> button.</p>
+                </li>
+                <li value="7">
+                    <p>To remove all functions, click the <span class="uielement">Reset All</span> button.</p>
+                </li>
+                <li value="8">
+                    <p>Click the <span class="uielement">Save As</span> button to save your updated configuration file.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t1"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Loading a control mapping file</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t1">
+            <ol>
+                <li value="1">
+                    <p>From the Options menu, choose <span class="uielement">Preferences</span> to display the Preferences dialog.</p>
+                </li>
+                <li value="2">
+                    <p>Select the External Control &amp; Automation tab in the Preferences dialog.</p>
+                </li>
+                <li value="3">
+                    <p>Double-click the Generic Control entry in the <span class="uielement">Active control devices</span> list to display the Configure Generic Control dialog.</p>
+                </li>
+                <li value="4">
+                    <p>Click the <span class="uielement">Open</span> button and browse to the mapping file you want to use.</p>
+                </li>
+                <li value="5">
+                    <p>Click <span class="uielement">OK</span> to apply your changes and return to the Preferences dialog.</p>
+                </li>
+                <li value="6">
+                    <p>Click <span class="uielement">OK</span> to close the Preferences dialog.</p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

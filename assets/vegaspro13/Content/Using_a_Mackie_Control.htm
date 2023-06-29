@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using hardware controllers|Using a control surface" data-mc-conditions="Primary.ProOnly">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Using a Mackie Control</title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2>Using a Mackie Control</h2>
+        <p>The Mackie Control is fully supported by <span class="PrimaryProductName">Vegas Pro</span>. 
+ An overlay is available from Mackie that you can use to label the Mackie Control 
+ buttons and controls with their mapped functions in <span class="PrimaryProductName">Vegas Pro</span>:<a href="http://www.mackie.com/products/mcu/index.html" target="_blank">http://www.mackie.com/products/mcu/index.html</a>. 
+ </p>
+        <p>You can download a full-size, printable version of the overlay from <a href="http://download.sonycreativesoftware.com/current/extras/mackiecontroloverlay.pdf" target="_blank">http://download.sonycreativesoftware.com/current/extras/mackiecontroloverlay.pdf</a>.</p>
+        <p>The overlay identifies the default control mapping. You can also customize 
+ the buttons and controls on the Mackie control. When you use the default 
+ mapping, the Mackie Control is divided into several functional areas. 
+ All functionality described in this topic refers to the default control 
+ mapping.</p>
+        <p>For information about your Mackie Control, please refer to the manufacturer's 
+ documentation.</p>
+        <p>For more information about setting up a control surface, see <a href="Using_Control_Surfaces.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Using a control surface</u></span>."</a></p>
+        <p class="warn"><a name="kanchor685"></a><a name="kanchor686"></a>The Mackie Control Universal can control either 
+ trim or automation settings. In order to control automation settings, 
+ the <span class="uielement">Automation</span> 
+ button in the Audio/Video section must be selected, and the track or bus 
+ you want to edit must be set to <span class="uielement">Automation 
+ Write (Touch)</span> or <span class="uielement">Automation 
+ Write (Latch)</span>. Hold the F1 button while turning the V-Pot (or use 
+ the <span class="uielement">Automation Settings</span> 
+ button <img src="Resources/Images/b_automationtouch.gif" />) to change the automation recording mode for each track and 
+ bus track.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t19"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Configuring channel mappings for Mackie Control Extenders</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t19">
+            <p>If you're using Mackie Control Extenders. you'll need to 
+ set up your channel mapping.</p>
+            <p>For example, if your Mackie Control Universal is on the 
+ left of your Mackie Control Extender, you could configure the Mackie Control 
+ to adjust channels 1 through 8 and use the Mackie Control Extender to 
+ adjust channels 9 through 16.</p>
+            <p>If you have a Mackie Control Universal positioned between 
+ two Mackie Control Extenders, you could adjust channels 1 through 8 on 
+ the left Extender, adjust channels 9 through 16 on the Mackie Control 
+ Universal, and adjust channels 17 through 24 on the right Extender.</p>
+            <ol>
+                <li value="1">
+                    <p>From the Options menu, choose 
+ <span class="uielement">Preferences</span> to 
+ display the Preferences dialog.</p>
+                </li>
+                <li value="2">
+                    <p><a name="kanchor687"></a>Select the External Control 
+ &amp; Automation tab.</p>
+                </li>
+                <li value="3">
+                    <p>Double-click your Mackie Control 
+ in the <span class="uielement">Active control 
+ devices</span> list to display the Configure Mackie Control dialog.<br /><br />	The current channel mapping is displayed on each device's LCD. </p>
+                </li>
+                <li value="4">
+                    <p>Choose the channels you want 
+ to control with the Mackie Control Universal:</p>
+                </li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li value="1">
+                        <p>From the <span class="uielement">Device 
+ Type </span>drop-down list, choose <span class="uielement">Mackie 
+ Control</span>.</p>
+                    </li>
+                    <li value="2">
+                        <p>From the <span class="uielement">Channel 
+ Mapping</span> drop-down list, choose the channels you want to adjust 
+ with the Mackie Control Universal.</p>
+                    </li>
+                </ol>
+                <li value="5">
+                    <p>Choose the channels you want 
+ to control with the Mackie Control Extender:</p>
+                </li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li value="1">
+                        <p>From the <span class="uielement">Device 
+ Type </span>drop-down list, choose <span class="uielement">Mackie 
+ Control Extender</span>.</p>
+                    </li>
+                    <li value="2">
+                        <p>From the <span class="uielement">Channel 
+ Mapping</span> drop-down list, choose the channels you want to adjust 
+ with the Mackie Control Extender.</p>
+                    </li>
+                </ol>
+                <li value="6">
+                    <p>Repeat Step 5 for each Mackie 
+ Control Extender.</p>
+                </li>
+                <li value="7">
+                    <p>Click <span class="uielement">OK</span> 
+ to apply your changes and close the Configure Mackie Control dialog.</p>
+                </li>
+                <li value="8">
+                    <p>Click <span class="uielement">OK
+ </span>to apply your changes and close the Preferences dialog.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t18"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Configuring or customizing control mappings</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t18">
+            <p>Use the External 
+ Control &amp; Automation tab in the Preferences dialog to select the 
+ control surfaces you want to use and adjust their configuration. For more information, see <a href="Control_Surface_Preferences.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Preferences - External Control &amp; Automation Tab</u></span>."</a></p>
+            <p class="tip">When you customize your control mappings, 
+ button functions may not match the labels on the overlay. You can click 
+ the<span class="uielement"> Default All</span> 
+ button in the Configure Mackie Control dialog to restore the default settings.</p>
+            <ol>
+                <li value="1">
+                    <p>From the Options menu, choose 
+ <span class="uielement">Preferences</span> to 
+ display the Preferences dialog.</p>
+                </li>
+                <li value="2">
+                    <p>Select the External Control 
+ &amp; Automation tab.</p>
+                </li>
+                <li value="3">
+                    <p>Double-click your Mackie Control 
+ in the <span class="uielement">Active control 
+ devices</span> list to display the Configure Mackie Control dialog.</p>
+                </li>
+                <li value="4">
+                    <p>To add or change a function 
+ do the following:</p>
+                </li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li value="1">
+                        <p>Select an item in the <span class="uielement">User defined surface control 
+ mappings</span> list.</p>
+                    </li>
+                    <li value="2">
+                        <p>Select an item in the <span class="uielement">Available host functions</span> 
+ list.</p>
+                    </li>
+                    <li value="3">
+                        <p>Click the <span class="uielement">Assign</span> 
+ button.</p>
+                    </li>
+                </ol>
+                <li value="5">
+                    <p>To remove a function, select 
+ an item in the <span class="uielement">User defined 
+ surface control mappings</span> list and click the <span class="uielement">Clear 
+ </span>button.</p>
+                </li>
+                <li value="6">
+                    <p>To remove all functions, click 
+ the <span class="uielement">Clear All</span> 
+ button.</p>
+                </li>
+                <li value="7">
+                    <p>To replace all custom functions 
+ with the default settings, click the <span class="uielement">Default 
+ All</span> button.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t17"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Channel section (not shown)</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t17">
+            <p>The channel section includes V-Pots (knobs), buttons, and 
+ faders that you can use to edit your tracks and busses.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Area</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>V-Pot</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Adjusts values for panning, volume (when <span class="uielement">Flip</span> button is selected), video track 
+ opacity (when <span class="uielement">Flip</span> button is selected), 
+ video track fade-to-color, and effect parameter values.</p>
+                            <ul>
+                                <li value="1">
+                                    <p>Adjusts track volume when the <span class="uielement">Pan</span> 
+ or <span class="uielement">Sends</span> button is selected and 
+ the <span class="uielement">Flip</span> button is selected.</p>
+                                </li>
+                                <li value="2">
+                                    <p>Adjusts audio track panning when the <span class="uielement">Pan</span> button is selected.</p>
+                                </li>
+                                <li value="3">
+                                    <p>Adjusts bus send levels when the <span class="uielement">Sends</span> 
+ button is selected.</p>
+                                </li>
+                                <li value="4">
+                                    <p>Adjusts video track opacity when the <span class="uielement">Video</span> and <span class="uielement">Flip</span> 
+ buttons are selected.</p>
+                                </li>
+                                <li value="5">
+                                    <p>Adjusts video track fade-to-color envelope when 
+ the <span class="uielement">Video</span> button is selected, 
+ the <span class="uielement">Automation</span> button in the Audio/Video 
+ section is selected, and the track is in <span class="uielement">Automation 
+ Write (Touch)</span> or <span class="uielement">Automation Write 
+ (Latch)</span> mode.</p>
+                                </li>
+                                <li value="6">
+                                    <p>Adjusts the track compositing mode when the 
+ <span class="uielement">Video</span> button is selected and you 
+ press the <span class="uielement">Output/Compositing</span> button 
+ twice to change the track assignment to CO.</p>
+                                </li>
+                                <li value="7">
+                                    <p>Adjusts effect parameters when the <span class="uielement">Inserts</span> 
+ button is selected.</p>
+                                </li>
+                            </ul>
+                            <p>The V-Pot is velocity sensitive, so rotating 
+ quickly changes values quickly, and you can press the button to choose 
+ a selection.</p>
+                            <p>When the <span class="uielement">Pan</span> 
+ or <span class="uielement">Sends</span> button is selected, press 
+ the V-Pot to edit the track or bus effects chain.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Rec/Rdy button</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Arms audio tracks for recording. For more information, see <a href="Recording.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Recording audio</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Signal LED</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Indicates whether an audio track or bus is outputting a signal.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Solo button</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to solo a track or remove it from the solo group.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Mute button</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to mute or unmute a track.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Select button</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to select a track.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Fader</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Adjusts the track or bus level (unless the <span class="uielement">Flip</span> button is selected). </p>
+                            <p>When the <span class="uielement">Automation</span> 
+ button is selected, the fader adjusts the automation envelope if the track 
+ is in <span class="uielement">Automation Write (Touch)</span> 
+ or <span class="uielement">Automation Write (Latch)</span> mode.</p>
+                            <p>The fader can also adjust settings for the following 
+ items when you select other buttons in the Channel section.</p>
+                            <ul>
+                                <li value="1">
+                                    <p> Adjusts audio track panning when the <span class="uielement">Pan</span> and <span class="uielement">Flip</span> buttons are selected.</p>
+                                </li>
+                                <li value="2">
+                                    <p>Adjusts bus send levels when the <span class="uielement">Sends</span> and <span class="uielement">Flip</span> buttons are selected.</p>
+                                </li>
+                                <li value="3">
+                                    <p>Adjusts video 
+ track opacity when the <span class="uielement">Video 
+ </span> button is selected.
+</p>
+                                </li>
+                                <li value="4">
+                                    <p>                               Adjusts video track fade-to-color settings when 
+ the <span class="uielement">Automation</span>, <span class="uielement">Video</span>, and <span class="uielement">Pan/Fade to Color</span> buttons are selected.</p>
+                                </li>
+                                <li value="5">Adjusts video track fade-to-color envelope when 
+ the following conditions are met:<ul style="list-style-type: circle;"><li value="1"><p>The <span class="uielement">Video</span> button is selected.</p></li><li value="2"><p>The <span class="uielement">Automation</span> button in the Audio/Video section is selected.</p></li><li value="3"><p>The <span class="uielement">Pan/Fade to Color</span> button is selected.</p></li><li value="4"><p>The 
+ track is in <span class="uielement">Automation Write (Touch)</span> 
+ or <span class="uielement">Automation Write (Latch)</span> mode.</p></li></ul></li>
+                            </ul>
+                            <p>The fader is touch sensitive, so if you're recording 
+ automation parameters, recording will begin when you touch the fader and 
+ stop when you release it. The current setting is displayed in the Mackie 
+ Control display.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t16"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Footswitches (not shown)</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t16">
+            <p>The Mackie Control has two switched inputs (labeled <span class="uielement">User Switch A</span> and <span class="uielement">User Switch B</span>) that 
+ you can use to connect footswitches.</p>
+            <p>By default, footswitch A toggles playback, and footswitch 
+ B starts and stops recording. </p>
+            <p>You can customize the footswitches in 
+ the Configure Mackie Control dialog. Double-click <span class="uielement">Mackie 
+ Control</span> in the Active control devices list on the External 
+ Control &amp; Automation tab of the Preferences dialog to display 
+ the Configure Mackie Control dialog.</p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t15"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Control buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t15">
+            <p>The buttons in the 
+ Control section determine the operation of the V-Pots and faders in the 
+ channel section of your Mackie Control. In every mode, the fader adjusts 
+ track volume, and the V-Pot adjusts the selected control mode. You can 
+ press the <span class="uielement">Flip</span> 
+ button to reverse the V-Pot and fader function.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Output 
+ /<br />Compositing
+                        </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press the <span class="uielement">Output 
+ </span>button to set the output device for 
+ each track or bus. Turn the V-Pot in the channel section to choose an 
+ output device and press the V-Pot to select it.</p>
+                            <p>When the <span class="uielement">Video</span> 
+ button is selected, you can set the compositing mode for each track using 
+ the V-Pot.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Input /<br />Motion Blur</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to set the recording input device for 
+ each track. Turn the V-Pot in the channel section to choose an input device 
+ and press the V-Pot to select it. </p>
+                            <p>When the <span class="uielement">Video</span> 
+ button is selected, press the V-Pot to enable or bypass motion blur for 
+ each video track.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Pan /<br />Fade to Color</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to adjust track panning using the V-Pot 
+ in the channel section.</p>
+                            <p>In 5.1 surround 
+ projects, pressing the Pan button toggles left-to-right panning, front-to-rear 
+ panning, and center-channel level adjustment using the V-Pot.
+                        </p>
+                            <p>When the <span class="uielement">Video</span> 
+ button is selected, you can adjust the opacity of video tracks with the 
+ fader in the channel section and adjust fade-to-color settings with the 
+ V-Pot when the <span class="uielement">Automation</span> button 
+ in the Audio/Video section is selected and the track is in <span class="uielement">Automation 
+ Write (Touch)</span> or <span class="uielement">Automation 
+ Write (Latch) </span>mode.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Sends</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to adjust bus and assignable effects send 
+ levels. Press the <span class="uielement">Sends</span> button 
+ to scroll through the available busses and assignable effects chains, 
+ and then turn the V-Pot to adjust the send level.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Inserts</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to adjust 
+ effects settings.
+                        </p>
+                            <p>Press the button once to display PL 
+ in the Mackie Control Assignment display. The Mackie Control LCD displays 
+ the effects that are assigned to each track or bus. The following example 
+ shows a three-track project:<br /><img src="Resources/Images/MCUFX_1DisplayFX.gif" /></p>
+                            <p>Turn the V-Pot to scroll through the effects, 
+ and press the V-Pot to edit the current effect. In editing mode, <span class="uielement">PE</span> is displayed in the Assignment 
+ display. The following example shows the 
+ settings for the Noise Gate plug-in on track one:<br /><img src="Resources/Images/MCUFX_2EditFX.gif" /></p>
+                            <p>PE mode uses the following 
+ controls: </p>
+                            <ul>
+                                <li value="1">
+                                    <p>V-Pots 1 - 4: Turn to edit 
+ the effect's parameters. For switch parameters such as Bypass, press the 
+ V-Pot to change the setting.
+                                    </p>
+                                </li>
+                                <li value="2">
+                                    <p>V-Pot 5: Turn to scroll 
+ through an effect's property pages.
+                                    </p>
+                                </li>
+                                <li value="3">
+                                    <p>V-Pot 6: Turn to choose 
+ from a plug-in's available presets. Press the V-Pot to choose a preset.</p>
+                                </li>
+                                <li value="4">
+                                    <p>V-Pot 7: Turn to edit 
+ the current effect for a different channel.
+                                    </p>
+                                </li>
+                                <li value="5">
+                                    <p>V-Pot 8: Turn to choose 
+ other effects for the current channel.
+                                    </p>
+                                </li>
+                            </ul>
+                            <p>Press the <span class="uielement">Inserts 
+ </span>button again to view effects chains. <span class="uielement">PS</span> 
+ is displayed in the Assignment display. The 
+ following example shows the effects chain on track one:<br /><img src="Resources/Images/MCUFX_3ViewChains.gif" /></p>
+                            <p>PS mode uses the 
+ following controls: </p>
+                            <ul>
+                                <li value="1">
+                                    <p>V-Pots 1, 3, and 5:                         Turn to choose other effects for the current 
+ channel. Press to edit the selected effect and enter PE 
+ mode.</p>
+                                </li>
+                                <li value="2">
+                                    <p>V-Pots 2, 4, and 6: After choosing an effect with V-Pot 1, 3, or 
+ 5, press V-Pot 2, 4, or 6 to add it to the channel.</p>
+                                </li>
+                                <li value="3">
+                                    <p>V-Pot 7: If a channel has multiple pages of effects 
+ in the chain, turn to display additional effects. In the previous example, 
+ <span class="uielement">Aud 1 1/2</span> means that track one 
+ has two pages of effects.</p>
+                                </li>
+                                <li value="4">
+                                    <p>V-Pot 8: Turn to choose effects chains for other channels.</p>
+                                </li>
+                            </ul>
+                            <p>When <span class="uielement">&lt;No 
+ Insert&gt;</span> is displayed above a V-Pot, you can turn the V-Pot to 
+ view effects that you can add to the chain. New effects are displayed 
+ with a *. Press the next V-Pot (to the right) to add the effect.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Settings</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to adjust track or bus settings using 
+ the F1 through F6 buttons.</p>
+                            <ul>
+                                <li value="1">
+                                    <p>F1: Hold the button and turn the V-Pot to change 
+ the automation 
+ recording mode for each track and bus track. For more information, see <a href="Automation_Recording_Envelopes_and_Keyframes.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Recording track envelope and keyframe automation</u></span>."</a></p>
+                                </li>
+                                <li value="2">
+                                    <p>F2: Hold the button and turn the V-Pot to change 
+ the current panning mode. For more information, see <a href="Audio_Panning_Modes.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Audio panning modes</u></span>."</a></p>
+                                </li>
+                                <li value="3">
+                                    <p>F3: Hold the button and press the V-Pot to change 
+ the track phase.</p>
+                                </li>
+                                <li value="4">
+                                    <p>F4: Hold the button and turn the V-Pot to change 
+ record input monitoring settings when you're 
+ using an ASIO audio device. For more information, see <a href="Recording.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Recording audio</u></span>."</a></p>
+                                </li>
+                                <li value="5">
+                                    <p><a href="Recording.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Recording audio</u></span>."</a>
+                                    </p>
+                                    <p>When the <span class="uielement">Sends</span> 
+ button is selected, press the <span class="uielement">Settings</span> 
+ button and hold F5 while pressing the V-Pot to change a track's bus or 
+ assignable effects send level to Pre Volume or Post Volume. Press the 
+ <span class="uielement">Sends</span> button to scroll through 
+ the available bus and effects sends.</p>
+                                </li>
+                                <li value="6">
+                                    <p>F6: Press the <span class="uielement">Settings</span> 
+ button and hold F6 while pressing the V-Pot on a channel to return the 
+ channel's settings to the track 
+ defaults. For more information, see <a href="Setting_Default_Track_Properties.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Setting default track properties</u></span>."</a></p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t14"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Fader Banks buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t14">
+            <p>The Fader Banks buttons control the behavior of the channel 
+ section controls.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Bank</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press the left or right arrow button to scroll 
+ the channels 8 units at a time.</p>
+                            <p>For example, if tracks 1-8 are currently displayed, 
+ pressing the right arrow will change to tracks 9-16.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Channel</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press the left 
+ or right arrow button to scroll the channels 1 unit at a time.
+                        </p>
+                            <p>For example, if tracks 1-8 are currently displayed, 
+ pressing the right arrow will change to tracks 2-9.</p>
+                            <p>Hold the <span class="uielement">Option</span> 
+ button while pressing either Channel button to change track order. For 
+ example, if track two is selected and you press <span class="uielement">Option</span>+ 
+ <span class="uielement">&lt; Channel</span>, track two becomes 
+ track one. Conversely, if track one is selected and you press <span class="uielement">Option</span> 
+ + <span class="uielement">Channel &gt;</span>, track one becomes 
+ track two. </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Flip</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to exchange the behavior of the fader 
+ and V-Pot when allowed.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Video</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to toggle audio and video modes.</p>
+                            <p>For example, you press the <span class="uielement">Pan/Fade</span> 
+ button in audio mode, you can perform audio track panning with the V-Pot. 
+ </p>
+                            <p>If you press the button in video mode, you can 
+ adjust fade-to-color settings if the <span class="uielement">Automation</span> button in the Audio/Video section is selected and the track is in <span class="uielement">Automation Write (Touch)</span> or <span class="uielement">Automation 
+ Write (Latch) </span>mode.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t13"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Display buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t13">
+            <p>The Display buttons control the Mackie Control LCD display.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Meters/Values</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>When you're working with audio tracks or busses, 
+ press to display meters or numeric values. Even in Meters mode, numeric 
+ values are displayed when you edit a value.</p>
+                            <p>In Audio mode, hold the <span class="uielement">Shift</span> 
+ button in the Modifiers section while pressing the <span class="uielement">Meters/Values</span> 
+ button to toggle control of tracks, busses, or tracks and busses. </p>
+                            <ul>
+                                <li value="1">
+                                    <p>Press 
+ once to show audio tracks.</p>
+                                </li>
+                                <li value="2">
+                                    <p>Press 
+ again to show audio tracks.</p>
+                                </li>
+                                <li value="3">
+                                    <p>Press 
+ again to show busses.</p>
+                                </li>
+                                <li value="4">
+                                    <p>Press 
+ again to show tracks and busses.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Time Fmt<br />Zero</p>
+                            <p>&#160;</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press and hold to display the current time format. 
+ Turn V-Pot 8 while holding the button to change the format.</p>
+                            <p>Hold the <span class="uielement">Shift</span> 
+ button in the Modifiers section while pressing the <span class="uielement">Time 
+ Fmt/Zero</span> button to set the current cursor position 
+ to zero. </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t12"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Markers buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t12">
+            <p>The Markers buttons control additional track and channel 
+ settings. </p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Marker 1/9<br />Automation Mode</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place the cursor at marker 1, or hold 
+ Shift and press to place the cursor at marker 9.</p>
+                            <p>When the <span class="uielement">Settings</span> 
+ button is selected, hold the button and turn the V-Pot to change the automation recording 
+ mode for each track and bus track. For more information, see <a href="Automation_Recording_Envelopes_and_Keyframes.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Recording track envelope and keyframe automation</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Marker 2/10<br />Pan Mode</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place the cursor at marker 2, or hold 
+ Shift and press to place the cursor at marker 10.</p>
+                            <p>When the <span class="uielement">Settings</span> 
+ button is selected, hold the button and turn the V-Pot to change the current 
+ panning mode. For more information, see <a href="Audio_Panning_Modes.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Audio panning modes</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Marker 3/11<br />Track Phase</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place the cursor at marker 3, or hold 
+ Shift and press to place the cursor at marker 11.</p>
+                            <p>When the <span class="uielement">Settings</span> 
+ button is selected, hold the button and press the V-Pot to change the 
+ track phase.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Marker 4/12<br />Input Monitor</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place the cursor at marker 4, or hold 
+ Shift and press to place the cursor at marker 12.</p>
+                            <p>When the Settings button is selected, hold the 
+ button and turn the V-Pot to change record 
+ input monitoring settings when you're using an ASIO audio 
+ device. For more information, see <a href="Recording.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Recording audio</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Marker 5/13<br />Pre/Post</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place the cursor at marker 5, or hold 
+ Shift and press to place the cursor at marker 13.</p>
+                            <p>When 
+ the <span class="uielement">Pan</span> button is selected, press 
+ the <span class="uielement">Settings</span> button and then hold 
+ F5 while pressing the V-Pot to change the bus or assignable effects output 
+ fader to Pre FX or Post FX.
+                        </p>
+                            <p>When the <span class="uielement">Sends</span> 
+ button is selected, press the <span class="uielement">Settings</span> 
+ button and hold F5 while pressing the V-Pot to change a track's bus or 
+ assignable effects send level to Pre Volume or Post Volume. Press the 
+ <span class="uielement">Sends</span> button to scroll through 
+ the available bus and effects sends.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Marker 6/14<br />Default</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place the cursor at marker 6, or hold 
+ Shift and press to place the cursor at marker 14.</p>
+                            <p>Press 
+ the <span class="uielement">Settings</span> button and hold F6 
+ while pressing the V-Pot on a channel to return the channel's settings 
+ to the track defaults.
+For more information, see <a href="Setting_Default_Track_Properties.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Setting default track properties</u></span>."</a> <![CDATA[ ]]></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Marker 7/15</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place the cursor at marker 7, or hold 
+ Shift and press to place the cursor at marker 15.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Marker 8/16</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to place the cursor at marker 8, or hold 
+ Shift and press to place the cursor at marker 16.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t11"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Add New buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t11">
+            <p>The Add New buttons add busses or tracks to your project.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Track</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to add a new audio track. When the <span class="uielement">Video</span> button is selected, a new video 
+ track is added.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Bus</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to add an audio bus to your project.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t10"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Windows buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t10">
+            <p>The Windows buttons control the display of various <span class="PrimaryProductName">Vegas Pro</span> windows.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Master Bus</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to show the Master Bus 
+ window. If the window is not docked, pressing the button shows/hides the 
+ window. </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Video Preview</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to show the Video 
+ Preview window. If the window is not docked, pressing the button shows/hides 
+ the window. </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Plug-Ins</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to show 
+ the Plug-In Manager window. If the window is 
+ not docked, pressing the button shows/hides the window.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t9"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />View buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t9">
+            <p>The View buttons control the display of various sections 
+ of the <span class="PrimaryProductName">Vegas Pro</span> window.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Bus Tracks</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to show or hide audio bus tracks in the <span class="PrimaryProductName">Vegas Pro</span> 
+ timeline. </p>
+                            <p>When the Video button is selected, press to 
+ show or hide the video 
+ bus track.</p>
+                            <p>For more information, see <a href="Bus_Tracks-AUDIO.htm" title="" alt="" class="MCXref xref">"<span style="color: #009ccc;" class="mcFormatColor"><u>Audio bus tracks</u></span>"</a> and <a href="Bus_Tracks-Video.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Video bus track</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Dock Area</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to show or hide the Window Docking Area at the bottom of the <span class="PrimaryProductName">Vegas Pro</span> window.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Track List</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to show or hide the track list in the 
+ timeline.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t8"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Modifiers buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t8">
+            <p>The Modifiers buttons extend the functionality of other 
+ buttons on the Mackie Control.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Shift</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Hold the <span class="uielement">Shift</span> 
+ button while pressing a button labeled with inverse text to perform the 
+ shift function. </p>
+                            <p>For example, hold <span class="uielement">Shift</span> 
+ while pressing the <span class="uielement">Undo/Redo</span> button 
+ to reverse an undo action.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Option/<br />Track Order</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Hold the <span class="uielement">Option/Track 
+ Order</span> button while pressing a button in the Settings, Add New, 
+ or Windows group for alternative functions. </p>
+                            <p>Hold the <span class="uielement">Option/Track 
+ Order </span>button while pressing a the <span class="uielement">Channel 
+ &lt;</span> or <span class="uielement">Channel &gt; </span>button 
+ to change track order.</p>
+                            <p>Hold the <span class="uielement">Option/Track 
+ Order</span> button while pressing F1 to 
+ F16 to perform custom functions you can define. See the <a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t7"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Configure 
+ or customize your control mappings</a> 
+ heading in this section for more information. &#160;</p>
+                            <div style="display: none;" data-mc-target-name="t7">
+                                <p>Use the External 
+ Control &amp; Automation tab in the Preferences dialog to select the 
+ control surfaces you want to use and adjust their configuration. </p>
+                                <ol>
+                                    <li value="1">
+                                        <p>From the Options menu, choose 
+ <span class="uielement">Preferences</span> to 
+ display the Preferences dialog.</p>
+                                    </li>
+                                    <li value="2">
+                                        <p>Select the External Control 
+ &amp; Automation tab.</p>
+                                    </li>
+                                    <li value="3">
+                                        <p>Double-click your Mackie Control 
+ in the <span class="uielement">Active devices</span> 
+ list to display the Configure Mackie Control dialog.</p>
+                                    </li>
+                                    <li value="4">
+                                        <p>To add or change a function 
+ do the following:</p>
+                                    </li>
+                                    <ul>
+                                        <li value="1">
+                                            <p>Select an item in the <span class="uielement">User 
+ defined surface control mappings</span> list.</p>
+                                        </li>
+                                        <li value="2">
+                                            <p>Select an item in the <span class="uielement">Available 
+ host functions</span> list.</p>
+                                        </li>
+                                        <li value="3">
+                                            <p>Click the <span class="uielement">Assign</span> 
+ button.</p>
+                                        </li>
+                                    </ul>
+                                    <li value="5">
+                                        <p>To remove a function, select 
+ an item in the <span class="uielement">User defined 
+ surface control mappings</span> list and click the <span class="uielement">Clear 
+ </span>button.</p>
+                                    </li>
+                                    <li value="6">
+                                        <p>To remove all functions, click 
+ the <span class="uielement">Clear All</span> 
+ button.</p>
+                                    </li>
+                                    <li value="7">
+                                        <p>To replace all custom functions 
+ with the default settings, click the <span class="uielement">Default 
+ All</span> button.</p>
+                                        <p>For more information, see <a href="Control_Surface_Preferences.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Preferences - External Control &amp; Automation Tab</u></span>."</a></p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Ctrl</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Hold the <span class="uielement">Ctrl</span> 
+ button while using a control for alternative functions.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Alt</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Hold the <span class="uielement">Alt 
+ </span>button while using a control for alternative functions. <br /><br />Hold <span class="uielement">Alt</span> while pressing F1 through 
+ F10 to run scripts 1-10 from the Tools &gt; Scripting submenu.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t6"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Audio/Video buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t6">
+            <p>The Audio/Video buttons control various audio and video 
+ settings for your project.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Automation</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place the controls on the Mackie Control 
+ in automation mode. The controls in the channel section of the Mackie 
+ Control will affect the automation 
+ parameters on the track or bus if <span class="uielement">Automation 
+ Write (Touch)</span> or <span class="uielement">Automation 
+ Write (Latch) </span>mode is selected.</p>
+                            <p>When the button is not selected, the buttons 
+ control trim (static) values.</p>
+                            <p>For more information, see <a href="AutomationOverview.htm" title="" alt="" class="MCXref xref">"<span style="color: #009ccc;" class="mcFormatColor"><u>Using automation</u></span>"</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Bypass FX</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to bypass/enable 
+ all audio effects.
+                        </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Metronome</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to turn the metronome 
+ on or off. </p>
+                            <p>For more information, see <a href="Metronome.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Metronome</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Surround/<br />Ext Monitor</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to toggle the project 
+ properties between stereo and 5.1 surround mode.</p>
+                            <p>When the <span class="uielement">Video</span> 
+ button is selected, press the <span class="uielement">Surround/Ext 
+ Monitor</span> button to send your video preview 
+ to an external monitor.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Downmix/<br />Split Screen</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to toggle the state of the <span class="uielement">Downmix 
+ Output</span> button in the Master Bus window.</p>
+                            <p>When the <span class="uielement">Video</span> 
+ button is selected, press the <span class="uielement">Downmix/Split 
+ Screen</span> button to toggle split-screen 
+ video previews.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Dim/<br />Overlays</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to toggle the state of the <span class="uielement">Dim 
+ Output</span> button in the Master Bus window.</p>
+                            <p>When the <span class="uielement">Video</span> 
+ button is selected, press the <span class="uielement">Dim/Overlays</span> 
+ button to toggle the display of overlays (grid, safe areas, and RGB channels) 
+ in the Video Preview window.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t5"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Project buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t5">
+            <p>The Project buttons perform various project-level commands.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col style="width: 1.5in;" class="Column-Column1" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Save</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to save your project.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Undo/<br />Redo</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to reverse edit operations. Hold <span class="uielement">Shift</span> while pressing the button to reverse 
+ an undo operation.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>OK</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Not used.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Cancel</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Not used.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t4"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Timeline buttons</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t4">
+            <p>The Timeline buttons perform various commands for the project 
+ timeline.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Marker/<br />CD Index</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to place a marker 
+ at the cursor position. </p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Marker/CD 
+ Index </span>button to place a CD 
+ index marker at the cursor position.</p>
+                            <p>Hold the <span class="uielement">Ctrl</span> 
+ button while pressing the <span class="uielement">Marker/CD Index</span> 
+ button to remove a marker.</p>
+                            <p>Hold the <span class="uielement">Ctrl</span> 
+ and <span class="uielement">Shift</span> buttons while pressing 
+ the <span class="uielement">Marker/CD Index</span> button to 
+ remove a CD index marker.</p>
+                            <p>For more information, see <a href="Using_Markers,_Regions,_and_Commands.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Using markers, regions, and commands</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Region/<br />CD Track</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to convert the current selection to a 
+ region. </p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Region/CD 
+ Track </span>button to convert the current selection to a CD 
+ track region.</p>
+                            <p>Hold the <span class="uielement">Ctrl</span> 
+ button while pressing the <span class="uielement">Region/CD Track</span> 
+ button to remove a region.</p>
+                            <p>Hold the <span class="uielement">Ctrl</span> 
+ and <span class="uielement">Shift</span> buttons while pressing 
+ the <span class="uielement">Region/CD Track</span> button to 
+ remove a CD track.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Loop/<br />Select</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to toggle 
+ looped playback mode. 
+                        </p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Loop/Select 
+ </span>button to create a time selection from the loop region.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Mark In/<br />Go to In</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to set the 
+ beginning of the loop region at the cursor position. 
+                        </p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Mark 
+ In/Go to In </span>button to move the cursor to the beginning of the loop 
+ region.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Mark Out/<br />Go to Out</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to set the 
+ end of the loop region at the cursor position.
+                        </p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Mark 
+ Out/Go to Out </span>button to move the cursor to the end of the loop 
+ region.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Event Trim/<br />Center Cursor</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to toggle event edge-trimming mode. Press the right or left 
+ arrow button to select the next or previous event edge, and then turn 
+ the jog dial to trim the event edge.</p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Event 
+ Trim/Center Cursor </span>button to center the cursor in the timeline 
+ view.</p>
+                            <p>For more information, see <a href="Adjusting_an_Events_Length.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Adjusting an event's length</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>RTZ/<br />End</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to move the cursor to 
+ the beginning of the project.</p>
+                            <p>Hold the <span class="uielement">Shift</span> 
+ button while pressing the <span class="uielement">RTZ/End</span> 
+ button to move the cursor to the end of the project.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t3"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Transport buttons (not shown)</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t3">
+            <p>The Transport buttons allow you to navigate the timeline 
+ and preview your project.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Rewind</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press and hold to move backward through the 
+ timeline at 20x speed.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Fast Forward</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press and hold to move forward 
+ through the timeline at 20x speed.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Stop</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to stop 
+ playback and return the cursor to its position before playback started. 
+
+                        </p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Stop 
+ </span>button to create a dynamic 
+ RAM preview. </p>
+                            <p>For more information, see <a href="Using_Dynamic_RAM_Previews.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Using dynamic RAM previews</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Play</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Press to start 
+ playback. Press again to stop playback and leave the cursor at its current 
+ position. 
+                        </p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Play 
+ </span>button to preview the cursor position. To change the playback duration, 
+ use the <span class="uielement">Cursor preview duration </span>control 
+ on the Editing tab of the Preferences dialog. 
+ </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Record</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Press to start 
+ recording. Press again to stop recording and leave the cursor at its current 
+ position. 
+                        </p>
+                            <p>Hold the <span class="uielement">Shift 
+ </span>button while pressing the <span class="uielement">Record 
+ </span>button to render the current selection to a new 
+ track. </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t2"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Arrow buttons (not shown)</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t2">
+            <p>The arrow buttons allow you to navigate the timeline and 
+ preview your project.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Button</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p>Left/Right</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>When the <span class="uielement">Zoom</span> 
+ button is not selected:, </p>
+                            <ul>
+                                <li value="1">
+                                    <p>Press the left or right arrow button to move 
+ left or right by grid marks.</p>
+                                </li>
+                                <li value="2">
+                                    <p>When the <span class="uielement">Event 
+ Trim</span> button is selected, pressing the left or right arrow button 
+ selects the previous or next event edge. You can then use the jog dial 
+ to trim the event edge.</p>
+                                </li>
+                                <li value="3">
+                                    <p>Hold <span class="uielement">Shift</span> 
+ while pressing the left or right arrow button to select left or right 
+ by grid marks.</p>
+                                </li>
+                                <li value="4">
+                                    <p>Hold <span class="uielement">Ctrl </span>while 
+ pressing the left or right arrow button to move left or right by edits 
+ on the focus track. </p>
+                                </li>
+                                <li value="5">
+                                    <p>Hold <span class="uielement">Ctrl</span> 
+ + <span class="uielement">Shift</span> while pressing the left 
+ or right arrow button to select left or right by edits on the focus track.</p>
+                                </li>
+                            </ul>
+                            <p>When the <span class="uielement">Zoom</span> 
+ button is selected:</p>
+                            <ul>
+                                <li value="1">Press the left or right arrow button to move 
+ left or right by pixels (when <span class="uielement">Quantize 
+ to Frames</span> is turned off). </li>
+                                <li value="2">Hold <span class="uielement">Shift</span> 
+ while pressing the left or right arrow button to select left or right 
+ by pixels.
+                                    </li>
+                                <li value="3">Hold <span class="uielement">Ctrl </span>while 
+ pressing the left or right arrow button to move to the previous or next 
+ marker. </li>
+                                <li value="4">Hold <span class="uielement">Ctrl</span> 
+ + <span class="uielement">Shift</span> while pressing the left 
+ or right arrow button to select to the previous or next marker. </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p>Up/Down</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>When 
+ the <span class="uielement">Zoom</span> button is not selected:</p>
+                            <ul>
+                                <li value="1">
+                                    <p>Press to change the focus track. </p>
+                                </li>
+                                <li value="2">
+                                    <p>Hold <span class="uielement">Shift</span> 
+ while pressing the up or down arrow button to select a range of tracks.</p>
+                                </li>
+                            </ul>
+                            <p>When the <span class="uielement">Zoom</span> 
+ button is selected:</p>
+                            <ul>
+                                <li value="1">
+                                    <p>Press to zoom in or out.</p>
+                                </li>
+                                <li value="2">
+                                    <p>Hold <span class="uielement">Shift</span> 
+ while pressing the up or down arrow button to change the magnification 
+ of audio waveforms.</p>
+                                </li>
+                                <li value="3">
+                                    <p>Hold <span class="uielement">Ctrl</span> 
+ while pressing the up or down buttons to zoom to a selection or to the 
+ high in/max out. </p>
+                                </li>
+                                <li value="4">
+                                    <p>Hold <span class="uielement">Ctrl</span>+<span class="uielement">Shift</span> while pressing the up or down 
+ buttons to change track heights.</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t1"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Jog dial (not shown)
+            </a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t1">
+            <p>The jog dial allows you to navigate the timeline and trim 
+ events.</p>
+            <h4>Navigating the timeline</h4>
+            <p>When playback is paused and the 
+ <span class="uielement">Scrub</span> button is 
+ not selected, the jog dial performs the following functions:</p>
+            <ul>
+                <li value="1">
+                    <p>When the <span class="uielement">Zoom</span> 
+ button is not selected, turn the dial clockwise or counterclockwise to 
+ navigate the timeline by frames.</p>
+                </li>
+                <li value="2">
+                    <p>When the <span class="uielement">Zoom</span> 
+ button is selected, turn the dial clockwise or counterclockwise to navigate 
+ the timeline by pixels.</p>
+                </li>
+                <li value="3">
+                    <p>Hold the <span class="uielement">Shift</span> 
+ button and turn the dial to create a time selection or extend a selection.</p>
+                </li>
+            </ul>
+            <h4>Scrubbing the timeline</h4>
+            <p>During playback, turning the 
+ jog dial increases or decreases the playback rate.</p>
+            <p>When playback is paused and the 
+ <span class="uielement">Scrub</span> button is 
+ selected, turning the jog dial scrubs the timeline. </p>
+            <h4>Trimming events</h4>
+            <ol>
+                <li value="1">
+                    <p>Press the <span class="uielement">Event 
+ Trim</span> button to enter event trimming mode.</p>
+                </li>
+                <li value="2">
+                    <p>Press the left or right arrow 
+ button to select the event edge you want to trim. 
+ A red bracket is displayed to indicate which event edge will be trimmed.<br /><br /><img src="Resources/Images/trimindicator.png" /></p>
+                </li>
+                <li value="3">
+                    <p>Turn the jog dial to trim 
+ the event edge left or right in one-frame increments. Hold Ctrl while 
+ turning the dial to trim in one-pixel increments. Depending on the current 
+ zoom level, the trim duration will vary.</p>
+                    <p>For more information, see <a href="Adjusting_an_Events_Length.htm" title="" alt="" class="MCXref xref">"<span style="color: #009ccc;" class="mcFormatColor"><u>Adjusting an event's length</u></span>"</a> and <a href="Zoom_Controls.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Zooming and magnification</u></span>."</a></p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

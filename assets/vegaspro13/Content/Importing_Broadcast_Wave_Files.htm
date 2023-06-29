@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Adding, managing, and arranging media" data-mc-conditions="Primary.ProOnly">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Importing Broadcast Wave Format files</title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor171"></a>Importing Broadcast Wave Format files</h2>
+        <p>You can use Broadcast Wave Format (BWF) files to exchange audio between audio editors or broadcasting platforms.</p>
+        <p>Broadcast Wave Format files are similar to standard .wav files, but they contain additional metadata including timestamps that tell the software where to add audio on the <span class="PrimaryProductName">Vegas Pro</span> timeline.</p>
+        <p class="note">You can also add Broadcast Wave Format files to your project by dragging them from the Explorer window to the timeline. However, if you drag a BWF file to the timeline, events are created where you drop the file. Using the Import Broadcast Wave dialog ensures that events are arranged according to the timestamps in the file.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <ol>
+            <li value="1">
+                <p>From the <span class="PrimaryFileMenu">File menu</span>, choose <span class="uielement">Import</span>, and then choose <span class="uielement">Broadcast Wave Format</span> from the submenu. The Import Broadcast Wave Format dialog is displayed.</p>
+            </li>
+            <li value="2">
+                <p>Choose the folder where the project you want to open is stored:</p>
+                <ul>
+                    <li value="1">
+                        <p>Choose a drive and folder from the <span class="uielement">Look in</span> drop-down list.</p>
+                    </li>
+                    <li value="2">
+                        <p>Choose a folder from the <span class="uielement">Recent</span> drop-down list to quickly select a folder from which you have previously opened files.</p>
+                    </li>
+                </ul>
+            </li>
+            <li value="3">
+                <p>Select the files you want to open in the browse window.</p>
+                <p>Information about the selected files is displayed at the bottom of the Import Broadcast Wave dialog.</p>
+            </li>
+            <li value="4">
+                <p>From the <span class="uielement">Arrange</span> drop-down list, choose a setting to indicate how you want to arrange audio events on the timeline:</p>
+                <table style="mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col class="Column-Column1" style="width: 1.5in;" />
+                    <col class="Column-Column1" style="width: 4in;" />
+                    <thead>
+                        <tr class="Head-Header1">
+                            <th class="HeadE-Column1-Header1">
+                                <p>Setting</p>
+                            </th>
+                            <th class="HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Add across tracks</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>A separate track is created for each BWF file you import.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1">
+                                <p><span class="uielement">Add across time</span>
+                                </p>
+                            </td>
+                            <td class="BodyA-Column1-Body1">
+                                <p>All selected BWF files are added to a single track.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="note">Audio from multichannel BWF files is always added across tracks, regardless 
+ of the <span class="uielement">Arrange</span> 
+ setting. For example, if you import a four-channel BWF file, the audio 
+ will be added to four adjacent tracks. For control 
+ over which channels are used by each event, right-click a multichannel 
+ audio event, choose <span class="uielement">Channels</span> 
+ from the shortcut menu, and choose a command from the submenu. For more information, see <a href="Working_with_Channels_for_Audio_Files.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Audio channels</u></span>."</a></p>
+            </li>
+            <li value="5">
+                <p>If you chose <span class="uielement">Add 
+ across tracks</span> in step 4, choose a setting from the <span class="uielement">Order 
+ tracks</span> drop-down list to indicate how you want to arrange the tracks 
+ in the track list:</p>
+                <table style="mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col class="Column-Column1" style="width: 1.5in;" />
+                    <col class="Column-Column1" style="width: 4in;" />
+                    <thead>
+                        <tr class="Head-Header1">
+                            <th class="HeadE-Column1-Header1">
+                                <p>Setting</p>
+                            </th>
+                            <th class="HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">By timestamp</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Sorts tracks chronologically using the timestamp in each file.</p>
+                                <p>Select a file in the Import Broadcast Wave dialog to display its timestamp at the bottom of the dialog.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1">
+                                <p><span class="uielement">Alphabetically by filename</span>
+                                </p>
+                            </td>
+                            <td class="BodyA-Column1-Body1">
+                                <p>Sorts tracks alphabetically using the names of the files you import.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="6">
+                <p>Choose a setting from the <span class="uielement">Positioning</span> drop-down list to indicate where imported audio will be added to the timeline.</p>
+                <table style="mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col class="Column-Column1" style="width: 1.5in;" />
+                    <col class="Column-Column1" style="width: 4in;" />
+                    <thead>
+                        <tr class="Head-Header1">
+                            <th class="HeadE-Column1-Header1">
+                                <p>Setting</p>
+                            </th>
+                            <th class="HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Use ruler time</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Adds each imported file to the <span class="PrimaryProductName">Vegas Pro</span> 
+ timeline at the exact position indicated by its timestamp. For example, 
+ if you import a BWF file with a timestamp of 00:00:30;00, the media would 
+ be added to the timeline at the thirty-second mark on the ruler.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1">
+                                <p><span class="uielement">Relative to cursor</span>
+                                </p>
+                            </td>
+                            <td class="BodyA-Column1-Body1">
+                                <p>Adds each imported file to the <span class="PrimaryProductName">Vegas Pro</span> 
+ timeline and offsets the timestamp value by the cursor position. For example, 
+ if you position the cursor at 00:00:10;00 before importing a BWF file 
+ with a timestamp of 00:00:30;00, the media would be added to the timeline 
+ at the forty-second mark on the ruler.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="7">
+                <p>Click <span class="uielement">Open</span>. 
+ The selected files are imported and added to the timeline of the current 
+ project.</p>
+            </li>
+        </ol>
+    </body>
+</html>

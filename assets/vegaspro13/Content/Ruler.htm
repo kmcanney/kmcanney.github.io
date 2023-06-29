@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Customizing the [%=Primary.ProductName%] interface" data-mc-conditions="Primary.MovieStudio,Primary.ProOnly">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Time ruler</title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor712"></a>Time ruler</h2>
+        <p>You can specify how the time ruler will be displayed 
+ (in time units).</p>
+        <div class="tip">
+            <p>To set the cursor position, click in the timeline or time ruler. The cursor moves to the position you click<MadCap:conditionalText data-mc-conditions="Primary.ProOnly">, and the cursor position is displayed below the timeline.</MadCap:conditionalText></p>
+            <p data-mc-conditions="Primary.ProOnly">
+                <img src="Resources/Images/LOC/cursorposition.png" />
+            </p>
+        </div>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t2"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Changing the format of 
+ the ruler</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t2">
+            <p>To change the ruler time format:</p>
+            <ul>
+                <li value="1">
+                    <p>Select the Ruler tab in the Project Properties window. Choose a format from the <span class="uielement">Ruler time format</span> drop-down list. For more information, see <a href="Project_Properties.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Setting project properties</u></span>."</a></p>
+                </li>
+                <li value="2">
+                    <p>From the Options menu, choose <span class="uielement">Ruler 
+ Format</span> and choose a format from the submenu.</p>
+                </li>
+            </ul>
+            <p class="warn">When synchronizing 
+ audio to video, it is crucial that the SMPTE timecode format used in the 
+ sequencer or digital audio workstation is the same as the SMPTE timecode 
+ striped onto the video. This guarantees that the SMPTE times on the video 
+ screen and computer monitor synchronize during playback.</p>
+            <table style="mc-table-style: url('Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Format</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Samples</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the 
+ ruler in samples.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Time</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the 
+ ruler in hours:minutes:seconds.milliseconds.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Seconds</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the 
+ ruler in seconds.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Time &amp; Frames</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the 
+ ruler in hours:minutes:seconds.frames.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Absolute Frames</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the 
+ ruler with all frames numbered sequentially from the beginning of your 
+ project.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Measures 
+ and Beats</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the ruler in measures.beats.ticks, 
+ where 64 ticks = 1 beat.</p>
+                            <p>To set the 
+ tempo and number of beats per measure, use the Ruler tab in the Project 
+ Properties dialog. For more information, see <a href="Project_Properties.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Setting project properties</u></span>."</a></p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1" data-mc-conditions="Primary.ProOnly">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Feet 
+ and Frames 16mm (40 fpf)</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the 
+ ruler in feet+frames at a rate of 40 frames per foot.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1" data-mc-conditions="Primary.ProOnly">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Feet 
+ and Frames 35mm (16 fpf)</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the 
+ ruler in feet+frames at a rate of 16 frames per foot.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">SMPTE 
+ Film Sync IVTC (23.976 fps)</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the ruler in hours:minutes:seconds:frames 
+ with a frame rate of 23.976 frames per second. This frame rate matches 
+ the frame rate used when the inverse 
+ telecine 
+ process removes pulldown 
+ from progressive-scan 24 fps (24p video).</p>
+                            <p>This format will display 
+ running film time correctly if you will be transferring your project to 
+ film. To see running project 
+ time, use SMPTE Film Sync (24 fps) or SMPTE Drop (29.97 fps).</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1" data-mc-conditions="Primary.ProOnly">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">SMPTE 
+ Film Sync (24 fps)</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the ruler in hours:minutes:seconds:frames 
+ with a frame rate of 24 frames per second. This frame rate matches the 
+ standard crystal-sync 16/33 mm film rate of 24 fps.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">SMPTE 
+ EBU (25 fps, Video)</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the ruler in hours:minutes:seconds:frames 
+ with a frame rate of 25 frames per second. This is known as SMPTE EBU 
+ (European Broadcasting Union) because European television systems run 
+ at 25 fps.</p>
+                            <p>Use SMPTE 
+ 25 EBU format for PAL DV/D1 projects.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">SMPTE 
+ Non-Drop (29.97 fps, Video)</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the ruler in hours:minutes:seconds:frames 
+ with a frame rate of 29.97 frames per second, which leads to a discrepancy 
+ between real ("wall clock") time and the SMPTE time, because 
+ there is no compensation in the counting system as there is in Drop Frame.</p>
+                            <p>Use SMPTE 
+ Non-Drop format for NTSC D1 projects that will be recorded on master tapes 
+ striped with Non-Drop timecode.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">SMPTE 
+ Drop (29.97 fps, Video)</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the ruler in hours:minutes:seconds;frames 
+ with a frame rate of 29.97 fps to match the frame rate used by NTSC television 
+ systems (North America, Japan).</p>
+                            <p>Use SMPTE Drop Frame format for NTSC 
+ DV/D1 projects.</p>
+                            <p>Both SMPTE 
+ Drop and SMPTE Non-Drop run at 29.97 fps. In both formats, the actual 
+ frames are not discarded, but they are numbered differently. SMPTE Drop 
+ removes certain frame numbers the counting system to keep the SMPTE clock 
+ from drifting from real ("wall clock") time. The time is adjusted 
+ forward by two frames on every minute boundary except 0, 10, 20, 30, 40, 
+ and 50. For example, when SMPTE Drop time increments from 00:00:59.29, 
+ the next value will be 00:01:00.02.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1" data-mc-conditions="Primary.ProOnly">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">SMPTE 
+ 30 (30 fps, Audio)</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Displays the ruler in hours:minutes:seconds:frames 
+ with a frame rate of 30 frames per second.</p>
+                            <p>This rate 
+ is exactly 30 fps and is commonly used when synchronizing audio applications 
+ such as multitrack recorders or MIDI sequencers. This format should not 
+ be used when working with video.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p><span class="uielement">Audio 
+ CD Time</span>
+                            </p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Displays the 
+ ruler in hours:minutes:seconds:frames with a frame rate of 75 frames per 
+ second for creating Red Book 
+ CDs. For more information, see <a href="Disc-at-Once_(Red_Book)_CD_Burning.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Disc-at-once (DAO or Red Book) CD Burning</u></span>."</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a name="kanchor713"></a><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t1"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a time ruler offset</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t1">
+            <p>A time ruler offset changes the ruler so it starts at a 
+ specific time. Typically, this feature is used in conjunction with SMPTE 
+ and MIDI projects when their timelines are the main 
+ reference. An offset allows you to set the <span class="PrimaryProductName">Vegas Pro</span> ruler based on another project's timeline for reference purposes.</p>
+            <p class="note">Since an audio CD must always begin at 00:00:00, you cannot create a time ruler offset when the time ruler is set to the Audio CD Time format.</p>
+            <ol>
+                <li value="1">
+                    <p>Right-click the time ruler and choose <span class="uielement">Set Time at Cursor</span>from the shortcut menu. An edit box is displayed in the time ruler.</p>
+                    <p class="tip">To create a simple offset, click <span class="uielement">Go to Start </span><img src="Resources/Images/b_gotobeginning.gif" data-mc-conditions="Primary.ProOnly" /> to move the cursor to the beginning of your project.</p>
+                </li>
+                <li value="2">
+                    <p>Type a time in the edit box and press Enter.</p>
+                    <p>The time ruler is shifted so the cursor position matches the time you specified. For example, if the cursor is positioned at the 2:00 minute mark and you enter 15:00 minutes, the start of the project will be set to 13:00 minutes.</p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
