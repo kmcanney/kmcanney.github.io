@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Editing events on the timeline" data-mc-conditions="Primary.MovieStudio,Primary.ProOnly" data-mc-ignored-words="keyframe;keyframes">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Panning and cropping video events</title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor278"></a><a name="kanchor279"></a>Panning and cropping video events</h2>
+        <p>Use the Pan/Crop plug-in to crop, zoom, rotate, or pan the selected video event. You can also use panning and cropping to add motion to video events created with still images.</p>
+        <p data-mc-conditions="Primary.ProOnly">You can also use the Pan/Crop plug-in to create masks using Bézier curves.</p>
+        <p class="tip">To prevent unwanted blurring, you can choose whether effects are applied to the event before or after any event panning and cropping by arranging the <span class="uielement">Pan/Crop</span> button in the plug-in chain at the top of the Video Event FX window.</p>
+        <p>
+            <img src="Resources/Images/LOC/PrePostPanCrop.gif" />
+        </p>
+        <p>Here, the Deform plug-in is applied before the pan/crop and the Glow and Color Curves plug-ins are applied after the pan/crop.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t9"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Cropping or zooming a video event</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t9">
+            <p>Cropping is the process of removing the outside edges from an image or video without resizing it.</p>
+            <p>When you use a single setting for the duration of an event, you are cropping the contents of the event. When you add keyframes to change the extent of cropping through the duration of the event, you can create an animated zoom effect.</p>
+            <p data-mc-conditions="Primary.ProOnly">
+                <img src="Resources/Images/vidcropex.gif" />
+            </p>
+            <ol>
+                <li value="1">
+                    <p>From the Tools menu, choose <span class="uielement">Video</span>, and choose <span class="uielement">Video Event Pan/Crop</span> (or click the <span class="uielement">Pan/Crop</span> button <img src="Resources/Images/b_pancrop.gif" data-mc-conditions="Primary.ProOnly" /> on the video event).</p>
+                    <p>The Pan/Crop plug-in is displayed in the Video Event FX window.</p>
+                </li>
+                <li value="2">
+                    <p>Adjust the selection area to change the viewable portion of the event.</p>
+                </li>
+                <ul>
+                    <li value="1">
+                        <p>To resize the selection box, drag the handles located around the perimeter of the box. To type specific dimensions for the selection box, expand the <span class="uielement">Position</span> heading on the left side of the window and type new values in the <span class="uielement">Width</span> and <span class="uielement">Height</span> boxes.</p>
+                        <p>Select the <span class="uielement">Lock Aspect Ratio</span> button <img src="Resources/Images/b_lockaspectratio.gif" /> if you want the selection box to retain its aspect ratio during resizing. When the button is not selected, the height and width can be resized independently.</p>
+                        <p>Select the <span class="uielement">Size About Center</span> button <img src="Resources/Images/b_scaleaboutcenter.gif" /> if you want the selection box to retain its center point when you resize the box by dragging its edges. When the button is not selected, the opposite side of the selection box will remain anchored when you drag the edges to resize it.</p>
+                    </li>
+                    <li value="2">
+                        <p>To reposition the selection box, click in the middle of the selection area and drag to a new position. To type a specific location, expand the <span class="uielement">Position</span> heading on the left side of the window and type new values in the <span class="uielement">X Center</span> and <span class="uielement">Y Center</span> boxes.</p>
+                        <p>When <span class="uielement">Move Freely </span><img src="Resources/Images/b_movefreely.gif" /> is selected, you can move the selection box along the X or Y axis. When <span class="uielement">Move in X Only </span><img src="Resources/Images/b_movehorizonly.gif" /> is selected, you can only move the selection box horizontally. When <span class="uielement">Move in Y Only </span><img src="Resources/Images/b_moveverticalonly.gif" /> is selected, you can only move the selection box vertically.</p>
+                    </li>
+                    <li value="3">
+                        <p>To zoom in on the selection so the 
+ selection fills the output frame, expand the <span class="uielement">Source</span> 
+ heading on the left side of the window and choose <span class="uielement">Yes</span> 
+ from the <span class="uielement">Stretch to 
+ fill frame</span> drop-down list. When <span class="uielement">No</span> 
+ is selected, the media retains its original size, and the area outside 
+ the selection box is cropped.</p>
+                    </li>
+                </ul>
+                <p class="tip">Right-click the workspace to display a shortcut 
+ menu that displays commands to restore, center, or flip the selection 
+ box. You can also force the box to match the source media's aspect ratio 
+ or your project's output aspect ratio. 
+ Matching the output aspect ratio can prevent black bars from appearing 
+ when you use source media (such as photographs) that does not match your 
+ project's aspect ratio.</p>
+                <li value="3">
+                    <p>The cropping or 
+ zooming occurs instantly and the results are updated in the Video 
+ Preview window.</p>
+                </li>
+                <li value="4">
+                    <p>If you want to create an animated crop 
+ or zoom, use the keyframe controller at the bottom of the Video Event 
+ FX window to establish distinct zoom settings throughout the duration 
+ of the event.</p>
+                    <p>During playback, intermediate frames 
+ are interpolated to create smooth motion. Expand the <span class="uielement">Keyframe 
+ interpolation</span> heading on the left side of the window and drag the 
+ <span class="uielement">Smoothness</span> slider 
+ to adjust the interpolation. For more information, see <a href="KeyFrames.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Keyframe animation</u></span>."</a></p>
+                </li>
+            </ol>
+            <p class="tip" data-mc-conditions="Primary.ProOnly">Use the <span class="uielement">Default 
+ Pan/Crop smoothness</span> control on the External 
+ Control &amp; Automation tab of the Preferences dialog to set the 
+ default Smoothness value for new keyframes.</p>
+        </div>
+        <h3 data-mc-conditions="Primary.ProOnly"><a name="Creating"></a><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t8" name="kanchor280"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a Bézier mask</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-conditions="Primary.ProOnly" data-mc-target-name="t8">
+            <p>Select the <span class="uielement">Mask</span> check box in the keyframe controller  at the bottom of the Video Event FX&#160;window and use the controls in the <span class="uielement">Path</span> 
+ heading on the left side of the Pan/Crop plug-in to create masks using 
+ Bézier curves. </p>
+            <p>Each event can contain multiple Bézier 
+ masks.</p>
+            <p data-mc-conditions="Primary.Online">For an example of how to use a Bézier mask with the Pixelate 
+ plug-in to blur a subject's face, see <a href="FAQ-Blur_Face_(or_License_Plate_or_Anything).htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Blurring a Face (or Any Portion of a Video)</u></span>."</a></p>
+            <p>
+                <img src="Resources/Images/beziertracks.gif" />
+            </p>
+            <p>Video Tracks</p>
+            <p>
+                <img src="Resources/Images/Beziermask.gif" />
+            </p>
+            <p>Bézier Mask</p>
+            <p>
+                <img src="Resources/Images/beziermaskoutput.gif" />
+            </p>
+            <p>Video Output</p>
+            <li value="10">
+                <p class="tip">Double-click the mask shape in the workspace to edit its properties. For more information, see <a href="#Editing" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Editing a mask</u></span>."</a></p>
+            </li>
+        </div>
+        <h3 data-mc-conditions="Primary.ProOnly"><a name="Creating2"></a><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t10"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Creating a rectangular or oval mask</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-conditions="Primary.ProOnly" data-mc-target-name="t10">
+            <p>Use the <a name="kanchor281"></a><span class="uielement">Rectangle or Square Mask Creation Tool</span> <img src="Resources/Images/b_squaremask.gif" /> or <a name="kanchor282"></a><span class="uielement">Oval or Circle Mask Creation Tool</span> <img src="Resources/Images/b_roundmask.gif" /> on the left side of the Video Event FX&#160;window to quickly create new masks. Each event can contain multiple 
+ masks.</p>
+            <ol>
+                <li value="1">
+                    <p>From the Tools menu, choose 
+ <span class="uielement">Video</span>, and choose 
+ <span class="uielement">Video Event Pan/Crop</span> 
+ (or click the <span class="uielement">Pan/Crop</span> 
+ button <img src="Resources/Images/b_pancrop.gif" /> on the video event). The Pan/Crop plug-in is displayed in the 
+ Video Event FX window.</p>
+                </li>
+                <li value="2">
+                    <p>Select the <span class="uielement">Mask</span> check box in the keyframe controller at the bottom of the Video Event FX&#160;window.</p>
+                </li>
+                <li value="3">
+                    <p>Click the <span class="uielement">Rectangle or Square Mask Creation Tool</span> <img src="Resources/Images/b_squaremask.gif" /> or <span class="uielement">Oval or Circle Mask Creation Tool</span> <img src="Resources/Images/b_roundmask.gif" /> on the left side of the Video Event FX&#160;window.</p>
+                </li>
+                <li value="4">
+                    <p> Click and drag in the workspace to create a mask.</p>
+                    <ul>
+                        <li value="1">
+                            <p>Hold Shift while dragging to constrain the mask to a square or circular shape.</p>
+                        </li>
+                        <li value="2">
+                            <p>Hold Ctrl while dragging to scale the mask shape from its center.</p>
+                        </li>
+                        <li value="3">
+                            <p>When creating an oval or circular mask, hold the left or right Alt key to create a half-oval (or half-circle) mask.</p>
+                        </li>
+                        <li value="4">
+                            <p>When creating a rectangle or square mask, hold Alt to create a mask with rounded corners.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li value="5">
+                    <p>Double-click the mask shape in the workspace to edit its properties. For more information, see <a href="#Editing" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Editing a mask</u></span>."</a></p>
+                </li>
+            </ol>
+        </div>
+        <h3 data-mc-conditions="Primary.ProOnly"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t11"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Masking event effects</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-conditions="Primary.ProOnly" data-mc-target-name="t11">
+            <p>You can use the <span class="uielement">Apply to FX</span>&#160;control on the left side of the Video Event FX window to mask video event effects.</p>
+            <ol>
+                <li value="1">
+                    <p>Apply an effect to your video event. For example, if you wanted to blur a subject's face, you could use the Pixelate plug-in.</p>
+                    <p>For more information, see <a href="AddVideoFX.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Adding video effects</u></span>."</a></p>
+                </li>
+                <li value="2">
+                    <p>Create a mask around the portion of the event where you want the effect applied.</p>
+                    <p>For more information, see <a href="#Creating" class="MCXref xref">"<span style="color: #009ccc;" class="mcFormatColor"><u>Creating a Bézier mask</u></span>"</a> or <a href="#Creating2" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Creating a rectangular or oval mask</u></span>."</a></p>
+                </li>
+                <li value="3">
+                    <p>Select the <span class="uielement">Mask</span> check box in the keyframe controller at the bottom of the Video Event FX&#160;window and expand the <span class="uielement">Mask</span> heading on the left side of the window.</p>
+                </li>
+                <li value="4">
+                    <p>Choose <span class="uielement">Yes</span> from the <span class="uielement">Apply to FX</span> menu. </p>
+                    <p>When you choose <span class="uielement">Yes</span>, the video event effects will be applied only to the mask area:</p>
+                    <p>
+                        <img src="Resources/Images/MaskFXOn.png" />
+                    </p>
+                    <p>When you choose <span class="uielement">No</span>, the mask is applied to the frame:</p>
+                    <p>
+                        <img src="Resources/Images/MaskFXOff.png" />
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <h3 data-mc-conditions="Primary.ProOnly"><a name="Editing"></a><a name="kanchor283"></a><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t12"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Editing a mask</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-conditions="Primary.ProOnly" data-mc-target-name="t12">
+            <p>After you create a Bézier, rectangular, or circular mask, you can use the tools in the workspace to edit the mask</p>
+            <ol>
+                <li value="1">
+                    <p>Double-click the mask shape in the workspace to edit its properties:</p>
+                    <p>
+                        <img src="Resources/Images/masktool.gif" />
+                    </p>
+                </li>
+                <li value="2">
+                    <p>Click the <span class="uielement">Positive Mask</span> <img src="Resources/Images/b_positivemask.gif" /> or <span class="uielement">Negative Mask</span> button <img src="Resources/Images/b_negativemask.gif" /> to choose whether you want to mask the area inside or outside the mask shape.</p>
+                    <p class="tip">You can also choose <span class="uielement">Positive</span> or <span class="uielement">Negative</span> from the <span class="uielement">Mode</span> drop-down list in the <span class="uielement">Path</span> 
+ heading on the left side of the Pan/Crop plug-in.  </p>
+                </li>
+                <li value="3">
+                    <p>If you want to feather the edge of the mask shape, select the <span class="uielement">Feather Inside</span> <img src="Resources/Images/b_featherinside.gif" />, <span class="uielement">Feather Both</span> <img src="Resources/Images/b_featherboth.gif" />, or <span class="uielement">Feather Outside</span> <img src="Resources/Images/b_featheroutside.gif" /> button and drag the slider below the mask shape to adjust the feather amount.</p>
+                    <p class="tip">You can also use the <span class="uielement">Feather type</span> and <span class="uielement">Feather (%)</span> controls in the <span class="uielement">Path</span> 
+ heading on the left side of the Pan/Crop plug-in. </p>
+                </li>
+                <li value="4">
+                    <p>To move a mask, double-click the path to select it, and then drag it within the workspace.</p>
+                </li>
+                <div class="tip">
+                    <ul>
+                        <li value="1">
+                            <p>You can also hold Alt+Shift while clicking a mask to select or deselect it.</p>
+                        </li>
+                        <li value="2">
+                            <p>You can also use the <span class="uielement">Position</span> controls on the left side of the Pan/Crop plug-in to move selected masks.</p>
+                        </li>
+                        <li value="3">
+                            <p>To scale or rotate a selected mask, use the drag handles around the shape. Hold Ctrl or Shift to constrain movement.</p>
+                        </li>
+                        <li value="4">
+                            <p>Hold Shift while rotating a mask to constrain rotation to 15-degree increments.</p>
+                        </li>
+                        <li value="5">
+                            <p>To flip selected masks, right-click the mask and choose <span class="uielement">Flip Horizontal</span> or <span class="uielement">Flip Vertical</span> from the shortcut menu.</p>
+                        </li>
+                        <li value="6">
+                            <p>To duplicate a mask, right-click the mask and choose <span class="uielement">Duplicate</span> from the shortcut menu (or hold Ctrl while dragging a selected mask to a new position).</p>
+                        </li>
+                    </ul>
+                </div>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t7"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Rotating a video event</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t7">
+            <ol>
+                <li value="1">
+                    <p>From the Tools menu, choose <span class="uielement">Video</span>, and choose <span class="uielement">Video Event Pan/Crop</span> (or click the <span class="uielement">Pan/Crop</span> button <img src="Resources/Images/b_pancrop.gif" data-mc-conditions="Primary.ProOnly" /> on the video event).</p>
+                    <p>The Pan/Crop plug-in is displayed in the Video Event FX window.</p>
+                </li>
+                <li value="2">
+                    <p>Adjust the selection area 
+ to crop the event. (If you rotate the entire frame, the background behind 
+ the video event will show through.)</p>
+                </li>
+                <li value="3">
+                    <p>Drag the corner of the selection 
+ box to rotate the event. Your cursor is displayed as a <img src="Resources/Images/cursor-rotate.gif" />.</p>
+                    <p>To type a specific rotation angle, expand the <span class="uielement">Rotation</span> 
+ heading on the left side of the window and type a new value in the <span class="uielement">Angle </span>box.</p>
+                    <p>
+                        <img src="Resources/Images/eventrotate.gif" />
+                    </p>
+                </li>
+                <li value="4">
+                    <p>If you want to rotate your 
+ video around a center point other than the center of the selection box, 
+ drag the point at the center of the selection point.</p>
+                    <p>To type a specific center point, expand the <span class="uielement">Rotation</span> 
+ heading and type new values in the <span class="uielement">X 
+ Center</span> and <span class="uielement">Y Center</span> 
+ boxes.</p>
+                    <p>As you rotate your event, the video will rotate about this center.</p>
+                    <p>The rotation occurs 
+						instantly and the results are updated in the Video 
+					Preview window.</p>
+                </li>
+                <li value="5">
+                    <p>If you want to use multiple rotation 
+ settings, use the keyframe controller at the bottom of the Video Event 
+ FX window to establish distinct settings throughout the duration of the 
+ event.</p>
+                    <p>During playback, intermediate frames 
+ are interpolated to create smooth motion. Expand the <span class="uielement">Keyframe 
+ interpolation</span> heading on the left side of the window and drag the 
+ <span class="uielement">Smoothness</span> slider 
+ to adjust the interpolation. For more information, see <a href="KeyFrames.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Keyframe animation</u></span>."</a></p>
+                    <p class="tip">Use the <span class="uielement">Default 
+						Pan/Crop smoothness</span> control on the Editing 
+						tab of the Preferences dialog to set the default Smoothness value for 
+					new keyframes.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t6"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Panning a video event</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t6">
+            <p>You can use event panning to focus on the action of a video 
+ event, or you can simulate motion using a still image.</p>
+            <p class="tip">Another use for panning 
+ is Pan-and-Scan, which is a technique commonly used when film is converted 
+ for television. Movie screens and film are usually wider (~2.35:1) than 
+ television (~1.33:1). When you transfer the film to video, you can use 
+ panning to crop your video frame and move the crop area to follow the 
+ action or subject.</p>
+            <ol>
+                <li value="1">
+                    <p>From the Tools menu, choose <span class="uielement">Video</span>, and choose <span class="uielement">Video Event Pan/Crop</span> (or click the <span class="uielement">Pan/Crop</span> button <img src="Resources/Images/b_pancrop.gif" data-mc-conditions="Primary.ProOnly" /> on the video event).</p>
+                    <p>The Pan/Crop plug-in is displayed in the Video Event FX window.</p>
+                </li>
+                <li value="2">
+                    <p>Adjust the selection area 
+ to crop the event. (If you pan the entire frame, the background behind 
+ the video event will show through.)</p>
+                </li>
+                <li value="3">
+                    <p>To resize the selection box, drag 
+ the handles located around the perimeter of the box. To type specific 
+ dimensions for the selection box, expand the <span class="uielement">Position</span> 
+ heading on the left side of the window and type new values in the <span class="uielement">Width</span> and <span class="uielement">Height</span> 
+ boxes.</p>
+                    <p>Select the <span class="uielement">Lock Aspect 
+ Ratio</span> button <img src="Resources/Images/b_lockaspectratio.gif" /> if you want the selection box to retain its aspect 
+ ratio during resizing. When the button is not selected, the height and 
+ width can be resized independently.</p>
+                    <p>Select the <span class="uielement">Size About 
+ Center</span> button <img src="Resources/Images/b_scaleaboutcenter.gif" /> if you want the selection box to retain its center 
+ point when you resize the box by dragging its edges. When the button is 
+ not selected, the opposite side of the selection box will remain anchored 
+ when you drag the edges to resize it.</p>
+                </li>
+                <li value="4">
+                    <p>To reposition the selection box, 
+ click in the middle of the selection area and drag to a new position. 
+ To type a specific location, expand the <span class="uielement">Position</span> 
+ heading on the left side of the window and type new values in the <span class="uielement">X Center</span> and <span class="uielement">Y 
+ Center</span> boxes.</p>
+                    <p>When <span class="uielement">Move Freely </span><img src="Resources/Images/b_movefreely.gif" /> 
+ is selected, you can move the selection box along the X or Y axis. When 
+ <span class="uielement">Move in X Only </span><img src="Resources/Images/b_movehorizonly.gif" /> is selected, you can only move the selection box horizontally. 
+ When <span class="uielement">Move in Y Only </span><img src="Resources/Images/b_moveverticalonly.gif" /> is selected, you can only move the selection box vertically.</p>
+                </li>
+                <li value="5">
+                    <p>To zoom in on the selection so the 
+ selection fills the output frame, expand the <span class="uielement">Source</span> 
+ heading on the left side of the window and choose <span class="uielement">Yes</span> 
+ from the <span class="uielement">Stretch to 
+ fill frame</span> drop-down list. When <span class="uielement">No</span> 
+ is selected, the media retains its original size, and the area outside 
+ the selection box is cropped.</p>
+                    <p class="tip">Right-click the workspace to display a shortcut 
+						menu that displays commands to restore, center, or flip the selection 
+						box. You can also force the box to match the source media's aspect ratio 
+						or your project's output aspect ratio. 
+						Matching the output aspect ratio can prevent black bars from appearing 
+						when you use source media (such as photographs) that does not match your 
+					project's aspect ratio.</p>
+                </li>
+                <li value="6">
+                    <p>Expand the <span class="uielement">Source</span> heading on the 
+ left side of the window and choose <span class="uielement">Yes</span> 
+ from the <span class="uielement">Stretch to 
+ fill frame</span> drop-down list.</p>
+                </li>
+                <li value="7">
+                    <p>Drag the selection box to 
+ set the viewable portion the event. Your cursor is displayed as a <img src="Resources/Images/cursormove.gif" />.</p>
+                </li>
+                <li value="8">
+                    <p>Use the keyframe controller 
+ at the bottom of the Video Event FX window to establish distinct settings 
+ throughout the duration of the event. The path of the panning is drawn 
+ in the Video Event FX window.</p>
+                    <p>During playback, intermediate frames are interpolated to create smooth 
+ motion. Expand the <span class="uielement">Keyframe 
+ interpolation</span> heading on the left side of the window and drag the 
+ <span class="uielement">Smoothness</span> slider 
+ to adjust the interpolation. For more information, see <a href="KeyFrames.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Keyframe animation</u></span>."</a></p>
+                    <p class="tip">Use the <span class="uielement">Default 
+						Pan/Crop smoothness</span> control on the Editing 
+						tab of the Preferences dialog to set the default Smoothness value for 
+					new keyframes.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t5" name="kanchor284"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Editing keyframe interpolation</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t5">
+            <p>If you have two or more keyframes, you can expand the <span class="uielement">Keyframe interpolation</span> 
+ heading and edit the <span class="uielement">Smoothness</span> 
+ setting to adjust the smoothness of the motion.</p>
+            <p><a name="kanchor285"></a>Smoothness adjusts spatial interpolation: how motion occurs 
+ within the frame. A <span class="uielement">Smoothness</span> 
+ setting of 0 produces linear motion from one keyframe to the next. Increasing 
+ the setting produces a curved path.</p>
+            <p class="note">If you want to adjust temporal interpolation how motion 
+ occurs over time change a keyframe type by 
+ right-clicking a keyframe and choosing a new interpolation curve type 
+ (linear, fast, slow, smooth, sharp, or hold).</p>
+            <p>During playback, intermediate frames are interpolated to 
+ create smooth motion. For more information, see <a href="KeyFrames.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Keyframe animation</u></span>."</a></p>
+            <p class="tip">Use the <span class="uielement">Default 
+ Pan/Crop smoothness</span> control on the Editing 
+ tab of the Preferences dialog to set the default Smoothness value for 
+ new keyframes.</p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t4"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Editing source media aspect ratio and stretching</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t4">
+            <p>Use the controls in the <span class="uielement">Source</span> 
+ heading on the left side of the Pan/Crop plug-in to indicate how your 
+ video will be stretched or cropped.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Item</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><a name="kanchor286"></a><span class="uielement">Maintain aspect ratio</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Choose <span class="uielement">Yes</span> from 
+ the drop-down list (or select the <img src="Resources/Images/b_lockaspectratio.gif" /> button) to prevent distortion of the source 
+ media file.</p>
+                            <p>When you choose <span class="uielement">No</span>, 
+ the source media's ratio of height to width is not preserved when video 
+ is stretched in the output frame.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p><a name="kanchor287"></a><span class="uielement">Stretch to fill frame</span>
+                            </p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Choose <span class="uielement">Yes</span> from 
+ the drop-down list if you want the media in the selection box to fill 
+ the output frame.</p>
+                            <p>When you choose <span class="uielement">No</span>, 
+ the media retains its original size, and the area outside the selection 
+ box is cropped.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t3"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Editing workspace display settings</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t3">
+            <p>Use the controls in the <span class="uielement">Workspace</span> 
+ heading on the left side of the Pan/Crop plug-in to change the display.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Item</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span class="uielement">Zoom</span>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>To change the magnification of the video in 
+ the workspace, select the <span class="uielement">Zoom</span> 
+ box and type a new setting, or select the box and click the <img src="Resources/Images/b_downarrow.gif" /> 
+ button to display a slider that you can use to adjust the magnification 
+ level.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span class="uielement">X offset</span>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>To pan the display left or right, select the 
+ <span class="uielement">X offset</span> box and type a new setting, 
+ or select the box and click the <img src="Resources/Images/b_downarrow.gif" /> button to display a slider that you can use 
+ to adjust the offset.</p>
+                            <p>Negative values move the video to the left, 
+ positive values move to the right, and 0 represents the horizontal center 
+ of the workspace.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span class="uielement">Y offset</span>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>To pan the display up or down, select the <span class="uielement">Y offset</span> box and type a new setting, 
+ or select the box and click the <img src="Resources/Images/b_downarrow.gif" /> button to display a slider that you can use 
+ to adjust the offset.</p>
+                            <p>Negative values move the video up, positive 
+ values move the video down, and 0 represents the vertical center of the 
+ workspace.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1"><span class="uielement">Grid spacing</span>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Select the <span class="uielement">Grid 
+ spacing</span> box and type a new setting or select the box and click 
+ the <img src="Resources/Images/b_downarrow.gif" /> button to display a slider that you can use to adjust the number 
+ of divisions displayed in the workspace.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="tip">You can also change the <span class="uielement">X 
+ offset</span> and <span class="uielement">Y offset</span> 
+ values by hovering over the workspace until the pointer is displayed as 
+ a <img src="Resources/Images/dragpointer.gif" /> 
+ and dragging the workspace to pan in any direction.</p>
+        </div>
+        <h3 class="pagebreak"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t2"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Editing the selection box</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t2">
+            <p>Use the controls in the <span class="uielement">Edit</span> 
+ heading on the left side of the Pan/Crop plug-in to edit the selection 
+ box in the window.</p>
+            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Item</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span class="uielement">Snap to grid</span>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Choose <span class="uielement">Yes</span> 
+ from the drop-down list if you want to snap the edges of the selection 
+ box to the workspace grid when you drag to resize or move the box.</p>
+                            <p>When you choose <span class="uielement">No</span>, 
+ you can move and resize the selection box freely.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span class="uielement">Lock aspect</span>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Choose <span class="uielement">Yes</span> 
+ from the drop-down list if you want the selection box to retain its aspect 
+ ratio during resizing. </p>
+                            <p>When you choose <span class="uielement">No</span>, 
+ the height and width can be resized independently.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1"><span class="uielement">Scale about center</span>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Choose <span class="uielement">Yes</span> 
+ from the drop-down list if you want the selection box to retain its center 
+ point when you resize the box by dragging its edges.</p>
+                            <p>When you choose <span class="uielement">No</span>, 
+ the opposite side of the selection box will remain anchored when you drag 
+ the edges to resize it.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1"><span class="uielement">Allow movement</span>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p><span class="uielement">Horizontal</span>: You can move the selection box only horizontally 
+ in the workspace.</p>
+                            <p><span class="uielement">Vertical</span>: You can move the selection box only vertically 
+ in the workspace.</p>
+                            <p><span class="uielement">Unconstrained</span>: You can move the selection box horizontally 
+ or vertically in the workspace.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a name="kanchor288"></a>You can also right-click in the Pan/Crop plug-in to display 
+ a shortcut menu that will allow you to quickly adjust the selection box:</p>
+            <table class="TableStyle-Basic" style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" cellspacing="0">
+                <col class="Column-Column1" style="width: 1.5in;" />
+                <col class="Column-Column1" style="width: 4in;" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Item</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Restore</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Returns the 
+ crop area to full frame.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Center</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Moves the 
+ crop area to the center of the frame.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Flip 
+ Horizontal</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Flips the 
+ event left to right and backwards.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Flip 
+ Vertical</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Flips the 
+ event top to bottom and backwards.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Match 
+ Output Aspect</span>
+                            </p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>Sets the x,y 
+ ratio to match your project properties.</p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p><span class="uielement">Match 
+ Source Aspect</span>
+                            </p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>Sets the x,y 
+ value to match the properties of your source media.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3 class="pagebreak"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t1"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Saving or recalling a keyframe preset</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t1">
+            <p>Keyframe presets save the settings of the selected keyframe 
+ row at the cursor position.</p>
+            <p class="note">Presets for the Position and Mask keyframe rows are saved separately: 
+ presets you create in the Position row will not be available in the Mask 
+ row.</p>
+            <h4>Saving a preset</h4>
+            <ol>
+                <li value="1">
+                    <p>Adjust your Position or Mask 
+ settings as desired to create a keyframe.</p>
+                </li>
+                <li value="2">
+                    <p>Type a name in the <span class="uielement">Preset</span> box.</p>
+                </li>
+                <li value="3">
+                    <p>Click the <span class="uielement">Save 
+ Preset</span> button <img src="Resources/Images/b_save.gif" />.</p>
+                </li>
+            </ol>
+            <h4>Recalling a preset</h4>
+            <ol>
+                <li value="1">
+                    <p>Click in the Position or 
+ Mask keyframe row to select a row and position the cursor where you want 
+ to apply the preset.</p>
+                </li>
+                <li value="2">
+                    <p>Choose a setting from the 
+ <span class="uielement">Preset</span> drop-down 
+ list.</p>
+                    <p>If no keyframe exists at the cursor position, one is created using 
+ the settings from the preset. If a keyframe exists at the cursor position, 
+ the keyframe's settings are replaced with the settings from the preset.</p>
+                </li>
+            </ol>
+            <h4>Deleting a preset</h4>
+            <p>Click the <span class="uielement">Delete 
+ Preset</span> button <img src="Resources/Images/b_delete.gif" /> to delete the current preset.</p>
+        </div>
+    </body>
+</html>

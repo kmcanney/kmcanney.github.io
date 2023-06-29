@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Mixing audio|Mixing tracks and busses|Using output busses" data-mc-conditions="Primary.ProOnly">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Routing busses</title>
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor505"></a>Routing busses</h2>
+        <p>The Mixing Console window allows you to create up to 26 (plus the Master) 
+ virtual busses that you can route to hardware 
+ attached to your computer or to other busses.</p>
+        <p>By default, all busses are assigned to the Master bus. In this configuration, 
+ you can use them for creating subgroups of tracks—for example, you could 
+ route all your drum tracks to a bus so you can adjust their levels together 
+ without changing their relative levels. When you assign busses to hardware 
+ outputs, you can use busses for sending tracks to external effects processors 
+ or for mixing on an external mixer.</p>
+        <p class="warn">When 
+ you route busses to hardware outputs, the outputs from those busses will 
+ not be included in the mix when you render your 
+ project.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3 class="pagebreak"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t2"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Routing a bus to another bus</a>
+        </h3>
+        <div style="display: none;" data-mc-target-name="t2">
+            <ol>
+                <li value="1">
+                    <p>Add busses to your project. For more information, see <a href="Adding_Audio_Busses.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Adding audio busses</u></span>."</a></p>
+                </li>
+                <li value="2">
+                    <p>Click the <span class="uielement">Playback 
+ Device Selector</span> button on the audio 
+ bus track and choose a bus from the menu. For more information, see <a href="Bus_Tracks-AUDIO.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Audio bus tracks</u></span>."</a></p>
+                </li>
+                <ul>
+                    <li value="1">
+                        <p>The button is displayed as a <img src="Resources/Images/b_masterbus.gif" /> when a bus is routed 
+ to the master bus.</p>
+                    </li>
+                    <li value="2">
+                        <p>The bus letter is displayed (<img src="Resources/Images/b_bus.gif" />, <img src="Resources/Images/b_busb.gif" />, and so on) when a bus is routed to another 
+ bus.</p>
+                    </li>
+                    <li value="3">
+                        <p>The button is displayed as a <img src="Resources/Images/b_playbackdevice.gif" /> when a bus is routed to a hardware output.</p>
+                    </li>
+                </ul>
+            </ol>
+            <p class="note">To prevent feedback, you cannot perform circular routing. 
+ For example, if your project has two busses and bus A is routed to B, 
+ bus B can only be routed to the Master bus.</p>
+            <p class="tip">You can also use the I/O control region in 
+ the bus channel strip 
+ to route busses. For more information, see <a href="SPCONSOLEOPT_Bus_Channel_Strips.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Bus Channel Strips</u></span>."</a> <![CDATA[ ]]></p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t1"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Routing a bus to a hardware output</a>
+        </h3>
+        <div style="display: none;" data-mc-target-name="t1">
+            <ol>
+                <li value="1">
+                    <p>Verify that you are using 
+ Windows classic wave drivers or an ASIO driver:</p>
+                </li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li value="1">
+                        <p>From the Options menu, choose 
+ Preferences and click the <span class="uielement">Audio 
+ Device</span> tab.</p>
+                    </li>
+                    <li value="2">
+                        <p>From the <span class="uielement">Audio 
+ device type</span> drop-down list, choose <span class="uielement">Windows 
+ Classic Wave Driver</span> or an ASIO driver.</p>
+                    </li>
+                    <li value="3">
+                        <p>Click <span class="uielement">OK</span> 
+ to close the Preferences dialog.</p>
+                    </li>
+                </ol>
+                <p class="note">If you have selected <span class="uielement">Microsoft 
+ Sound Mapper </span>in the <span class="uielement">Audio 
+ device type</span> drop-down list on the Audio 
+ tab in the Preferences dialog, you will not be able to assign the bus 
+ to a different device. For more information, see <a href="PrefAudioTab.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Preferences - Audio Tab</u></span>."</a></p>
+                <li value="2">
+                    <p>Click the <span class="uielement">Output</span> 
+ button in the I/O control region of the bus 
+ channel strip and choose another bus from the menu. For more information, see <a href="SPCONSOLEOPT_Bus_Channel_Strips.htm" title="" alt="" class="period MCXref xref xrefperiod" xrefformat="{quote}{color #009ccc}{u}{paratext}{/u}{/color}.{quote}">"<span style="color: #009ccc;" class="mcFormatColor"><u>Bus Channel Strips</u></span>."</a></p>
+                    <p>
+                        <img src="Resources/Images/LOC/choosebusoutput.gif" />
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

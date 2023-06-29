@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using automation" data-mc-conditions="Primary.MovieStudio,Primary.ProOnly">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Keyframe animation</title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor424"></a>Keyframe animation</h2>
+        <p>Keyframes define the state of an effect's settings at a given point in time.</p>
+        <p>Each keyframe contains a set of parameters for a specified point on the timeline. The settings for intermediate frames are interpolated. Additional keyframes can be added to create more complex effects.</p>
+        <p><a name="kanchor425"></a>The Keyframe Controller is displayed at the bottom of Video FX, Video Media Generators, Track Motion, and Transition dialogs and is used to add and remove keyframes and control the FX parameters for individual keyframes.</p>
+        <p>
+            <img src="Resources/Images/LOC/keyframe_videofx.gif" title="Video effects, transitions, and media generator " alt="Video effects, transitions, and media generator " />
+        </p>
+        <p>Each effect in a video effects chain can have its own keyframes.</p>
+        <p>Some video effects, such as Sony Stereoscopic 3D Adjust, have parameters that have their own keyframes.</p>
+        <p>
+            <img src="Resources/Images/LOC/keyframecontroller.gif" title="Track Motion and Event Pan/Crop keyframes" alt="Track Motion and Event Pan/Crop keyframes" />
+        </p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t8"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Adding a keyframe</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t8">
+            <ol>
+                <li value="1">
+                    <p>In the Keyframe Controller, click to position the cursor where you want to add a keyframe.</p>
+                </li>
+                <li value="2">
+                    <p>Click the <span class="uielement">Insert Keyframe</span> button <img src="Resources/Images/b_addkeyframe.gif" />. A keyframe is added to the Keyframe Controller timeline.</p>
+                    <p>The new keyframe's attributes are copied from the previous keyframe to allow you to make subtle changes without recreating all your settings.</p>
+                    <p class="tip">To quickly add a keyframe, double-click on the Keyframe Controller timeline, or position the cursor on the timeline and modify your effect parameters.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t7"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Removing a keyframe</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t7">
+            <ol>
+                <li value="1">
+                    <p>Select a keyframe by clicking it.</p>
+                </li>
+                <li value="2">
+                    <p>Click the <span class="uielement">Delete Keyframe</span> button <img src="Resources/Images/b_delkeyframe.gif" />.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t6"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Navigating between keyframes</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t6">
+            <p>
+                <p>To jump to the next or previous keyframe, click the <span class="uielement">Previous Keyframe </span><img src="Resources/Images/b_prevkeyframe.gif" /> and <span class="uielement">Next Keyframe </span><img src="Resources/Images/b_nextkeyframe.gif" /> buttons (or press Ctrl+Left Arrow or Ctrl+Right Arrow).</p>
+            </p>
+            <p>
+                <p>To jump to the first or last keyframe, click the <span class="uielement">First Keyframe </span><img src="Resources/Images/b_firstkeyframe.gif" /> or <span class="uielement">Last Keyframe </span><img src="Resources/Images/b_lastkeyframe.gif" /> button.</p>
+            </p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t5"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Copying a keyframe</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t5">
+            <p>Right-click the keyframe and choose <span class="uielement">Copy</span> from the shortcut menu. The keyframe and its settings are copied to the clipboard.</p>
+            <p class="tip">Hold the Ctrl key while dragging to copy a keyframe.</p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t4"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Using keyframe animation to modify an effect</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t4">
+            <p>Keyframe animation can be used to smoothly and gradually modify an effect. For example, if you wanted to gradually fade an event to black and white, you could use the Black and White effect to create two keyframes. The first keyframe would use the <span class="uielement">Reset to None</span> preset, and the second keyframe would use the <span class="uielement">100% Black and White</span> preset. During playback the event would start playing in color and gradually fade to black and white.</p>
+            <ol>
+                <li value="1">
+                    <p>Add an effect to an event or track. For more information, see <a href="AddVideoFX.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Adding video effects</u></span>."</a></p>
+                    <p>The Video FX window is displayed.</p>
+                </li>
+                <li value="2">
+                    <p>Click the <span class="uielement">Animate</span> button to display the keyframe controller at the bottom of the window.</p>
+                </li>
+                <li value="3">
+                    <p>In they keyframe controller, click to position the cursor where you want the effect to start.</p>
+                    <p class="tip">Select the <span class="uielement">Sync Cursor</span> button <img src="Resources/Images/b_synccursor.gif" /> to synchronize the cursor positions on the main timeline and Keyframe Controller timeline.</p>
+                </li>
+                <li value="4">
+                    <p>Click the <span class="uielement">Insert Keyframe</span> button <img src="Resources/Images/b_addkeyframe.gif" />.</p>
+                </li>
+                <li value="5">
+                    <p>Adjust the effect attributes as desired.</p>
+                </li>
+                <li value="6">
+                    <p>Repeat steps 3 through 5 to add a keyframe for each effect parameter change.</p>
+                    <p>During playback, the effect will smoothly transition through the attributes you established for each keyframe.</p>
+                </li>
+            </ol>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t3" name="kanchor426"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Changing the interpolation curve between keyframes</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t3">
+            <p>The interpolation curve determines the rate of animation between two keyframe settings.</p>
+            <p>For event pan/crop and track motion keyframes, the color of the keyframe indicates which interpolation curve is being used.</p>
+            <table style="mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Command</p>
+                        </th>
+                        <th class="HeadE-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Looks Like</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Linear</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-linear.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Effect parameters are interpolated in a linear path.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/linearkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Fast</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-fast.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Effect parameters are interpolated in a fast logarithmic path.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/FASTkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Slow</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-slow.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Effect parameters are interpolated in a slow logarithmic path.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/slowkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Smooth</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-smooth.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Effect parameters are interpolated along a smooth, natural curve.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/smoothkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Sharp</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-sharp.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Effect parameters are interpolated along a sharp curve.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/sharpkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p><span class="uielement">Hold</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-hold.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyB-Column1-Body1">
+                            <p>No animation will take place. The keyframe's settings will be maintained until the next keyframe.</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/holdkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>In the Lanes view of the Video FX dialog or in the Pan/Crop or Track Motion dialog, you can right-click a selected keyframe and choose a command from the shortcut menu to change the interpolation curve. The curve type is updated for all selected keyframes.</p>
+            <p>For video effects, the line between keyframes indicates which interpolation curve is being used.</p>
+            <p>In the Curves view of the Video FX dialog, you can manually adjust a keyframe's spline curves. Click the <span class="uielement">Lanes/Curves</span> button to toggle between Lanes and Curves views.</p>
+            <p>Right-click a keyframe and choose <span class="uielement">Manual</span> from the shortcut menu to display the spline curve handles. Drag the handles to adjust the curve.</p>
+            <p>
+                <img src="Resources/Images/LOC/keyframe_manual.gif" />
+            </p>
+            <p>Right-click a keyframe and choose <span class="uielement">Split Manual</span> from the shortcut menu to independently adjust the curve on each side of the keyframe.</p>
+            <p>
+                <img src="Resources/Images/LOC/keyframe_splitmanual.gif" />
+            </p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t2"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Moving keyframes</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t2">
+            <p>After you've set your keyframes, you may need to adjust their positions along the timeline. Drag a keyframe to a new position in the Keyframe Controller timeline to change its position.</p>
+            <p>Hold Ctrl or Shift while clicking to select multiple keyframes. A selected keyframe is displayed as <img src="Resources/Images/keyframe-selected.gif" />, and an unselected keyframe is displayed as a <img src="Resources/Images/keyframe-unselected.gif" />.</p>
+            <p class="tip">Hold Alt while dragging the first or last keyframe in a group of selected keyframes to adjust their spacing equally.</p>
+        </div>
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t1" name="kanchor427"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Adjusting track-level keyframes</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t1">
+            <p>If you're using video track effects or track motion, keyframes will be displayed in the timeline below your video track. You can drag keyframes to adjust their position, add and delete keyframes, and change the interpolation curve between keyframes.</p>
+            <p class="tip">Select the <span class="uielement">Lock Envelopes to Events</span> button <img src="Resources/Images/b_locklenvelopestoevents.gif" data-mc-conditions="Primary.ProOnly" /> to lock track-level keyframes to the events on the track. When keyframes are locked, you can move events along the timeline, and their associated keyframes move with them.</p>
+            <p>Click the <span class="uielement"><a name="kanchor428"></a>Expand/Collapse Track Keyframes</span> button <img src="Resources/Images/b_expandtrackkeyframes.gif" /> in the track header to toggle the height of the track keyframes. When expanded, a separate row is displayed for each keyframed item.</p>
+            <p class="note">Event-level keyframes are not visible in the timeline.</p>
+            <h4>Adding track keyframes</h4>
+            <ol>
+                <li value="1">
+                    <p>Click the <span class="uielement">Expand/Collapse Track Keyframes</span> button <img src="Resources/Images/b_expandtrackkeyframes.gif" />.</p>
+                </li>
+                <li value="2">
+                    <p>Double-click to add a keyframe to the track view. The keyframe will use the same settings and interpolation curve as the previous keyframe.</p>
+                </li>
+            </ol>
+            <h4>Moving track keyframes</h4>
+            <p>Drag the keyframe to a new position in the timeline. If track keyframe rows are collapsed, overlapping keyframes will move together.</p>
+            <p class="tip">To move multiple keyframes, select the Envelope tool <img src="Resources/Images/b_envelope.gif" data-mc-conditions="Primary.ProOnly" /> and create a time selection that includes the keyframes you want to move. When you drag, all keyframes in the time selection will move together.</p>
+            <h4>Changing the interpolation curve between keyframes</h4>
+            <p>The interpolation curve determines the rate of temporal interpolation: the rate of motion between two keyframes. To change the interpolation curve, right-click a keyframe and choose a command from the shortcut menu:</p>
+            <p class="note">If you want to adjust spatial interpolation—how motion occurs within a video image—change the <span class="uielement">Smoothness</span> setting in the Event Pan/Crop or Track Motion dialog. A <span class="uielement">Smoothness</span> setting of 0 produces linear motion from one keyframe to the next. Increasing the setting produces a curved path. For more information, see <a href="PanCropWindow.htm" title="" alt="" class="MCXref xref">"<span style="color: #009ccc;" class="mcFormatColor"><u>Panning and cropping video events</u></span>"</a> and <a href="TrackMotion.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Editing track motion</u></span>."</a></p>
+            <table style="mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <col class="Column-Column1" />
+                <thead>
+                    <tr class="Head-Header1">
+                        <th class="HeadE-Column1-Header1">
+                            <p>Command</p>
+                        </th>
+                        <th class="HeadE-Column1-Header1">
+                            <p>Description</p>
+                        </th>
+                        <th class="HeadD-Column1-Header1">
+                            <p>Looks Like</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Hold</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-hold.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>No animation will take place. The keyframe's settings will be maintained until the next keyframe.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/holdkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Linear</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-linear.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Effect parameters are interpolated in a linear path.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/linearkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Fast</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-fast.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Effect parameters are interpolated in a fast logarithmic path.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/FASTkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyE-Column1-Body1">
+                            <p><span class="uielement">Slow</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-slow.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyE-Column1-Body1">
+                            <p>Effect parameters are interpolated in a slow logarithmic path.</p>
+                        </td>
+                        <td class="BodyD-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/slowkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="Body-Body1">
+                        <td class="BodyB-Column1-Body1">
+                            <p><span class="uielement">Smooth</span>
+                            </p>
+                            <p>
+                                <img src="Resources/Images/keyframe-smooth.gif" />
+                            </p>
+                        </td>
+                        <td class="BodyB-Column1-Body1">
+                            <p>Effect parameters are interpolated along a smooth, natural curve.</p>
+                        </td>
+                        <td class="BodyA-Column1-Body1">
+                            <p>
+                                <img src="Resources/Images/smoothkeyframe.gif" />
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Editing track keyframes</h4>
+            <p>Individual keyframe parameters cannot be adjusted in the track view. To edit a keyframe, open the effect's property page.</p>
+            <ol>
+                <li value="1">
+                    <p>Click the <span class="uielement">Expand/Collapse Track Keyframes</span> button <img src="Resources/Images/b_expandtrackkeyframes.gif" /> to expand track keyframe rows.</p>
+                </li>
+                <li value="2">
+                    <p>Double-click a keyframe to open its property page. For more information about using an effect, see <a href="AddVideoFX.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Adding video effects</u></span>."</a></p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

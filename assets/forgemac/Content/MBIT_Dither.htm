@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Processing audio" data-mc-conditions="Primary.AppStore Exclude" data-mc-ignored-words="Psych5;Psych9;MBIT">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>iZotope MBIT+&#160;Dither</title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <meta name="description" content="How to perform bit-depth conversion with the iZotope MBIT+ Dither plug-in." />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor171"></a>iZotope MBIT+&#160;Dither</h2>
+        <p>Choose <span class="uielement">Process</span> &gt; <span class="uielement">iZotope MBIT+&#160;Dither</span> to convert sound files to different bit depths and apply dithering.</p>
+        <p class="tip">Because the signal-to-noise ratio decreases when you decrease the bit depth of a file, you should maximize the volume of the sound file using the Volume or Normalize functions before performing the conversion.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <ol>
+            <li value="1">
+                <p>Choose <span class="uielement">Process</span> &gt; <span class="uielement">iZotope MBIT+&#160;Dither</span>.</p>
+            </li>
+            <li style="page-break-inside: auto;" value="2">
+                <p>Choose a setting from the <span class="uielement">Preset</span> drop-down list, or adjust the controls as needed.</p>
+                <table style="mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                    <col class="Column-Column1" style="width: 1.5in;" />
+                    <col class="Column-Column1" style="width: 4in;" />
+                    <thead>
+                        <tr class="Head-Header1">
+                            <th class="HeadE-Column1-Header1">
+                                <p>Item</p>
+                            </th>
+                            <th class="HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Bit depth</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Specify the sample rate to which the sound file will be converted.</p>
+                                <p class="note">Increasing a file's sample rate cannot improve the quality of the existing audio, but does allow higher resolution for processing.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Dither mode</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Choose a setting from the drop-down to choose the type of dithering that will be applied to mask quantization noise.</p>
+                                <ul>
+                                    <li value="1">
+                                        <p><span class="uielement">Type 1</span>: Uses a traditional rectangular probability distribution function.</p>
+                                    </li>
+                                    <li value="2">
+                                        <p><span class="uielement">Type 2</span>: Uses a  traditional rectangular probability distribution function.</p>
+                                    </li>
+                                    <li value="3">
+                                        <p><span class="uielement">MBIT+</span>: Uses a proprietary algorithm to offer superior results for all types of source material.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Noise shaping</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Choose a setting from the drop-down list to control the amount of noise shaping that will be applied.</p>
+                                <p>When <span class="uielement">Type 1</span> or <span class="uielement">Type 2</span> is selected in the <span class="uielement">Dither mode</span> drop-down list, the following settings are available:</p>
+                                <ul>
+                                    <li value="1">
+                                        <p><span class="uielement">None</span>: No noise shaping is applied.</p>
+                                    </li>
+                                    <li value="2">
+                                        <p><span class="uielement">Simple</span>: A high-pass filter is applied to the dither noise.</p>
+                                    </li>
+                                    <li value="3">
+                                        <p><span class="uielement">Clear</span>: Aggressively moves dither noise toward the Nyquist frequency.</p>
+                                    </li>
+                                    <li value="4">
+                                        <p><span class="uielement">Psych5</span>: Uses a fifth-order filter to move dither noise away from audible frequency bands.</p>
+                                    </li>
+                                    <li value="5">
+                                        <p><span class="uielement">Psych9</span>: Uses a ninth-order filter to move dither noise away from audible frequency bands.</p>
+                                    </li>
+                                </ul>
+                                <p>When <span class="uielement">MBIT+</span> is selected in the <span class="uielement">Dither mode</span> drop-down list, you can choose a setting from the <span class="uielement">Noise shaping</span> drop-down list to control the amount of noise shaping applied. Increased settings will provide more audible noise suppression at the expense of a higher noise floor.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Dither bits/amount</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>When <span class="uielement">Type 1</span> or <span class="uielement">Type 2</span> is selected in the <span class="uielement">Dither Mode</span> drop-down list, you can choose a setting from the <span class="uielement">Dither Bits</span> drop-down list to choose whether you want to use 1 or 2 dither bits. 1 works well for most applications.</p>
+                                <p>When <span class="uielement">MBIT+</span> is selected in the <span class="uielement">Dither mode</span> drop-down list, you can choose a setting from the <span class="uielement">Dither amount</span> drop-down list to control the amount of dithering applied. <span class="uielement">Normal</span> works well for most applications. The <span class="uielement">None</span> and <span class="uielement">Low</span> settings can leave some nonlinear quantization distortion or dither noise modulation behind. The <span class="uielement">High</span> setting can eliminate nonlinear quantization distortion at the expense of a higher noise floor.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Auto blank</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Allows you to scale the cutoff frequency of the plug-in's low-pass filter from the Nyquist frequency.</p>
+                                <p>Typical values are near 1. Higher values will offer a flatter pass-band, and lower values will offer better aliasing suppression.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">
+                                <p><span class="uielement">Minimize peaks</span>
+                                </p>
+                            </td>
+                            <td class="BodyD-Column1-Body1">
+                                <p>Select this check box if you want to suppress peaks in the dither noise signal.</p>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyB-Column1-Body1">
+                                <p><span class="uielement">Silence harmonics</span>
+                                </p>
+                            </td>
+                            <td class="BodyA-Column1-Body1">
+                                <p>Select this check box if dithering distorts the timbre of your audio. When the check box is selected, harmonic quantization distortion is moved away from the overtones of audible frequencies.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="3">
+                <p>Click the <span class="uielement">Process</span> button.</p>
+            </li>
+        </ol>
+    </body>
+</html>

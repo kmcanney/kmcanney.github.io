@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Editing sound data">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Mixing sound data</title>
+        <meta name="description" content="How to mix audio." />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor114"></a>Mixing sound data</h2>
+        <p>Choose <span class="uielement">Edit</span> &gt; <span class="uielement">Mix</span> to mix a copy of the clipboard contents at the current cursor position.</p>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3>Mixing by dragging and dropping a selection</h3>
+        <div class="h3">
+            <ol xmlns="http://www.w3.org/1999/xhtml">
+                <li value="1">
+                    <p>Choose <span class="uielement" xmlns="http://www.w3.org/1999/xhtml">Edit</span> &gt; <span class="uielement" xmlns="http://www.w3.org/1999/xhtml">Mode</span> &gt;&#160;<span class="uielement" xmlns="http://www.w3.org/1999/xhtml">Time</span> (or click the <span class="uielement" xmlns="http://www.w3.org/1999/xhtml">Time Mode</span> button  <img src="Resources/Images/Shared/b_timemode.png" xmlns="http://www.w3.org/1999/xhtml" /> in an editor's playbar).</p>
+                </li>
+                <li value="2">
+                    <p>Select the sound data you want to mix or crossfade. </p>
+                    <p>For more information, see <a href="Selecting_Data_Using_the_Mouse.htm" class="period MCXref xref xrefperiod" xmlns="">"<span style="color: #009ccc;" class="mcFormatColor"><u>Selecting data using the mouse</u></span>."</a></p>
+                </li>
+                <li value="3">
+                    <p xmlns=""> Drag the selection to the location where you want to mix the data. The mix cursor is displayed, and a shaded selection box is displayed to show you where the mix will occur. </p>
+                    <p xmlns="">
+                        <img src="Resources/Images/Shared/dragmix.png" />
+                    </p>
+                    <div class="tip" xmlns="http://www.w3.org/1999/xhtml">
+                        <p xmlns="">You can drag a selection to a new location in the current editor, to a different editor, or to a blank spot in an editor (to create a new tab). </p>
+                        <p>If you're dragging nonadjacent channels in a multichannel file — channels 1 and 3 in a 5.1-channel file, for example — hold Option during the drag to force the dragged data to adjacent channels.</p>
+                    </div>
+                </li>
+                <li value="4">
+                    <p xmlns="">When you drop the selection,the Mix dialog is displayed.</p>
+                </li>
+                <li value="5">
+                    <p>Choose a setting from the <span class="uielement">Preset</span> drop-down list, or adjust the controls as desired:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li value="1">
+                            <p xmlns="">Drag the source <span class="uielement">Volume</span> fader to adjust the volume of the selection you want to mix.</p>
+                        </li>
+                        <li value="2">
+                            <p xmlns="">Drag the destination <span class="uielement">Volume</span> fader to adjust the volume of the selection you want to mix over.</p>
+                            <p class="tip">Select the <span class="uielement" xmlns="">Invert phase</span> check boxes to invert the source or destination audio at the baseline (reverse the phase). Inverting data can help match transitions and compare the phase relationship of the two sound files.</p>
+                        </li>
+                        <li value="3">
+                            <p>Type a value in the <span class="uielement">Fade in</span> box (or use the spinner) to set the length of the fade in between the source and destination audio.</p>
+                        </li>
+                        <li value="4">
+                            <p>Type a value in the <span class="uielement">Fade out</span> box (or use the spinner) to set the length of the fade out between the source and destination audio.</p>
+                            <p class="tip">Click the <span class="uielement">Fade curves</span> button <img src="Resources/Images/Shared/fadetype.png" style="width: auto;height: 16px;" /> and choose a curve type from the menu to set the speed of the in and out fades.</p>
+                        </li>
+                        <li value="5">
+                            <p>Select the <span class="uielement">Proportional fade lengths</span> check box if you want to specify fade lengths as a percentage of the selection.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li value="6">
+                    <p>Click the <span class="uielement" xmlns="">Process</span> button to apply the mix.</p>
+                </li>
+            </ol>
+        </div>
+        <h3 class="pagebreak">Mixing audio from the clipboard</h3>
+        <div class="h3">
+            <p class="warn">The the <span class="uielement">Mix</span> command is not available in event-editing mode.</p>
+            <ol xmlns="http://www.w3.org/1999/xhtml">
+                <li value="1">
+                    <p>Choose <span class="uielement" xmlns="http://www.w3.org/1999/xhtml">Edit</span> &gt; <span class="uielement" xmlns="http://www.w3.org/1999/xhtml">Mode</span> &gt;&#160;<span class="uielement" xmlns="http://www.w3.org/1999/xhtml">Time</span> (or click the <span class="uielement" xmlns="http://www.w3.org/1999/xhtml">Time Mode</span> button  <img src="Resources/Images/Shared/b_timemode.png" xmlns="http://www.w3.org/1999/xhtml" /> in an editor's playbar).</p>
+                </li>
+                <li value="2">
+                    <p>Select the sound data you want to mix or crossfade, and then cut or copy the sound data to the clipboard. </p>
+                    <p>For more information, see <a href="Selecting_Data_Using_the_Mouse.htm" class="comma MCXref xref xrefcomma" xmlns="">"<span style="color: #009ccc;" class="mcFormatColor"><u>Selecting data using the mouse</u></span>,"</a> <a href="Cut.htm" class="comma MCXref xref xrefcomma" xmlns="">"<span style="color: #009ccc;" class="mcFormatColor"><u>Cutting sound data</u></span>,"</a> or <a href="Copy.htm" class="period MCXref xref xrefperiod" xmlns="">"<span style="color: #009ccc;" class="mcFormatColor"><u>Copying sound data</u></span>."</a></p>
+                </li>
+                <li value="3">
+                    <p>Click to place the cursor where you want to mix the clipboard contents or select the data you want to replace.</p>
+                </li>
+                <li value="4">
+                    <p>Choose <span class="uielement">Edit</span> &gt; <span class="uielement">Mix</span>. The Mix dialog is displayed.</p>
+                </li>
+                <li value="5">
+                    <p>Choose a setting from the <span class="uielement">Preset</span> drop-down list, or adjust the controls as desired:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li value="1">
+                            <p xmlns="">Drag the source <span class="uielement">Volume</span> fader to adjust the volume of the selection you want to mix.</p>
+                        </li>
+                        <li value="2">
+                            <p xmlns="">Drag the destination <span class="uielement">Volume</span> fader to adjust the volume of the selection you want to mix over.</p>
+                            <p class="tip">Select the <span class="uielement" xmlns="">Invert phase</span> check boxes to invert the source or destination audio at the baseline (reverse the phase). Inverting data can help match transitions and compare the phase relationship of the two sound files.</p>
+                        </li>
+                        <li value="3">
+                            <p>Type a value in the <span class="uielement">Fade in</span> box (or use the spinner) to set the length of the fade in between the source and destination audio.</p>
+                        </li>
+                        <li value="4">
+                            <p>Type a value in the <span class="uielement">Fade out</span> box (or use the spinner) to set the length of the fade out between the source and destination audio.</p>
+                            <p class="tip">Click the <span class="uielement">Fade curves</span> button <img src="Resources/Images/Shared/fadetype.png" style="width: auto;height: 16px;" /> and choose a curve type from the menu to set the speed of the in and out fades.</p>
+                        </li>
+                        <li value="5">
+                            <p>Select the <span class="uielement">Proportional fade lengths</span> check box if you want to specify fade lengths as a percentage of the selection.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li value="6">
+                    <p>Click the <span class="uielement">Process</span> button. The contents of the clipboard are mixed starting at the cursor position.</p>
+                    <p>If the clipboard has fewer channels than your mix target, only the selected channels will be mixed.</p>
+                    <p>If the clipboard has more channels than your mix target, only the selected channels in your destination will be mixed.</p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

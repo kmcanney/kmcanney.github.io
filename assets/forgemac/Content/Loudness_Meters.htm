@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Previewing sound data" data-mc-conditions="Primary.AppStore Exclude">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Loudness Meters</title>
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2 class="pagebreak"><a name="kanchor244"></a>Loudness Meters</h2>
+        <p><a name="kanchor245"></a><a name="kanchor246"></a>The Loudness Meters provide data about an audio file's momentary 
+ loudness, short-term loudness, integrated (overall) loudness, and loudness 
+ range. You can use these values when mastering for broadcast to ensure 
+ compliance with loudness standards (such as the CALM Act).</p>
+        <p>If the Loudness Meters are not visible, you can select the <span class="uielement">Show or hide the bottom pane</span> button <img src="Resources/Images/Shared/b_showhidebottompane.png" /> or choose <span class="uielement">View</span> &gt; <span class="uielement">Loudness Meters</span>. For more information, see <a href="Tools.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Arranging editing views</u></span>."</a></p>
+        <p>
+            <img src="Resources/Images/Loudness_Meters.png" />
+        </p>
+        <p>The meters display real-time values for each of the following measurements:</p>
+        <ul style="list-style: square;" type="square">
+            <li class="p" value="1">
+                <p>The <span class="uielement">M</span><a name="kanchor247"></a> 
+ meter represents the momentary loudness — in loudness units (LU) — across 
+ all audio channels based on 400-millisecond integration windows. The <span class="uielement">Momentary</span> box displays 
+ a numeric representation of the momentary loudness.</p>
+            </li>
+            <li class="p" value="2">
+                <p>The <span class="uielement">S</span> 
+ meter represents the short-term loudness — in loudness units — across 
+ all audio channels based on 3-second integration windows. The <span class="uielement">Short 
+ </span>box displays a numeric representation of the short-term loudness.</p>
+            </li>
+            <li class="p" value="3">
+                <p>The <span class="uielement">I</span><a name="kanchor248"></a> 
+ meter represents the integrated loudness — in loudness units — across 
+ all audio channels over the duration of the program. The <span class="uielement">Integrated 
+ </span>box displays a numeric representation of the integrated loudness 
+ and includes an over-target indicator.</p>
+            </li>
+            <li class="p" value="4">
+                <p>The <span class="uielement">LRA</span> 
+ meter represents the loudness range — in loudness units — of the momentary 
+ and short-term levels. The <span class="uielement">Loudness 
+ Range</span> measurement provides a standardized method of determining 
+ the dynamic range of the signal.</p>
+            </li>
+            <li class="p" value="5">
+                <p>The <span class="uielement">True 
+ peaks</span><a name="kanchor249"></a> meter represents the peak levels in dB FS. True peaks are 
+ calculated using a higher sample rate than peaks in the 
+ Meters tool for increased accuracy. For more information, see <a href="Monitoring_PeakLevels.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Monitoring peak levels</u></span>."</a><br /><br />The clipping indicator on the <span class="uielement">True Peaks</span> 
+ meter shows you whether the target loudness has been exceeded. The 
+ indicator is reset when you restart playback, or you can click the indicator to reset it. </p>
+            </li>
+        </ul>
+        <p>The statistics at the top of the tool can display the maximum or last-calculated (current)
+ values. Choose <span class="uielement">Current</span>, <span class="uielement">Max</span>, or <span class="uielement">Reset</span> from the menu at the end of the statistics bar to change the display.</p>
+        <div class="note">
+            <ul style="list-style: square;" type="square">
+                <li class="p" value="1">
+                    <p>Loudness is recalculated whenever you start, stop, seek, 
+ or change playback direction. If you want to force a recalculation, choose  <span class="uielement">Reset</span> from the menu at the end of the statistics bar.</p>
+                </li>
+                <li class="p" value="2">
+                    <p>Select the <span class="uielement">Enable surround 
+ processing on 5.1 media</span>check box on the Advanced tab in the Loudness Meters tool if you want to treat audio with six channels 
+ as surround audio when measuring loudness (a gain of ~1.5 dB is applied 
+ to the left and right surround channels). When the check box is cleared, 
+ all channels contribute equally to the loudness measurement.<br /></p>
+                </li>
+            </ul>
+        </div>
+        <p class="warn">When <span class="uielement">Loop Playback</span> <img src="Resources/Images/Shared/b_loopplay.gif" /> is selected, the selection must be greater than 2.5 milliseconds to use the Loudness Meters.</p>
+        <hr width="100%" size="0" align="center" />
+        <h3>Choosing a metering mode</h3>
+        <div class="h3">
+            <p class="TxtDr">To change the mode of the meters, click the General tab in the Loudness Meters tool, and then choose  <span class="uielement">EBU 
+ R 128</span> or <span class="uielement">ATSC 
+ A 85</span> from the <span class="uielement">Mode</span> drop-down list.</p>
+            <ul>
+                <li value="1">
+                    <p class="sbbul">When using <span class="uielement">EBU 
+ R 128</span>, the target value of the <span class="uielement">Integrated</span> 
+ meter is -23 LUFS, and the maximum <span class="uielement">True 
+ peak</span> value is -1.0 dB FS. Use this mode when you're mastering to 
+ European Broadcasting Union (EBU) standards.</p>
+                </li>
+                <li value="2">
+                    <p class="sbbul">When using <span class="uielement">ATSC 
+ A 85</span>, the target value of the <span class="uielement">Integrated 
+ </span>meter is -24 LUFS, and the maximum <span class="uielement">True 
+ peak</span> value is -2.0 dB FS. Use this mode when you're mastering to 
+ North American Advanced Television Systems Committee (ATSC) standards.</p>
+                </li>
+            </ul>
+            <p class="TxtDr">The over-target indicators will be triggered if the target 
+ values for <span class="uielement">Integrated</span> 
+ and <span class="uielement">True Peaks</span> 
+ meters are exceeded.</p>
+        </div>
+        <h3>
+            
+ Choosing a loudness scale</h3>
+        <div class="h3">
+            <p class="TxtDr">To change the scale of the meter,  click the General tab in the Loudness Meters tool, and then choose <span class="uielement">EBU 
+ +9</span> or <span class="uielement">EBU +18</span> 
+ from the <span class="uielement">Scale range</span> drop-down list.</p>
+            <ul>
+                <li value="1">
+                    <p class="sbbul">When using <span class="uielement">EBU 
+ +9</span>, the meters are displayed with a range of -18 to +9 LU. </p>
+                </li>
+                <li value="2">
+                    <p class="sbbul">When using <span class="uielement">EBU 
+ +18</span>, the meters are displayed with a range of -36 to +18 LU. </p>
+                </li>
+            </ul>
+            <p class="note">
+                Choosing 
+ a wide range allows you to see low-level signals at the expense of precision 
+ display at high levels.</p>
+            <p>Select <span class="uielement">Absolute scale  (-23 LUFS)</span> if you want to display loudness values as Loudness Units 
+ Full Scale (LUFS). When <span class="uielement">Absolute 
+ scale (-23 LUFS)</span> is not selected, all values are expressed as Loudness 
+ Units (LU) relative to the selected mode (<span class="uielement">EBU 
+ R 128 Mode</span> or <span class="uielement">ATSC 
+ A 85 Mode</span>).</p>
+        </div>
+        <h3>Configuring peak meters</h3>
+        <div class="h3">
+            <p class="TxtDr">To toggle the True Peaks meters in the Loudness Meters, 
+ select the <span class="uielement">True peak meter</span> check box on the General tab in the Loudness Meters.</p>
+            <p class="tip">
+                Please note that true peaks are 
+ calculated using a higher sample rate than peaks in the 
+ Channel Meters for increased accuracy. For more information, see <a href="Monitoring_PeakLevels.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Monitoring peak levels</u></span>."</a></p>
+            <p>Peak levels may be miscalculated if audio signals are asymmetrical 
+ or if a DC offset is present. To enable filtering, select the Advanced tab in the Loudness Meters  and then select the <span class="uielement">True peak blocking filter </span>check box. When <span class="uielement">True 
+ peak blocking filter</span> is selected, peaks are calculated as the maximum 
+ of the filtered and unfiltered signals.</p>
+            <p>The True Peaks meters display levels in dB FS. To change 
+ the resolution of the meters, choose a setting from the True peak meter drop-down list on the General tab in the Loudness Meters.</p>
+            <ul>
+                <li value="1">
+                    <p class="note">Choosing a wide range allows you to see low-level 
+ signals at the expense of precision display at high levels.
+            </p>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

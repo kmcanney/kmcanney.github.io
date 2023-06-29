@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Printing video to tape" data-mc-conditions="Primary.MovieStudio,Primary.ProOnly">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Printing video to tape from the timeline</title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor655"></a>Printing video to tape from the timeline</h2>
+        <p>
+            <MadCap:conditionalText data-mc-conditions="Primary.ProOnly">From the Tools menu, choose <span class="uielement">Print Video to Tape</span> <![CDATA[ ]]></MadCap:conditionalText>to print your project to a camera or deck.</p>
+        <div class="warn" data-mc-conditions="Primary.ProOnly">
+            <p>Important:</p>
+            <ul>
+                <li value="1">
+                    <p>Prerendered files can require significant drive space. On the Video tab of the Project Properties dialog, select a <span class="uielement">Prerendered files folder</span> on an a/v-capable drive with ample free space: DV requires approximately 228 MB per minute.</p>
+                </li>
+                <li value="2">
+                    <p>HDMI print to tape is supported on the Blackmagic Design DeckLink HD 
+ Extreme/Intensity Pro/HD Extreme 3D, AJA Io Express, and AJA KONA LHi 
+ cards. Please note that AJA XENA cards are now branded as KONA cards: <a href="http://www.aja.com/products/kona/transition.php" target="_blank">http://www.aja.com/products/kona/transition.php</a>.</p>
+                </li>
+                <li value="3">
+                    <p>For the latest information about supported hardware, please see our Web site: <a href="http://www.sonycreativesoftware.com/vegaspro/io#sdi" target="_blank">http://www.sonycreativesoftware.com/vegaspro/io#sdi</a>.</p>
+                </li>
+            </ul>
+        </div>
+        <hr width="100%" size="0" align="center" data-mc-conditions="Primary.Online" />
+        <h3><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t2"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Printing to a DV device</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-target-name="t2">
+            <ol>
+                <li value="1">
+                    <p>If you want to print only a portion of your project, create a time selection that includes the section of your project.</p>
+                </li>
+                <li value="2" data-mc-conditions="Primary.ProOnly">
+                    <p>From the Tools menu, choose <span class="uielement">Print Video to Tape</span>. The Device Setup dialog is displayed.</p>
+                </li>
+                <li value="3">
+                    <p>Use the Device Setup dialog to configure your camera or deck:</p>
+                </li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li value="1">
+                        <p>From the <span class="uielement">Device type</span> drop-down list, choose <span class="uielement">OHCI-Compliant IEEE 1394/DV</span>.</p>
+                    </li>
+                    <li style="page-break-inside: auto;" value="2">
+                        <p>From the <span class="uielement">Video</span> drop-down list, choose the setting that matches your destination format.</p>
+                        <div class="note">
+                            <p>You'll need to choose a rendering template 
+							that inserts <a href="Glossary2.htm#pulldown" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">pulldown</a> 
+ fields to create a standard DV file if your project properties are set 
+							to 24p or if you selected the <span class="uielement">Allow pulldown removal when opening 24p DV</span> check box on the General tab of the Preferences dialog. Use 
+							the <span class="uielement">NTSC DV 24p (inserting 
+							2-3-3-2 pulldown)</span> template if you intend to bring the file back 
+						into the timeline as source material. For more information, see <a href="PrefGeneralTab.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Preferences - General Tab</u></span>."</a></p>
+                            <p>If you cleared the <span class="uielement">Allow 
+							pulldown removal when opening 24p DV</span> check box before adding your 
+							media and your project properties are not set to 24p, your 24p video is 
+							read as 29.97 fps interlaced video (60i), so you can choose whichever 
+						NTSC DV or PAL DV template suits your project requirements.</p>
+                        </div>
+                    </li>
+                    <li value="3">
+                        <p>From the <span class="uielement">Audio</span> drop-down list, choose the setting that matches your destination format.</p>
+                    </li>
+                    <li value="4">
+                        <p>If necessary, drag the <span class="uielement">Record engage delay</span> 
+ control to specify the number of frames it takes your camera or deck to 
+ switch from Record Pause to Record mode. If you're missing frames from 
+ the beginning of your file after printing to tape, increase the setting. 
+ If you see duplicated frames at the beginning of your video, decrease 
+ the setting.</p>
+                    </li>
+                    <li value="5">
+                        <p>Click the <span class="uielement">Next</span> 
+ button. The Render Settings dialog is displayed.</p>
+                    </li>
+                </ol>
+                <li value="4">
+                    <p>Use the Render Settings 
+ dialog to choose the format you want to use to print your video to tape.</p>
+                </li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li value="1" data-mc-conditions="Primary.ProOnly">
+                        <p><a name="kanchor656"></a>Select the <span class="uielement"><a name="kanchor657"></a>Enable 
+ multichannel mapping</span> check box if you're working with multichannel 
+ source files and need to specify which channels to use in the stereo file 
+ when printing to tape. Click the <span class="uielement">Channels</span> 
+ button to choose which channels you want to render.</p>
+                        <p>For example, if your video source contained 6-channel audio, you could 
+ route each channel's track to a separate bus. Then, when printing to tape, 
+ you could click the <span class="uielement">Channels</span> 
+ button and choose which bus should be printed to tape.</p>
+                        <p>For more information, see <a href="Rendering_Multichannel_Audio_Files.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Rendering Multichannel Audio Files</u></span>."</a></p>
+                        <p class="note">Multichannel audio is not supported when printing to 
+					a DV device.</p>
+                    </li>
+                    <li value="2" data-mc-conditions="Primary.ProOnly">
+                        <p>Select the <span class="uielement">Use 
+ project output rotation setting</span> check box if you're rendering a rotated project 
+ and want to use the <span class="uielement">Output 
+ rotation</span> setting from the Project Properties dialog for your rendered 
+ file.</p>
+                        <p>When the check box is cleared, the media is rotated according to its 
+ Media Properties setting, but the project itself is unrotated—you can 
+ use this setting to proof your project on an unrotated display.</p>
+                        <p>For more information, see <a href="Creating_Rotated_Projects_for_Digital_Signage.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Creating rotated projects</u></span>."</a></p>
+                    </li>
+                    <li value="3">
+                        <p>Select the <span class="uielement">Render 
+ loop region only</span> check box if you want to print only the portion 
+ of your project that you selected in step 1.</p>
+                        <p>The check box is available only if you've created a time selection in the timeline.</p>
+                    </li>
+                    <li value="4">
+                        <p>Select the <span class="uielement">Prerender 
+ audio to proxy file</span> check box if you want to prerender the audio 
+ portion of your project before printing to tape.</p>
+                        <p>The <span class="uielement">Prerendered files 
+ folder</span> box displays the path to the folder where prerendered files 
+ are saved. Video files are saved to this folder so that you don't need 
+ to rerender the project every time you view it.</p>
+                        <p>If you want to change the location of the folder, click the <span class="uielement">Browse</span> 
+ button and choose a new location. Changing the setting here will update 
+ the setting on the Video tab of the Project 
+ Properties dialog.</p>
+                    </li>
+                    <li value="5">
+                        <p>Click <span class="uielement">Next</span>. 
+ The Leader and Trailer dialog is displayed.</p>
+                    </li>
+                </ol>
+                <li value="5">
+                    <p>Use the Leader and 
+ Trailer dialog to set up the data that will be printed before and after 
+ your project:</p>
+                </li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li value="1">
+                        <p>Select the <span class="uielement">Add 
+ test pattern leader</span> check box if you want to print a test pattern 
+ before your video.</p>
+                    </li>
+                    <li value="2">
+                        <p>From the <span class="uielement">Test pattern style</span> drop-down list, choose a test pattern type and video format.</p>
+                    </li>
+                    <li value="3">
+                        <p>Type a value in the <span class="uielement">Duration</span> box to determine the length of the test pattern.</p>
+                    </li>
+                    <li value="4">
+                        <p>Select the <span class="uielement">Play 
+ 1 kHz tone with test pattern</span> check box to add an audio test tone 
+ that will play along with the test pattern.</p>
+                    </li>
+                    <li value="5">
+                        <p>Select the <span class="uielement">Add black leader</span> check box and type a value in the <span class="uielement">Duration</span> 
+ box if you want to print black frames before your video.</p>
+                    </li>
+                    <li value="6">
+                        <p>Select the <span class="uielement">Add black trailer</span> check box and type a value in the <span class="uielement">Duration</span> 
+ box if you want to print black frames after your video.</p>
+                    </li>
+                    <li value="7">
+                        <p>Click <span class="uielement">Next</span>. 
+ The Device Control dialog is displayed.</p>
+                    </li>
+                </ol>
+                <li style="page-break-inside: auto;" value="6">
+                    <p>Use the Device Control dialog to indicate 
+ whether <span class="PrimaryProductName">Vegas Pro</span> will have control 
+ of your DV recorder and how you want to print to tape:</p>
+                    <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                        <col class="Column-Column1" style="width: 1.5in;" />
+                        <col class="Column-Column1" style="width: 4in;" />
+                        <thead>
+                            <tr class="Head-Header1">
+                                <th class="HeadE-Column1-Header1">
+                                    <p>Setting</p>
+                                </th>
+                                <th class="HeadD-Column1-Header1">
+                                    <p>Description</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="Body-Body1">
+                                <td class="BodyE-Column1-Body1"><span class="uielement">Manual</span>
+                                </td>
+                                <td class="BodyD-Column1-Body1">
+                                    <p>Select this radio button if the application 
+ is unable to obtain device control of your deck.</p>
+                                    <p>You will need to cue the tape and press 
+ the Record button on your deck before recording.</p>
+                                </td>
+                            </tr>
+                            <tr class="Body-Body1">
+                                <td class="BodyE-Column1-Body1">
+                                    <p><a name="kanchor658"></a><span class="uielement">Crash Recording</span>
+                                    </p>
+                                </td>
+                                <td class="BodyD-Column1-Body1">
+                                    <p>Select this radio button if the application can perform basic device control of your deck.</p>
+                                    <p>You will need to cue the tape to the location 
+ where you want to begin printing. The device's timecode location is displayed 
+ in the <span class="uielement">Device timecode</span> box.</p>
+                                    <p>When you click <span class="uielement">Finish</span>, 
+ recording will begin automatically and will stop after reaching the end 
+ of the selection or project.</p>
+                                </td>
+                            </tr>
+                            <tr class="Body-Body1">
+                                <td class="BodyB-Column1-Body1">
+                                    <p><span class="uielement">Auto Edit</span>
+                                    </p>
+                                </td>
+                                <td class="BodyA-Column1-Body1">
+                                    <p>Select this radio button if your deck supports Auto Edit/Insert Edit mode.</p>
+                                    <p class="warn">When using Auto Edit mode, use a striped tape to ensure 
+ continuous timecode over the portion of the tape where you plan to record.</p>
+                                    <ol style="list-style-type: lower-alpha;">
+                                        <li value="1">
+                                            <p>Select the <span class="uielement">Preview 
+ only</span> check box if you want to preview your print-to-tape operation 
+ without engaging the deck's record head.</p>
+                                            <p>Use <span class="uielement">Preview only</span> mode to 
+ double-check and adjust your <span class="uielement">Start printing 
+ at</span> timecode setting as needed.</p>
+                                        </li>
+                                        <li value="2">
+                                            <p>The <span class="uielement">Start 
+ printing at</span> box displays the current device timecode location. 
+ You can cue the tape or type a value to indicate where you want to begin 
+ recording. The <span class="uielement">End at</span> box displays 
+ the frame where recording will end (much like punch-in audio recording). 
+ </p>
+                                        </li>
+                                        <li value="3">
+                                            <p>When you click <span class="uielement">Next</span>, the Select Channels page is displayed.</p>
+                                        </li>
+                                        <li value="4">
+                                            <p>On the Select Channels page, 
+ select a radio button to choose which channels you want to print to tape:</p>
+                                            <ul>
+                                                <li value="1">
+                                                    <p><span class="uielement">Write all rendered channels</span>: select this radio button to print video 
+ and all audio channels to tape</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p><span class="uielement">Write only selected channels</span>: select this radio button if you want to 
+ choose which channels you want to print to tape. Select the check box 
+ for each channel you want to print.</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li value="7">
+                    <p>Click <span class="uielement">Finish</span>. 
+ If you have not already prerendered, portions of your project that cannot 
+ be rendered and printed to tape in real time will be selectively 
+ prerendered. For more information, see <a href="Selective_Pre-Render.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Selectively prerender video</u></span>."</a></p>
+                </li>
+                <ul>
+                    <li value="1">
+                        <p>If you're using <span class="uielement">Manual</span> mode, a dialog will be displayed after rendering is finished. You 
+ can specify a delay time in the <span class="uielement">Delay playback countdown timer</span> box and select the <span class="uielement">Beep 
+ each second during countdown</span> check box if you want to count down 
+ before sending video to your device.</p>
+                    </li>
+                    <li value="2">
+                        <p>If you're using <span class="uielement">Crash recording</span> mode, your DV recorder will start and begin recording 
+ after rendering is finished. </p>
+                    </li>
+                    <li value="3">
+                        <p>If you're using <span class="uielement">Auto 
+ Edit</span> mode, recording will begin and end automatically at the specified 
+ timecode positions. </p>
+                    </li>
+                </ul>
+            </ol>
+        </div>
+        <h3 class="pagebreak" data-mc-conditions="Primary.ProOnly"><a href="javascript:void(0);" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_" data-mc-targets="t1"><img class="MCToggler_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Printing to a tape deck connected to an SDI card</a>
+        </h3>
+        <div class="h3" style="display: none;" data-mc-conditions="Primary.ProOnly" data-mc-target-name="t1">
+            <ol>
+                <li value="1">
+                    <p>If you want to print only 
+ a portion of your project, create a time selection that includes the section 
+ of your project.</p>
+                </li>
+            </ol>
+            <ol start="2">
+                <li value="2">
+                    <p>From the Tools menu, 
+ choose <span class="uielement">Print Video 
+ to Tape</span>. The Device Setup dialog is displayed.</p>
+                </li>
+                <li style="page-break-inside: auto;" value="3">
+                    <p>Use the Device Setup dialog 
+ to configure your camera or deck:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li value="1">
+                            <p>From the <span class="uielement">Device type</span> drop-down list, choose <span class="uielement">AJA Video Device</span> or <span class="uielement">Blackmagic Design DeckLink</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>From the <span class="uielement">Output</span> 
+ drop-down list, choose <span class="uielement">SDI</span> 
+ or <span class="uielement">HDMI</span> (if your 
+ devices supports HDMI output). </p>
+                        </li>
+                        <li value="3">
+                            <p>From the <span class="uielement">Video</span> 
+ drop-down list, choose the setting that matches your destination format.</p>
+                            <div class="note">
+                                <p>You'll need to choose a rendering template 
+ that inserts <a href="Glossary2.htm#pulldown" class="MCTopicPopup MCTopicPopupHotSpot a aPopup" data-mc-width="auto" data-mc-height="auto">pulldown</a> 
+ fields to create a standard interlaced file if your project properties 
+ are set to 24p or if you selected the <span class="uielement">Allow pulldown removal when opening 24p DV</span> check box on the General tab of the Preferences dialog. For more information, see <a href="PrefGeneralTab.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Preferences - General Tab</u></span>."</a></p>
+                                <p>If you cleared the <span class="uielement">Allow 
+ pulldown removal when opening 24p DV</span> check box before adding your 
+ media and your project properties are not set to 24p, your 24p video is 
+ read as 29.97 fps interlaced video (60i), so you can choose whichever 
+ template suits your project requirements.</p>
+                            </div>
+                        </li>
+                        <li value="4">
+                            <p>From the <span class="uielement">Audio</span> 
+ drop-down list, choose the setting that matches your destination format.</p>
+                        </li>
+                        <li value="5">
+                            <p>Select the <span class="uielement">Use 
+ progressive segmented frame (psf) video formats</span> check box if your 
+ project properties are set to a progressive-scan 
+ format and you want to preview on a device that stores and transfers progressive-scan 
+ frames by dividing fields (AJA SDI cards only).</p>
+                        </li>
+                        <li value="6">
+                            <p>Select the <span class="uielement">Use 
+ 10-bit encoding</span> check box if you want to print 10-bit source material 
+ for increased color resolution. Source material with gradients in the 
+ background can benefit from 10-bit encoding.</p>
+                            <p>When you use 10-bit video in your project, choose <span class="uielement">32-bit 
+ floating point (video levels)</span> from the <span class="uielement">Pixel 
+ format</span> setting on the Video tab of the Project 
+ Properties dialog. For more information, see <a href="Project_Properties.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Setting project properties</u></span>."</a></p>
+                        </li>
+                        <li value="7">
+                            <p>If necessary, use the <span class="uielement">Record Engage Delay</span> 
+ control to specify the number of frames it takes your camera or deck to 
+ switch from Record Pause to Record mode. If you're missing frames from 
+ the beginning of your file after printing to tape, increase the setting. 
+ If you see duplicated frames at the beginning of your video, decrease 
+ the setting.</p>
+                        </li>
+                        <li value="8">
+                            <p>Choose a setting from the <span class="uielement">Genlock</span> 
+ drop-down list if you want to synchronize your video output with a reference 
+ signal (AJA SDI cards only).
+                            <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0"><col class="Column-Column1" style="width: 1.5in;" /><col class="Column-Column1" style="width: 4in;" /><thead><tr class="Head-Header1"><th class="HeadE-Column1-Header1"><p>Setting</p></th><th class="HeadD-Column1-Header1"><p>Description</p></th></tr></thead><tbody><tr class="Body-Body1"><td class="BodyE-Column1-Body1"><p><span class="uielement">Video In</span></p></td><td class="BodyD-Column1-Body1"><p>Synchronizes to the SDI input when <span class="uielement">SDI</span> is selected in the <span class="uielement">Output</span> drop-down list or synchronizes to the HDMI output when <span class="uielement">HDMI</span> is selected in the <span class="uielement">Output</span> drop-down list.</p></td></tr><tr class="Body-Body1"><td class="BodyE-Column1-Body1"><p><span class="uielement">Ref In</span></p></td><td class="BodyD-Column1-Body1"><p>Synchronizes to an external reference input signal.</p></td></tr><tr class="Body-Body1"><td class="BodyB-Column1-Body1"><p><span class="uielement">Free Run</span></p></td><td class="BodyA-Column1-Body1"><p>Ignores all input signals and uses internal timing.</p></td></tr></tbody></table></p>
+                        </li>
+                        <li value="9">
+                            <p>Click the <span class="uielement">Next</span> button. The Render Settings dialog is displayed.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li value="4">
+                    <p>Use the Render Settings dialog to choose the format you want to use to print your video to tape.</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li value="1">
+                            <p>Select the <span class="uielement">Enable 
+ multichannel mapping</span> check box if you want to render a file with 
+ multiple audio channels.</p>
+                            <p>For more information about rendering multichannel audio and setting 
+ up multichannel mapping, see <a href="Rendering_Multichannel_Audio_Files.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Rendering Multichannel Audio Files</u></span>."</a></p>
+                        </li>
+                        <li value="2">
+                            <p>Select the <span class="uielement">Use 
+ project output rotation setting</span> check box if you're rendering a rotated project 
+ and want to use the <span class="uielement">Output 
+ rotation</span> setting from the Project Properties dialog for your rendered 
+ file.</p>
+                            <p>When the check box is cleared, the media is rotated according to its 
+ Media Properties setting, but the project itself is unrotated—you can 
+ use this setting to proof your project on an unrotated display.</p>
+                            <p>For more information, see <a href="Creating_Rotated_Projects_for_Digital_Signage.htm" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Creating rotated projects</u></span>."</a></p>
+                        </li>
+                        <li value="3">
+                            <p>Select the <span class="uielement">Render 
+ loop region only</span> check box if you want to print only the portion 
+ of your project that you selected in step 1.</p>
+                            <p>The check box is available only if you've created a time selection in the timeline.</p>
+                        </li>
+                        <li value="4">
+                            <p>Select the <span class="uielement">Prerender 
+ audio to proxy file</span> check box if you want to prerender the audio 
+ portion of your project before printing to tape.</p>
+                            <p>The <span class="uielement">Prerendered files 
+ folder</span> box displays the path to the folder where prerendered files 
+ are saved. video files are saved to this folder so that you don't need 
+ to rerender the project every time you view it.</p>
+                            <p>If you want to change the location of the folder, click the <span class="uielement">Browse</span> 
+ button and choose a new location. Changing the setting here will update 
+ the setting on the Video tab of the Project 
+ Properties dialog.</p>
+                        </li>
+                        <li value="5">
+                            <p>Click <span class="uielement">Next</span>. 
+ The Leader and Trailer dialog is displayed.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li value="5">
+                    <p>Use the Leader and 
+ Trailer dialog to set up the data that will be printed before and after 
+ your project:</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li value="1">
+                            <p>Select the <span class="uielement">Add 
+ test pattern leader</span> check box if you want to print a test pattern 
+ before your video.</p>
+                        </li>
+                        <li value="2">
+                            <p>From the <span class="uielement">Test pattern style</span> 
+ drop-down list, choose a test pattern type and video format.</p>
+                        </li>
+                        <li value="3">
+                            <p>Type a value in the <span class="uielement">Duration</span> 
+ box to determine the length of the test pattern.</p>
+                        </li>
+                        <li value="4">
+                            <p>Select the <span class="uielement">Play 
+ 1 kHz tone with test pattern</span> check box to add an audio test tone 
+ that will play along with the test pattern.</p>
+                        </li>
+                        <li value="5">
+                            <p>Select the <span class="uielement">Add 
+ black leader </span>check box and type a value in the <span class="uielement">Duration</span> 
+ box if you want to print black frames before your video.</p>
+                        </li>
+                        <li value="6">
+                            <p>Select the <span class="uielement">Add 
+ black trailer </span>check box and type a value in the <span class="uielement">Duration</span> 
+ box if you want to print black frames after your video.</p>
+                        </li>
+                        <li value="7">
+                            <p>Click <span class="uielement">Next</span>. 
+ The Device Control dialog is displayed.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li value="6">
+                    <p>Use the Device Control dialog to indicate 
+ whether <span class="PrimaryProductName">Vegas Pro</span> will have control 
+ of your deck:</p>
+                    <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+                        <col class="Column-Column1" style="width: 1.5in;" />
+                        <col class="Column-Column1" style="width: 4in;" />
+                        <thead>
+                            <tr class="Head-Header1">
+                                <th class="HeadE-Column1-Header1">
+                                    <p>Setting</p>
+                                </th>
+                                <th class="HeadD-Column1-Header1">
+                                    <p>Description</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="Body-Body1">
+                                <td class="BodyE-Column1-Body1">
+                                    <p><span class="uielement">Manual</span>
+                                    </p>
+                                </td>
+                                <td class="BodyD-Column1-Body1">
+                                    <p>Select this radio button if the application 
+ is unable to obtain device control of your deck. </p>
+                                    <p>You will need to cue the tape and press 
+ the Record button on your deck before recording.</p>
+                                </td>
+                            </tr>
+                            <tr class="Body-Body1">
+                                <td class="BodyE-Column1-Body1">
+                                    <p><span class="uielement">Crash Recording</span>
+                                    </p>
+                                </td>
+                                <td class="BodyD-Column1-Body1">
+                                    <p>Select this 
+ radio button if the application can perform basic device control of your 
+ deck.
+                                </p>
+                                    <p>You will need to cue the tape to the location 
+ where you want to begin printing. The device's timecode location is displayed 
+ in the <span class="uielement">Device timecode</span> box.</p>
+                                    <p>When you click <span class="uielement">Finish</span>, 
+ recording will begin automatically and will stop after reaching the end 
+ of the selection or project.</p>
+                                </td>
+                            </tr>
+                            <tr class="Body-Body1">
+                                <td class="BodyB-Column1-Body1">
+                                    <p><span class="uielement">Auto Edit</span>
+                                    </p>
+                                </td>
+                                <td class="BodyA-Column1-Body1">
+                                    <p>Select this radio button if your deck supports Auto Edit/Insert Edit mode.</p>
+                                    <p class="warn">When using Auto Edit mode, use a striped tape to ensure 
+ continuous timecode over the portion of the tape where you plan to record.</p>
+                                    <ol style="list-style-type: lower-alpha;">
+                                        <li value="1">
+                                            <p>Select the <span class="uielement">Preview 
+ only</span> check box if you want to preview your print-to-tape operation 
+ without engaging the deck's record head.</p>
+                                            <p>Use <span class="uielement">Preview only</span> mode to 
+ double-check and adjust your <span class="uielement">Start printing 
+ at</span> timecode setting as needed.</p>
+                                        </li>
+                                        <li value="2">
+                                            <p>The <span class="uielement">Start 
+ printing at</span> box displays the current device timecode location. 
+ You can cue the tape or type a value to indicate where you want to begin 
+ recording. The <span class="uielement">End at</span> box displays 
+ the frame where recording will end (much like punch-in audio recording). 
+ </p>
+                                        </li>
+                                        <li value="3">
+                                            <p>When you click <span class="uielement">Next</span>, the Select Channels page is displayed.</p>
+                                        </li>
+                                        <li value="4">
+                                            <p>On the Select Channels page, 
+ select a radio button to choose which channels you want to print to tape:</p>
+                                            <ul>
+                                                <li value="1">
+                                                    <p><span class="uielement">Write all rendered channels</span>: select this radio button to print video 
+ and all audio channels to tape</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p><span class="uielement">Write only selected channels</span>: select this radio button if you want to 
+ choose which channels you want to print to tape. Select the check box 
+ for each channel you want to print.</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li value="7">
+                    <p>Click 
+ <span class="uielement">Finish</span>. If you 
+ have not already prerendered, portions of your project that cannot be 
+ rendered and printed to tape in real time will be selectively 
+ prerendered. For more information, see <a href="Selective_Pre-Render.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Selectively prerender video</u></span>."</a></p>
+                    <ul>
+                        <li value="1">
+                            <p>If you're using <span class="uielement">Manual</span> mode, 
+ a dialog will be displayed after rendering is finished. You can enter 
+ a delay time in the <span class="uielement">Delay</span> 
+ box and select the <span class="uielement">Beep</span> 
+ check box if you want to count down before sending video to your deck.</p>
+                        </li>
+                        <li value="2">
+                            <p>If you're using <span class="uielement">Crash Recording</span> or <span class="uielement">Auto Edit</span> mode, your deck will begin recording after rendering is finished.</p>
+                        </li>
+                        <li value="3">
+                            <p>If you're 
+ using <span class="uielement">Auto Edit</span> mode, recording will begin and end 
+ automatically at the specified timecode positions.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

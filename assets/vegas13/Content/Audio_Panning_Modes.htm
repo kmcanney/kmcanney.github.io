@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="5.1 surround projects" data-mc-conditions="Primary.ProOnly,Primary.MovieStudio">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" /><title>Audio panning modes</title>
+        <link href="Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="Resources/Stylesheets/sony.css" rel="stylesheet" type="text/css" />
+        <script src="../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/foundation.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2><a name="kanchor587"></a><a name="PanningModes"></a>Audio panning modes</h2>
+        <p>When you pan stereo audio tracks, 5.1 
+ surround tracks, or busses, you can right-click 
+ the fader handle (or surround panner) and choose a pan type to change 
+ the panning model.</p>
+        <p class="tip" data-mc-conditions="Primary.QSG">If you want to set the default pan type for new tracks, set a 
+ track's pan type, and then use the Set 
+ Default Track Properties dialog to set that track's pan type as the 
+ default. For more information, see <a href="Setting_Default_Track_Properties.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Setting default track properties</u></span>."</a></p>
+        <p class="note" data-mc-conditions="Primary.QSG">The selected panning mode is also used for track-level 
+ pan envelopes. For more information, see <a href="InsertAudioEnv.htm" title="" alt="" class="period MCXref xref xrefperiod">"<span style="color: #009ccc;" class="mcFormatColor"><u>Audio track automation</u></span>."</a></p>
+        <table style="mc-table-style: url('Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+            <col class="Column-Column1" style="width: 1.5in;" />
+            <col class="Column-Column1" style="width: 4in;" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Mode</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span class="uielement">Add Channels</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>This mode is most useful for panning 
+ stereo files. As you pan across the stereo field, the stereo image appears 
+ to move across the speakers. As you pan toward either side, the signal 
+ from the opposite channel is added to the channel you are panning toward 
+ until at the extreme both channels are sent to a single channel at full 
+ volume.</p>
+                        <p>This mode uses a linear panning curve.</p>
+                        <p class="warn">You can introduce 
+ clipping when channels are added. Monitor the meters in the Master Bus window and adjust the track volume accordingly.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span class="uielement">Balance (0 dB center)</span>
+                        </p>
+                        <p><span class="uielement">Balance (-3 dB center)</span>
+                        </p>
+                        <p><span class="uielement">Balance (-6 dB center)</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>In a stereo project, this mode can help you 
+ adjust the relative signal levels of the channels in stereo source material. 
+ As you pan from the center to either side, the opposite channel begins 
+ at the specified center value (0 dB -3 dB, or -6 dB), and decays to -infinity. 
+ The signal in the side you are panning toward progresses from the specified 
+ center value (0 dB -3 dB, or -6 dB) to 0 dB.</p>
+                        <p>This panning mode uses a linear panning curve.</p>
+                        <p>For example, when you pan fully right, the right 
+ channel is played at 0 dB and the left channel is not audible. As you 
+ pan to the center, each channel is attenuated to the specified center 
+ value (0 dB -3 dB, or -6 dB). As you pan to the left, the left channel 
+ is played at 0 dB, and the right channel is not audible.</p>
+                        <p>
+                            <img src="Resources/Images/LOC/0dBBalance.gif" />
+                        </p>
+                        <p>With the <span class="uielement">Balance 
+ (0 dB center)</span> setting, no gain or cut is applied when you're panned 
+ to the center, which can make the center seem louder.</p>
+                        <p>
+                            <img src="Resources/Images/LOC/3dBBalance.gif" />
+                        </p>
+                        <p>With the <span class="uielement">Balance (-3 dB center)</span> setting, a -3 dB cut is applied when you're panned to the center.</p>
+                        <p>
+                            <img src="Resources/Images/LOC/6dBbalance.gif" />
+                        </p>
+                        <p>Panning in a 5.1 surround project follows the 
+ same rules: as you pan from the center to any channel in a 5.1 surround 
+ project, the signal in the channel you are panning toward progresses from 
+ the specified center value to 0 dB. The signal in the channel you are 
+ panning away from begins at the specified center value and decays to -infinity.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p><span class="uielement">Constant 
+ Power</span>
+                        </p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>This mode is most useful for panning monaural 
+ source material. In this mode, sound will maintain its volume when you 
+ pan across channels.</p>
+                        <p>If you pan a stereo file <span class="uielement">100% R</span>, only the right channel of your 
+ media file is played, and this channel is sent to both output channels. 
+ If you continue to pan to the left, the left channel is gradually added 
+ to the output, and the right channel is gradually faded out until only 
+ the left channel will be heard through both output channels when the slider 
+ is at <span class="uielement">100% L</span>.</p>
+                        <p>
+                            <img src="Resources/Images/LOC/constantpower.gif" />
+                        </p>
+                        <p>If you pan a file fully right 
+ midway between the front and rear channels in a 5.1 surround project, 
+ only the right channel of your media file is played, and this channel 
+ is sent to the right-front and -rear output channels. If you pan to the 
+ left, the left channel is gradually added to the output, and the right 
+ channel is gradually faded out until only the left channel is sent to 
+ the left-front and -rear output channels.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" data-mc-conditions="Primary.ProOnly">
+                    <td class="BodyB-Column1-Body1">
+                        <p><a name="kanchor588"></a><span class="uielement">Film</span>
+                        </p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>This mode allows you to pan between pairs of 
+ adjacent speakers in 5.1 
+ surround projects using a constant power model. This mode is optimized 
+ for theater-style speaker placement. In stereo projects, Film mode functions 
+ identically to Constant Power.</p>
+                        <p>As you drag the pan point to the center speaker, 
+ the sound becomes diffused through the front and rear speakers. When the 
+ track is panned fully to the center speaker, there is no output from the 
+ front and rear speakers.</p>
+                        <p>Dragging the pan point to the center of the 
+ surround panner sends the signal to all speakers.</p>
+                        <div class="note">
+                            <p>If you're panning fully to a single speaker, 
+ you may notice that some signal is mixed to the opposite speaker. This 
+ is because the ideal placement for surround speakers does not match the 
+ representation in the surround panner. For example, panning to the front-left 
+ speaker produces a low-level signal in the rear-left speaker.</p>
+                            <p>This is because your front-left speaker should be positioned 30° left of 
+ center and the speaker in the surround panner is located 45° left of center. 
+ To produce a true 45° left-of-center pan, the signal is panned between 
+ the front- and rear-left speaker. </p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
